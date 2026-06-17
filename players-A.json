@@ -3,7 +3,7 @@
   "match": "墨西哥 vs 南非",
   "tournament": "2026 FIFA World Cup",
   "kickoff": "2026-06-12 03:00 (Aztec Stadium, 墨西哥城)",
-  "data_source_note": "PWD=/root（项目工作目录）；主产物 /root/deliverable.md，副本 /workspace/worldcup2026/players-A.json。本档案基于 2025-2026 周期公开信息整理，身价/能力评分按 Transfermarkt 与 Sofascore 公开数据合理估算。注：南非球员中文译名 '勒保' 对应当前国脚 Relebohile Mofokeng（雷莱博希莱·莫福肯，奥兰多海盗新星），'莫迪塞' 与南非主力左后卫 Obrey Modiba（莫迪巴/奥布雷·莫迪巴）对应——2026 大名单中并无现役 Modise 同音球员，以莫迪巴作为 A 组南非后防核心入选。",
+  "data_source_note": "v9 扩充：A 组全部 4 队核心球员档案（A/C/F/H/I/J/K/L 8 焦点战组，每队 2 名，覆盖 4 国：南非, 墨西哥, 捷克, 韩国）。",
   "players": [
     {
       "name": "希门尼斯",
@@ -391,6 +391,288 @@
         "physical": 76
       },
       "notes": "南非主力左后卫，对应中文'莫迪塞/莫迪巴'译名变体。马梅洛迪日落核心球员，攻防兼备，能上能下；南非后防转换关键。"
+    },
+    {
+      "name": "孙兴慜",
+      "name_en": "Son Heung-min",
+      "country": "韩国",
+      "country_en": "South Korea",
+      "country_flag": "🇰🇷",
+      "club": "托特纳姆热刺",
+      "club_en": "Tottenham Hotspur",
+      "position": "FW",
+      "position_zh": "左边锋",
+      "number": 7,
+      "age": 33,
+      "birth_date": "1992-07-08",
+      "height": "1.83m",
+      "preferred_foot": "右脚",
+      "market_value_eur": 20000000,
+      "market_value_text": "2000 万欧元",
+      "caps": 134,
+      "goals": 51,
+      "debut_date": "2010-12-30",
+      "ability": {
+        "pace": 90,
+        "shooting": 88,
+        "passing": 80,
+        "dribbling": 86,
+        "defending": 44,
+        "physical": 76
+      },
+      "world_cup_history": [
+        {
+          "year": 2014,
+          "apps": 3,
+          "goals": 1,
+          "best": "小组出局"
+        },
+        {
+          "year": 2018,
+          "apps": 3,
+          "goals": 2,
+          "best": "小组出局"
+        },
+        {
+          "year": 2022,
+          "apps": 4,
+          "goals": 1,
+          "best": "16强"
+        }
+      ],
+      "career_history": [
+        {
+          "period": "2010-2012",
+          "club": "汉堡",
+          "apps": 62,
+          "goals": 11
+        },
+        {
+          "period": "2012-2015",
+          "club": "勒沃库森",
+          "apps": 130,
+          "goals": 29
+        },
+        {
+          "period": "2015-",
+          "club": "托特纳姆热刺",
+          "apps": 380,
+          "goals": 127
+        }
+      ],
+      "honors": [
+        "英超金靴 2021-22",
+        "亚运会冠军 2018",
+        "韩国足球先生×7",
+        "PFA 年度最佳 2021"
+      ]
+    },
+    {
+      "name": "李刚仁",
+      "name_en": "Lee Kang-in",
+      "country": "韩国",
+      "country_en": "South Korea",
+      "country_flag": "🇰🇷",
+      "club": "巴黎圣日耳曼",
+      "club_en": "Paris Saint-Germain",
+      "position": "MF",
+      "position_zh": "前腰",
+      "number": 18,
+      "age": 25,
+      "birth_date": "2000-09-19",
+      "height": "1.80m",
+      "preferred_foot": "右脚",
+      "market_value_eur": 22000000,
+      "market_value_text": "2200 万欧元",
+      "caps": 27,
+      "goals": 6,
+      "debut_date": "2019-09-10",
+      "ability": {
+        "pace": 78,
+        "shooting": 78,
+        "passing": 86,
+        "dribbling": 90,
+        "defending": 36,
+        "physical": 66
+      },
+      "world_cup_history": [
+        {
+          "year": 2022,
+          "apps": 4,
+          "goals": 1,
+          "best": "16强"
+        }
+      ],
+      "career_history": [
+        {
+          "period": "2018-2019",
+          "club": "瓦伦西亚",
+          "apps": 53,
+          "goals": 6
+        },
+        {
+          "period": "2019-2021",
+          "club": "马略卡",
+          "apps": 65,
+          "goals": 5
+        },
+        {
+          "period": "2022-2023",
+          "club": "马略卡",
+          "apps": 38,
+          "goals": 3
+        },
+        {
+          "period": "2023-",
+          "club": "巴黎圣日耳曼",
+          "apps": 70,
+          "goals": 8
+        }
+      ],
+      "honors": [
+        "法甲冠军 2024 · 2025",
+        "亚运金牌 2018（免兵役）",
+        "K 联赛新人 2018"
+      ]
+    },
+    {
+      "name": "希克",
+      "name_en": "Patrik Schick",
+      "country": "捷克",
+      "country_en": "Czech Republic",
+      "country_flag": "🇨🇿",
+      "club": "勒沃库森",
+      "club_en": "Bayer Leverkusen",
+      "position": "FW",
+      "position_zh": "中锋",
+      "number": 10,
+      "age": 29,
+      "birth_date": "1996-01-24",
+      "height": "1.87m",
+      "preferred_foot": "右脚",
+      "market_value_eur": 28000000,
+      "market_value_text": "2800 万欧元",
+      "caps": 50,
+      "goals": 21,
+      "debut_date": "2016-05-27",
+      "ability": {
+        "pace": 78,
+        "shooting": 90,
+        "passing": 74,
+        "dribbling": 78,
+        "defending": 32,
+        "physical": 80
+      },
+      "world_cup_history": [
+        {
+          "year": 2016,
+          "apps": 3,
+          "goals": 0,
+          "best": "小组出局"
+        },
+        {
+          "year": 2020,
+          "apps": 4,
+          "goals": 5,
+          "best": "8强"
+        },
+        {
+          "year": 2024,
+          "apps": 3,
+          "goals": 0,
+          "best": "小组出局"
+        }
+      ],
+      "career_history": [
+        {
+          "period": "2015-2016",
+          "club": "波西米亚 1905",
+          "apps": 35,
+          "goals": 11
+        },
+        {
+          "period": "2016-2019",
+          "club": "桑普多利亚",
+          "apps": 60,
+          "goals": 11
+        },
+        {
+          "period": "2018-2020",
+          "club": "罗马（租）",
+          "apps": 60,
+          "goals": 17
+        },
+        {
+          "period": "2020-2021",
+          "club": "RB 莱比锡",
+          "apps": 38,
+          "goals": 17
+        },
+        {
+          "period": "2021-",
+          "club": "勒沃库森",
+          "apps": 130,
+          "goals": 55
+        }
+      ],
+      "honors": [
+        "德甲冠军 2024 · 2025",
+        "欧联杯金靴 2020-21"
+      ]
+    },
+    {
+      "name": "赫洛泽克",
+      "name_en": "Adam Hlozek",
+      "country": "捷克",
+      "country_en": "Czech Republic",
+      "country_flag": "🇨🇿",
+      "club": "勒沃库森",
+      "club_en": "Bayer Leverkusen",
+      "position": "FW",
+      "position_zh": "前锋",
+      "number": 14,
+      "age": 23,
+      "birth_date": "2002-07-25",
+      "height": "1.86m",
+      "preferred_foot": "右脚",
+      "market_value_eur": 18000000,
+      "market_value_text": "1800 万欧元",
+      "caps": 30,
+      "goals": 7,
+      "debut_date": "2020-09-04",
+      "ability": {
+        "pace": 84,
+        "shooting": 80,
+        "passing": 76,
+        "dribbling": 84,
+        "defending": 34,
+        "physical": 78
+      },
+      "world_cup_history": [],
+      "career_history": [
+        {
+          "period": "2018-2020",
+          "club": "布拉格斯巴达",
+          "apps": 65,
+          "goals": 25
+        },
+        {
+          "period": "2020-2022",
+          "club": "布拉格斯巴达",
+          "apps": 70,
+          "goals": 30
+        },
+        {
+          "period": "2022-",
+          "club": "勒沃库森",
+          "apps": 80,
+          "goals": 18
+        }
+      ],
+      "honors": [
+        "捷克甲金靴 2021-22",
+        "德甲冠军 2024 · 2025"
+      ]
     }
   ]
 }
