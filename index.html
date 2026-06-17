@@ -1,0 +1,1715 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>2026 美加墨世界杯 · 小组赛全景 + 胜负预测</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚽</text></svg>" />
+<meta name="description" content="2026 美加墨世界杯 48 队 / 12 组 / 72 场 · 小组赛积分榜、8 场焦点对决胜负预测、48 队档案、已结束战报时间线。" />
+<style>
+  /* ============== CSS 变量 ============== */
+  :root {
+    --bg-0: #060a14;
+    --bg-1: #0c1322;
+    --bg-2: #131a2e;
+    --bg-3: #1a2238;
+    --card: #161e33;
+    --card-hi: #1d2742;
+    --line: #243151;
+    --line-soft: #1d2742;
+    --pitch: #00d96b;
+    --pitch-dim: #0a8a45;
+    --gold: #ffc845;
+    --gold-dim: #d4a017;
+    --red: #ff4757;
+    --red-dim: #c0392b;
+    --blue: #4d8eff;
+    --blue-dim: #2c5fbf;
+    --text: #ecf0fb;
+    --text-mid: #b3bcd5;
+    --text-dim: #7a85a3;
+    --shadow-lg: 0 24px 60px rgba(0, 0, 0, 0.55);
+    --shadow-md: 0 12px 30px rgba(0, 0, 0, 0.45);
+    --shadow-sm: 0 6px 14px rgba(0, 0, 0, 0.35);
+    --radius-lg: 18px;
+    --radius-md: 12px;
+    --radius-sm: 8px;
+    --grad-pitch: linear-gradient(135deg, #00d96b 0%, #0a8a45 100%);
+    --grad-gold: linear-gradient(135deg, #ffc845 0%, #d4a017 100%);
+    --grad-red: linear-gradient(135deg, #ff4757 0%, #c0392b 100%);
+    --grad-blue: linear-gradient(135deg, #4d8eff 0%, #2c5fbf 100%);
+    --grad-card: linear-gradient(160deg, #1a2238 0%, #131a2e 100%);
+  }
+
+  /* ============== Reset ============== */
+  *, *::before, *::after { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: "Inter", "PingFang SC", "Microsoft YaHei", "Source Han Sans CN", system-ui, -apple-system, sans-serif;
+    background:
+      radial-gradient(1200px 600px at 80% -10%, rgba(0, 217, 107, 0.10), transparent 60%),
+      radial-gradient(900px 500px at -10% 30%, rgba(255, 200, 69, 0.06), transparent 60%),
+      radial-gradient(800px 500px at 50% 100%, rgba(77, 142, 255, 0.08), transparent 60%),
+      var(--bg-0);
+    color: var(--text);
+    line-height: 1.6;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  a { color: var(--pitch); text-decoration: none; }
+  a:hover { color: var(--gold); }
+
+  /* ============== 通用容器 ============== */
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  section {
+    padding: 64px 0 32px;
+    position: relative;
+  }
+  h1, h2, h3, h4 { margin: 0; font-weight: 700; letter-spacing: -0.02em; }
+
+  /* ============== 顶部进度条 ============== */
+  .topbar {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(6, 10, 20, 0.78);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--line-soft);
+  }
+  .topbar-inner {
+    display: flex; align-items: center; justify-content: space-between;
+    height: 56px; padding: 0 24px;
+    max-width: 1280px; margin: 0 auto;
+  }
+  .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 15px; }
+  .brand-logo {
+    width: 32px; height: 32px; border-radius: 9px;
+    background: var(--grad-pitch);
+    display: grid; place-items: center;
+    box-shadow: 0 6px 20px rgba(0, 217, 107, 0.35);
+    font-size: 18px;
+  }
+  .nav-links { display: flex; gap: 22px; font-size: 13px; color: var(--text-mid); }
+  .nav-links a { color: var(--text-mid); transition: color .2s; }
+  .nav-links a:hover { color: var(--text); }
+  .live-pill {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 5px 10px; border-radius: 999px;
+    background: rgba(255, 71, 87, 0.12);
+    color: var(--red); font-size: 11px; font-weight: 700;
+    border: 1px solid rgba(255, 71, 87, 0.25);
+  }
+  .live-dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--red);
+    box-shadow: 0 0 0 0 rgba(255, 71, 87, 0.6);
+    animation: pulse 1.5s infinite;
+  }
+  @keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(255, 71, 87, 0.6); }
+    70% { box-shadow: 0 0 0 8px rgba(255, 71, 87, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(255, 71, 87, 0); }
+  }
+
+  /* ============== Hero ============== */
+  .hero {
+    position: relative;
+    padding: 96px 0 80px;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: "";
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(800px 400px at 20% 30%, rgba(0, 217, 107, 0.18), transparent 60%),
+      radial-gradient(700px 350px at 85% 70%, rgba(255, 200, 69, 0.10), transparent 60%);
+    pointer-events: none;
+  }
+  .hero-inner { position: relative; z-index: 2; text-align: center; }
+  .hero-eyebrow {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 6px 14px; border-radius: 999px;
+    background: rgba(0, 217, 107, 0.10);
+    color: var(--pitch); font-size: 12px; font-weight: 700;
+    border: 1px solid rgba(0, 217, 107, 0.25);
+    margin-bottom: 22px;
+  }
+  .hero h1 {
+    font-size: clamp(34px, 5.6vw, 64px);
+    line-height: 1.05;
+    margin: 0 0 20px;
+    background: linear-gradient(180deg, #ffffff 0%, #b3bcd5 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .hero h1 .accent {
+    background: var(--grad-pitch);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .hero p.lead {
+    font-size: clamp(15px, 1.6vw, 18px);
+    color: var(--text-mid);
+    max-width: 720px; margin: 0 auto 28px;
+  }
+  .hero-meta {
+    display: inline-flex; flex-wrap: wrap; justify-content: center;
+    gap: 10px;
+  }
+  .meta-chip {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 8px 14px; border-radius: 999px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--line);
+    font-size: 13px; color: var(--text);
+  }
+  .meta-chip .dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--pitch);
+  }
+  .meta-chip.gold { background: rgba(255, 200, 69, 0.08); border-color: rgba(255, 200, 69, 0.25); color: var(--gold); }
+  .meta-chip.gold .dot { background: var(--gold); }
+  .meta-chip.red { background: rgba(255, 71, 87, 0.08); border-color: rgba(255, 71, 87, 0.25); color: var(--red); }
+  .meta-chip.red .dot { background: var(--red); }
+
+  .hero-art {
+    margin-top: 56px;
+    display: grid; place-items: center;
+    position: relative;
+  }
+  .pitch-svg {
+    width: min(680px, 90%);
+    height: auto;
+    filter: drop-shadow(0 30px 60px rgba(0, 217, 107, 0.15));
+  }
+
+  /* ============== 章节标题 ============== */
+  .section-head { text-align: center; margin-bottom: 36px; }
+  .section-eyebrow {
+    display: inline-block;
+    font-size: 11px; font-weight: 700; letter-spacing: 0.18em;
+    color: var(--pitch); text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .section-head h2 {
+    font-size: clamp(26px, 3.4vw, 38px);
+    line-height: 1.15;
+    margin: 0 0 12px;
+  }
+  .section-head p { color: var(--text-mid); max-width: 720px; margin: 0 auto; font-size: 15px; }
+
+  /* ============== 数字快览卡 ============== */
+  .stats-grid {
+    display: grid; gap: 18px;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .stat-card {
+    background: var(--grad-card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    padding: 22px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+  }
+  .stat-card::before {
+    content: ""; position: absolute; inset: 0 0 auto 0; height: 3px;
+    background: var(--grad-pitch);
+  }
+  .stat-card.gold::before { background: var(--grad-gold); }
+  .stat-card.red::before { background: var(--grad-red); }
+  .stat-card.blue::before { background: var(--grad-blue); }
+  .stat-card.purple::before { background: linear-gradient(135deg, #b16cff 0%, #6b3fb1 100%); }
+  .stat-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--pitch-dim);
+    box-shadow: var(--shadow-md);
+  }
+  .stat-icon { font-size: 24px; margin-bottom: 8px; }
+  .stat-num {
+    font-size: clamp(32px, 4.2vw, 46px);
+    font-weight: 800;
+    background: linear-gradient(180deg, #fff 0%, #b3bcd5 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1;
+  }
+  .stat-card.gold .stat-num {
+    background: var(--grad-gold);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .stat-label { color: var(--text-mid); font-size: 13px; margin-top: 6px; letter-spacing: 0.04em; }
+
+  /* ============== 焦点战卡片 ============== */
+  .focus-grid {
+    display: grid; gap: 22px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .focus-card {
+    background: var(--grad-card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    padding: 22px;
+    position: relative;
+    overflow: hidden;
+    transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+  }
+  .focus-card:hover { transform: translateY(-3px); border-color: var(--pitch-dim); box-shadow: var(--shadow-md); }
+  .focus-card::after {
+    content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 2px;
+    background: var(--grad-pitch);
+    opacity: .6;
+  }
+  .focus-card.pred-home::after { background: var(--grad-pitch); }
+  .focus-card.pred-draw::after { background: var(--grad-gold); }
+  .focus-card.pred-away::after { background: var(--grad-red); }
+
+  .focus-head {
+    display: flex; align-items: center; justify-content: space-between;
+    margin-bottom: 14px;
+    flex-wrap: wrap; gap: 10px;
+  }
+  .focus-num {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-size: 11px; font-weight: 700; letter-spacing: 0.12em;
+    color: var(--text-dim);
+  }
+  .focus-num .badge {
+    background: var(--pitch); color: var(--bg-0);
+    padding: 3px 8px; border-radius: 6px;
+    font-size: 10px; letter-spacing: 0.08em;
+  }
+  .focus-time {
+    font-size: 12px; color: var(--text-mid);
+    background: rgba(255, 255, 255, 0.05);
+    padding: 5px 10px; border-radius: 6px;
+    border: 1px solid var(--line-soft);
+  }
+
+  .match-row {
+    display: grid; grid-template-columns: 1fr auto 1fr; gap: 14px;
+    align-items: center; margin: 8px 0 16px;
+  }
+  .team {
+    display: flex; flex-direction: column; align-items: center; gap: 8px;
+    text-align: center;
+  }
+  .team.away { align-items: center; }
+  .team .flag { font-size: 44px; line-height: 1; filter: drop-shadow(0 4px 10px rgba(0,0,0,0.3)); }
+  .team .name { font-size: 15px; font-weight: 700; }
+  .team .rank { font-size: 11px; color: var(--text-dim); margin-top: -2px; }
+
+  .score-predict {
+    display: flex; flex-direction: column; align-items: center; gap: 8px;
+    padding: 12px 16px;
+    background: linear-gradient(180deg, rgba(0, 217, 107, 0.10) 0%, rgba(0, 217, 107, 0.02) 100%);
+    border: 1px solid rgba(0, 217, 107, 0.25);
+    border-radius: var(--radius-md);
+    min-width: 130px;
+  }
+  .focus-card.pred-draw .score-predict {
+    background: linear-gradient(180deg, rgba(255, 200, 69, 0.10) 0%, rgba(255, 200, 69, 0.02) 100%);
+    border-color: rgba(255, 200, 69, 0.25);
+  }
+  .score-predict .label {
+    font-size: 10px; color: var(--text-dim);
+    letter-spacing: 0.14em; text-transform: uppercase; font-weight: 700;
+  }
+  .score-predict .score {
+    font-size: 28px; font-weight: 800; color: var(--pitch);
+    letter-spacing: 0.04em;
+    line-height: 1;
+  }
+  .focus-card.pred-draw .score-predict .score { color: var(--gold); }
+  .score-predict .conf {
+    display: inline-block; font-size: 10px; font-weight: 700;
+    background: rgba(0, 217, 107, 0.20); color: var(--pitch);
+    padding: 2px 7px; border-radius: 4px;
+  }
+  .focus-card.pred-draw .score-predict .conf {
+    background: rgba(255, 200, 69, 0.20); color: var(--gold);
+  }
+
+  .result-pill {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 5px 10px; border-radius: 999px;
+    font-size: 11px; font-weight: 700; letter-spacing: 0.04em;
+  }
+  .result-pill.home { background: rgba(0, 217, 107, 0.15); color: var(--pitch); }
+  .result-pill.draw { background: rgba(255, 200, 69, 0.15); color: var(--gold); }
+  .result-pill.away { background: rgba(255, 71, 87, 0.15); color: var(--red); }
+
+  .focus-reason {
+    font-size: 13px; color: var(--text-mid);
+    border-top: 1px dashed var(--line-soft);
+    padding-top: 14px; margin-top: 4px;
+    line-height: 1.6;
+  }
+  .focus-reason .reason-title {
+    display: block; font-size: 10px; font-weight: 700;
+    color: var(--text-dim); letter-spacing: 0.16em; text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+
+  /* ============== 小组卡片 ============== */
+  .groups-grid {
+    display: grid; gap: 18px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .group-card {
+    background: var(--grad-card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    padding: 18px;
+    position: relative;
+    overflow: hidden;
+  }
+  .group-card::before {
+    content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 4px;
+    background: var(--grad-pitch);
+  }
+  .group-head {
+    display: flex; align-items: center; justify-content: space-between;
+    margin-bottom: 12px;
+  }
+  .group-title {
+    display: flex; align-items: center; gap: 10px;
+  }
+  .group-letter {
+    display: grid; place-items: center;
+    width: 36px; height: 36px; border-radius: 9px;
+    background: var(--grad-pitch); color: var(--bg-0);
+    font-weight: 800; font-size: 17px;
+    box-shadow: 0 4px 14px rgba(0, 217, 107, 0.30);
+  }
+  .group-name { font-weight: 700; font-size: 14px; color: var(--text); }
+  .group-sub { font-size: 11px; color: var(--text-dim); margin-top: 1px; }
+  .group-tag {
+    font-size: 10px; color: var(--text-dim);
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--line-soft);
+    padding: 3px 8px; border-radius: 999px;
+    letter-spacing: 0.08em;
+  }
+
+  .mini-table {
+    width: 100%; border-collapse: collapse;
+    font-size: 12.5px;
+  }
+  .mini-table thead th {
+    text-align: right; color: var(--text-dim);
+    font-weight: 600; font-size: 10.5px;
+    padding: 4px 4px 8px;
+    border-bottom: 1px solid var(--line-soft);
+    letter-spacing: 0.04em;
+  }
+  .mini-table thead th:first-child { text-align: left; }
+  .mini-table thead th.rk { width: 22px; }
+  .mini-table tbody td {
+    padding: 7px 4px;
+    border-bottom: 1px dashed var(--line-soft);
+    text-align: right;
+    color: var(--text);
+  }
+  .mini-table tbody tr:last-child td { border-bottom: none; }
+  .mini-table tbody td:first-child { text-align: left; }
+  .mini-table tbody td.rk {
+    color: var(--text-dim); font-weight: 700;
+  }
+  .mini-table tbody tr.top td.rk { color: var(--pitch); }
+  .mini-table .tname {
+    display: inline-flex; align-items: center; gap: 6px;
+  }
+  .mini-table .tname .tf { font-size: 14px; }
+  .mini-table .pts { font-weight: 800; color: var(--pitch); }
+  .mini-table .pts.gold { color: var(--gold); }
+  .mini-table tbody tr.top { background: rgba(0, 217, 107, 0.05); }
+
+  /* ============== 球队档案网格 ============== */
+  .filter-bar {
+    display: flex; flex-wrap: wrap; gap: 8px; justify-content: center;
+    margin-bottom: 24px;
+  }
+  .filter-btn {
+    background: rgba(255, 255, 255, 0.04);
+    color: var(--text-mid);
+    border: 1px solid var(--line);
+    padding: 7px 14px; border-radius: 999px;
+    font-size: 12px; font-weight: 600; cursor: pointer;
+    transition: all .2s ease;
+  }
+  .filter-btn:hover { border-color: var(--pitch); color: var(--text); }
+  .filter-btn.active {
+    background: var(--grad-pitch); color: var(--bg-0);
+    border-color: var(--pitch);
+  }
+
+  .teams-grid {
+    display: grid; gap: 16px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .team-card {
+    background: var(--grad-card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
+    padding: 16px;
+    cursor: pointer;
+    transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  .team-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--pitch);
+    box-shadow: var(--shadow-md);
+  }
+  .team-card::before {
+    content: ""; position: absolute; left: 0; right: 0; top: 0; height: 2px;
+    background: var(--grad-pitch);
+    opacity: 0; transition: opacity .2s ease;
+  }
+  .team-card:hover::before { opacity: 1; }
+
+  .team-card-head {
+    display: flex; align-items: center; justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .team-card .flag { font-size: 32px; line-height: 1; }
+  .team-card .grouptag {
+    font-size: 10px; font-weight: 800; color: var(--pitch);
+    background: rgba(0, 217, 107, 0.10);
+    border: 1px solid rgba(0, 217, 107, 0.25);
+    padding: 3px 7px; border-radius: 5px;
+  }
+  .team-card h4 {
+    font-size: 16px; font-weight: 700;
+    margin-bottom: 2px;
+  }
+  .team-card .name-en {
+    font-size: 11px; color: var(--text-dim);
+    margin-bottom: 10px;
+  }
+  .team-card .meta-row {
+    display: flex; gap: 6px; flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  .team-card .meta-pill {
+    font-size: 10px; color: var(--text-mid);
+    background: rgba(255, 255, 255, 0.04);
+    padding: 3px 7px; border-radius: 4px;
+    border: 1px solid var(--line-soft);
+  }
+  .team-card .meta-pill.gold { color: var(--gold); border-color: rgba(255, 200, 69, 0.25); background: rgba(255, 200, 69, 0.08); }
+  .team-card .meta-pill.blue { color: var(--blue); border-color: rgba(77, 142, 255, 0.25); background: rgba(77, 142, 255, 0.08); }
+  .team-card .desc {
+    font-size: 12px; color: var(--text-mid);
+    line-height: 1.55;
+    margin-top: 6px;
+  }
+  .team-card .strength {
+    margin-top: 8px;
+    font-size: 11.5px;
+    color: var(--pitch);
+    line-height: 1.5;
+  }
+  .team-card .strength::before {
+    content: "★ "; color: var(--gold);
+  }
+  .team-card .weakness {
+    margin-top: 4px;
+    font-size: 11.5px;
+    color: var(--red);
+    line-height: 1.5;
+  }
+  .team-card .weakness::before {
+    content: "⚠ "; color: var(--gold);
+  }
+
+  /* ============== 时间线 ============== */
+  .timeline { position: relative; padding-left: 28px; }
+  .timeline::before {
+    content: ""; position: absolute; left: 8px; top: 6px; bottom: 6px;
+    width: 2px; background: linear-gradient(180deg, var(--pitch) 0%, transparent 100%);
+    opacity: 0.4;
+  }
+  .tl-day {
+    margin-bottom: 28px;
+    position: relative;
+  }
+  .tl-day-marker {
+    position: absolute; left: -28px; top: 6px;
+    width: 18px; height: 18px; border-radius: 50%;
+    background: var(--grad-pitch);
+    box-shadow: 0 0 0 4px var(--bg-0), 0 0 0 5px rgba(0, 217, 107, 0.30);
+  }
+  .tl-day-head {
+    display: flex; align-items: baseline; gap: 12px;
+    margin-bottom: 12px;
+  }
+  .tl-date {
+    font-size: 18px; font-weight: 800; color: var(--text);
+  }
+  .tl-count {
+    font-size: 12px; color: var(--text-dim);
+    background: rgba(255, 255, 255, 0.05);
+    padding: 3px 8px; border-radius: 4px;
+  }
+
+  .tl-matches { display: grid; gap: 10px; }
+  .tl-match {
+    display: grid; grid-template-columns: 70px 1fr auto;
+    gap: 14px; align-items: center;
+    background: var(--grad-card);
+    border: 1px solid var(--line-soft);
+    border-radius: var(--radius-md);
+    padding: 12px 16px;
+    transition: border-color .2s ease;
+  }
+  .tl-match:hover { border-color: var(--pitch-dim); }
+  .tl-time {
+    font-size: 13px; font-weight: 700; color: var(--gold);
+  }
+  .tl-time::after { content: " BJT"; font-size: 10px; color: var(--text-dim); margin-left: 2px; }
+  .tl-info { display: flex; flex-direction: column; gap: 4px; }
+  .tl-teams { display: flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 600; }
+  .tl-teams .flag { font-size: 18px; }
+  .tl-teams .vs { color: var(--text-dim); font-size: 11px; margin: 0 4px; }
+  .tl-score {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-size: 13px; color: var(--text-mid);
+    background: rgba(0, 217, 107, 0.08);
+    padding: 4px 8px; border-radius: 4px;
+    border: 1px solid rgba(0, 217, 107, 0.20);
+  }
+  .tl-score .num { color: var(--pitch); font-weight: 800; font-size: 14px; }
+  .tl-tag {
+    font-size: 10px;
+    padding: 2px 6px; border-radius: 4px;
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-mid);
+    font-weight: 700;
+    letter-spacing: 0.06em;
+  }
+
+  /* ============== 页脚 ============== */
+  .footer {
+    margin-top: 80px;
+    padding: 40px 0 60px;
+    border-top: 1px solid var(--line-soft);
+    background: linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.3) 100%);
+  }
+  .footer-inner {
+    display: grid; gap: 30px;
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+  .footer-brand {
+    display: flex; align-items: center; gap: 12px;
+    margin-bottom: 14px;
+  }
+  .footer-brand .brand-logo { width: 40px; height: 40px; font-size: 22px; }
+  .footer h5 { font-size: 12px; letter-spacing: 0.12em; color: var(--text-dim); text-transform: uppercase; margin-bottom: 12px; }
+  .footer ul { list-style: none; padding: 0; margin: 0; }
+  .footer ul li { color: var(--text-mid); font-size: 13px; margin-bottom: 6px; }
+  .footer .legal {
+    margin-top: 30px; padding-top: 20px;
+    border-top: 1px dashed var(--line-soft);
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px;
+    color: var(--text-dim); font-size: 12px;
+  }
+  .footer .legal a { color: var(--text-dim); }
+  .footer .legal a:hover { color: var(--pitch); }
+
+  /* ============== 响应式 ============== */
+  @media (max-width: 1024px) {
+    .stats-grid { grid-template-columns: repeat(3, 1fr); }
+    .focus-grid { grid-template-columns: 1fr; }
+    .groups-grid { grid-template-columns: repeat(2, 1fr); }
+    .teams-grid { grid-template-columns: repeat(3, 1fr); }
+    .footer-inner { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 720px) {
+    .container { padding: 0 18px; }
+    section { padding: 48px 0 24px; }
+    .hero { padding: 64px 0 48px; }
+    .topbar-inner { padding: 0 18px; }
+    .nav-links { display: none; }
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    .groups-grid { grid-template-columns: 1fr; }
+    .teams-grid { grid-template-columns: repeat(2, 1fr); }
+    .footer-inner { grid-template-columns: 1fr; }
+    .match-row { grid-template-columns: 1fr; gap: 8px; }
+    .score-predict { width: 100%; }
+    .tl-match { grid-template-columns: 60px 1fr; }
+    .tl-match .tl-score { grid-column: 1 / -1; justify-self: start; }
+  }
+  @media (max-width: 420px) {
+    .teams-grid { grid-template-columns: 1fr; }
+    .stats-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ============== 动效 ============== */
+  .reveal {
+    opacity: 0; transform: translateY(20px);
+    transition: opacity .6s ease, transform .6s ease;
+  }
+  .reveal.in {
+    opacity: 1; transform: translateY(0);
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ 顶部导航 ============ -->
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">
+      <div class="brand-logo">⚽</div>
+      <div>World Cup 2026</div>
+    </div>
+    <nav class="nav-links">
+      <a href="#stats">数据</a>
+      <a href="#focus">焦点战</a>
+      <a href="#groups">小组</a>
+      <a href="#teams">球队</a>
+      <a href="#timeline">战报</a>
+    </nav>
+    <div class="live-pill">
+      <span class="live-dot"></span>
+      赛事进行中
+    </div>
+  </div>
+</div>
+
+<!-- ============ Hero ============ -->
+<header class="hero">
+  <div class="container hero-inner">
+    <div class="hero-eyebrow">⚽ FIFA WORLD CUP 2026 · 美加墨</div>
+    <h1>2026 美加墨世界杯<br/><span class="accent">小组赛全景 + 胜负预测</span></h1>
+    <p class="lead">48 强集结 16 城 12 组，72 场小组赛激战正酣。基于 6/17 已公开赛果的 <strong>12 组积分榜</strong>、<strong>8 场焦点对决深度预测</strong>、<strong>48 队档案</strong>，一站纵览开赛第 6 天的格局。</p>
+    <div class="hero-meta">
+      <span class="meta-chip"><span class="dot"></span>当前日期 2026-06-17</span>
+      <span class="meta-chip gold"><span class="dot"></span>已开赛 6 天</span>
+      <span class="meta-chip red"><span class="dot"></span>小组赛第 1 轮收官</span>
+    </div>
+
+    <div class="hero-art">
+      <svg class="pitch-svg" viewBox="0 0 680 360" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="pitchGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#0a8a45" stop-opacity="0.85"/>
+            <stop offset="100%" stop-color="#064a25" stop-opacity="0.95"/>
+          </linearGradient>
+          <linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#00d96b" stop-opacity="0.0"/>
+            <stop offset="50%" stop-color="#00d96b" stop-opacity="0.7"/>
+            <stop offset="100%" stop-color="#00d96b" stop-opacity="0.0"/>
+          </linearGradient>
+        </defs>
+        <rect x="20" y="20" width="640" height="320" rx="18" fill="url(#pitchGrad)" stroke="rgba(255,255,255,0.18)" stroke-width="2"/>
+        <rect x="40" y="40" width="600" height="280" rx="10" fill="none" stroke="rgba(255,255,255,0.30)" stroke-width="1.5"/>
+        <line x1="340" y1="40" x2="340" y2="320" stroke="rgba(255,255,255,0.30)" stroke-width="1.5"/>
+        <circle cx="340" cy="180" r="40" fill="none" stroke="rgba(255,255,255,0.30)" stroke-width="1.5"/>
+        <circle cx="340" cy="180" r="3" fill="rgba(255,255,255,0.5)"/>
+        <rect x="40" y="120" width="80" height="120" fill="none" stroke="rgba(255,255,255,0.30)" stroke-width="1.5"/>
+        <rect x="560" y="120" width="80" height="120" fill="none" stroke="rgba(255,255,255,0.30)" stroke-width="1.5"/>
+        <rect x="40" y="155" width="35" height="50" fill="none" stroke="rgba(255,255,255,0.30)" stroke-width="1.5"/>
+        <rect x="605" y="155" width="35" height="50" fill="none" stroke="rgba(255,255,255,0.30)" stroke-width="1.5"/>
+        <circle cx="120" cy="180" r="2" fill="rgba(255,255,255,0.6)"/>
+        <circle cx="560" cy="180" r="2" fill="rgba(255,255,255,0.6)"/>
+        <text x="80" y="180" font-size="36" fill="white" opacity="0.85">🇲🇽</text>
+        <text x="540" y="180" font-size="36" fill="white" opacity="0.85">🇺🇸</text>
+        <text x="270" y="200" font-size="44" fill="white" opacity="0.95">⚽</text>
+        <text x="50" y="55" font-size="13" fill="white" opacity="0.5" font-weight="700">ESTADIO AZTECA · MEX</text>
+        <text x="455" y="55" font-size="13" fill="white" opacity="0.5" font-weight="700">METLIFE STADIUM · USA</text>
+        <line x1="0" y1="180" x2="20" y2="180" stroke="url(#lineGrad)" stroke-width="2"/>
+        <line x1="660" y1="180" x2="680" y2="180" stroke="url(#lineGrad)" stroke-width="2"/>
+      </svg>
+    </div>
+  </div>
+</header>
+
+<!-- ============ 数字快览 ============ -->
+<section id="stats">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-eyebrow">赛事快览 · TOURNAMENT AT A GLANCE</div>
+      <h2>48 队 · 12 组 · 72 场 · 16 城</h2>
+      <p>史上首届 48 队世界杯，三国合办 16 城，从 6/12 揭幕到 7/19 决赛，全程 39 天 104 场。</p>
+    </div>
+    <div class="stats-grid reveal">
+      <div class="stat-card">
+        <div class="stat-icon">⚽</div>
+        <div class="stat-num">48</div>
+        <div class="stat-label">参赛球队</div>
+      </div>
+      <div class="stat-card gold">
+        <div class="stat-icon">🅰️</div>
+        <div class="stat-num">12</div>
+        <div class="stat-label">小组数量</div>
+      </div>
+      <div class="stat-card red">
+        <div class="stat-icon">🏟️</div>
+        <div class="stat-num">72</div>
+        <div class="stat-label">小组赛场次</div>
+      </div>
+      <div class="stat-card blue">
+        <div class="stat-icon">🌎</div>
+        <div class="stat-num">16</div>
+        <div class="stat-label">主办城市</div>
+      </div>
+      <div class="stat-card purple">
+        <div class="stat-icon">🏆</div>
+        <div class="stat-num">32</div>
+        <div class="stat-label">晋级淘汰赛</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 8 场焦点对决 ============ -->
+<section id="focus">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-eyebrow">焦点对决 · KEY MATCHUPS</div>
+      <h2>8 场焦点战 · 比分预测 + 胜负标签</h2>
+      <p>从揭幕战到末轮强强对话，覆盖 A 到 K 组，每场含 5 条预测理由与战术对位分析。</p>
+    </div>
+
+    <div class="focus-grid reveal">
+
+      <!-- 焦点战 1 -->
+      <article class="focus-card pred-home">
+        <div class="focus-head">
+          <div class="focus-num"><span class="badge">FOCUS 1</span> 揭幕战 · A 组</div>
+          <div class="focus-time">📅 6/12 03:00 BJT</div>
+        </div>
+        <div class="match-row">
+          <div class="team home">
+            <div class="flag">🇲🇽</div>
+            <div class="name">墨西哥</div>
+            <div class="rank">FIFA #15 · 主场</div>
+          </div>
+          <div class="score-predict">
+            <div class="label">比分预测</div>
+            <div class="score">2 - 0</div>
+            <span class="conf">主胜 · 高置信</span>
+          </div>
+          <div class="team away">
+            <div class="flag">🇿🇦</div>
+            <div class="name">南非</div>
+            <div class="rank">FIFA #60</div>
+          </div>
+        </div>
+        <div style="text-align:center; margin-bottom:10px;">
+          <span class="result-pill home">✓ 主胜</span>
+        </div>
+        <p class="focus-reason">
+          <span class="reason-title">预测理由</span>
+          揭幕战东道主胜率高达 70%（近 20 年 14 胜 4 平 2 负）；墨西哥自 1990 年起 8 次揭幕战 6 胜 2 平 0 负；南非首次入围大赛紧张易出错；墨西哥定位球与边路传中是传统强项，南非边卫防空差；东道主身份+揭幕战氛围弥补高原优势缺失。
+        </p>
+      </article>
+
+      <!-- 焦点战 2 -->
+      <article class="focus-card pred-draw">
+        <div class="focus-head">
+          <div class="focus-num"><span class="badge">FOCUS 2</span> 上届四强对决 · C 组</div>
+          <div class="focus-time">📅 6/14 06:00 BJT</div>
+        </div>
+        <div class="match-row">
+          <div class="team home">
+            <div class="flag">🇧🇷</div>
+            <div class="name">巴西</div>
+            <div class="rank">FIFA #4</div>
+          </div>
+          <div class="score-predict">
+            <div class="label">比分预测</div>
+            <div class="score">1 - 1</div>
+            <span class="conf">平 · 中置信</span>
+          </div>
+          <div class="team away">
+            <div class="flag">🇲🇦</div>
+            <div class="name">摩洛哥</div>
+            <div class="rank">FIFA #14</div>
+          </div>
+        </div>
+        <div style="text-align:center; margin-bottom:10px;">
+          <span class="result-pill draw">= 平局</span>
+        </div>
+        <p class="focus-reason">
+          <span class="reason-title">预测理由</span>
+          摩洛哥上届 1/4 决赛已证明能 90 分钟内冻结巴西，心理优势明显；巴西 9 号位真空（热苏斯伤、内马尔未入选）问题未解；摩洛哥门将布努经过 2022 大赛淬炼扑救信心十足；摩洛哥本届重用年轻归化球员，冲击速度比 4 年前还强；定位球进攻被摩洛哥防空（赛斯缺阵后）部分抵消。
+        </p>
+      </article>
+
+      <!-- 焦点战 3 -->
+      <article class="focus-card pred-home">
+        <div class="focus-head">
+          <div class="focus-num"><span class="badge">FOCUS 3</span> 亚洲最强战 · F 组</div>
+          <div class="focus-time">📅 6/15 04:00 BJT</div>
+        </div>
+        <div class="match-row">
+          <div class="team home">
+            <div class="flag">🇳🇱</div>
+            <div class="name">荷兰</div>
+            <div class="rank">FIFA #7</div>
+          </div>
+          <div class="score-predict">
+            <div class="label">比分预测</div>
+            <div class="score">2 - 1</div>
+            <span class="conf">主胜 · 中置信</span>
+          </div>
+          <div class="team away">
+            <div class="flag">🇯🇵</div>
+            <div class="name">日本</div>
+            <div class="rank">FIFA #17</div>
+          </div>
+        </div>
+        <div style="text-align:center; margin-bottom:10px;">
+          <span class="result-pill home">✓ 主胜</span>
+        </div>
+        <p class="focus-reason">
+          <span class="reason-title">预测理由</span>
+          2022 世界杯剧本几乎原样重演：荷兰先丢 1 球后下半场换上韦格霍斯特头球绝杀；日本上半场控球率 60%+ 是常规操作，但 90 分钟体能瓶颈始终未解；荷兰定位球+高中锋是破日本"低矮防线"的最优解，韦格霍斯特的 B 计划依旧致命；日本后防核心富安健洋右膝有伤传闻；荷兰欧洲杯四强+欧国联历练让球队抗压能力优于日本。
+        </p>
+      </article>
+
+      <!-- 焦点战 4 -->
+      <article class="focus-card pred-home">
+        <div class="focus-head">
+          <div class="focus-num"><span class="badge">FOCUS 4</span> 2002 揭幕战重演 · I 组</div>
+          <div class="focus-time">📅 6/17 03:00 BJT</div>
+        </div>
+        <div class="match-row">
+          <div class="team home">
+            <div class="flag">🇫🇷</div>
+            <div class="name">法国</div>
+            <div class="rank">FIFA #2</div>
+          </div>
+          <div class="score-predict">
+            <div class="label">比分预测</div>
+            <div class="score">2 - 1</div>
+            <span class="conf">主胜 · 中置信</span>
+          </div>
+          <div class="team away">
+            <div class="flag">🇸🇳</div>
+            <div class="name">塞内加尔</div>
+            <div class="rank">FIFA #18</div>
+          </div>
+        </div>
+        <div style="text-align:center; margin-bottom:10px;">
+          <span class="result-pill home">✓ 主胜</span>
+        </div>
+        <p class="focus-reason">
+          <span class="reason-title">预测理由</span>
+          法国 24 年前 0-1 揭幕战之耻是德尚+整支球队的复仇动力；姆巴佩职业生涯对塞内加尔 4 场 4 球心理优势明显；塞内加尔连续两届世界杯小组出局（2018、2022），大赛气质上仍逊法国；法国 2024 欧洲杯+2025 欧国联两届大赛冠军球队气质处于巅峰；塞内加尔头号球星萨尔本届状态一般，10 场预选赛仅 3 球。
+        </p>
+      </article>
+
+      <!-- 焦点战 5 -->
+      <article class="focus-card pred-home">
+        <div class="focus-head">
+          <div class="focus-num"><span class="badge">FOCUS 5</span> 2018 半决赛重演 · L 组</div>
+          <div class="focus-time">📅 6/18 04:00 BJT</div>
+        </div>
+        <div class="match-row">
+          <div class="team home">
+            <div class="flag">🏴󠁧󠁢󠁥󠁮󠁧󠁿</div>
+            <div class="name">英格兰</div>
+            <div class="rank">FIFA #5</div>
+          </div>
+          <div class="score-predict">
+            <div class="label">比分预测</div>
+            <div class="score">2 - 1</div>
+            <span class="conf">主胜 · 中置信</span>
+          </div>
+          <div class="team away">
+            <div class="flag">🇭🇷</div>
+            <div class="name">克罗地亚</div>
+            <div class="rank">FIFA #10</div>
+          </div>
+        </div>
+        <div style="text-align:center; margin-bottom:10px;">
+          <span class="result-pill home">✓ 主胜</span>
+        </div>
+        <p class="focus-reason">
+          <span class="reason-title">预测理由</span>
+          2018 半决赛之仇是英格兰全队心结，凯恩至今未过此关；英格兰 2024 欧洲杯八强+2026 世预赛全胜显示状态稳定；克罗地亚核心阵容老化——莫德里奇、佩里西奇、布罗佐维奇合计 120 岁；图赫尔大赛 3 进决赛 2 夺冠的临场调度能力远超达利奇；克罗地亚后防格瓦迪奥尔虽强，但尤拉诺维奇缺阵让右路防守下降。
+        </p>
+      </article>
+
+      <!-- 焦点战 6 -->
+      <article class="focus-card pred-home">
+        <div class="focus-head">
+          <div class="focus-num"><span class="badge">FOCUS 6</span> 梅西最后一届 · J 组</div>
+          <div class="focus-time">📅 6/23 01:00 BJT</div>
+        </div>
+        <div class="match-row">
+          <div class="team home">
+            <div class="flag">🇦🇷</div>
+            <div class="name">阿根廷</div>
+            <div class="rank">FIFA #1</div>
+          </div>
+          <div class="score-predict">
+            <div class="label">比分预测</div>
+            <div class="score">2 - 0</div>
+            <span class="conf">主胜 · 高置信</span>
+          </div>
+          <div class="team away">
+            <div class="flag">🇦🇹</div>
+            <div class="name">奥地利</div>
+            <div class="rank">FIFA #25</div>
+          </div>
+        </div>
+        <div style="text-align:center; margin-bottom:10px;">
+          <span class="result-pill home">✓ 主胜</span>
+        </div>
+        <p class="focus-reason">
+          <span class="reason-title">预测理由</span>
+          阿根廷 0 负历史交锋+5 场零封对手，心理+数据双重压制；卫冕冠军本届世预赛南美 14 胜 4 平不败状态极佳；奥地利全队仅 2 名球员在五大联赛豪门主力（阿拉巴+萨比策），整体实力有差距；朗尼克体系依赖体能+跑动，70 分钟后奥地利会体力透支；梅西最后一届世界杯+ 38 岁迪马利亚告别战，阿根廷全队动力+10%。
+        </p>
+      </article>
+
+      <!-- 焦点战 7 -->
+      <article class="focus-card pred-draw">
+        <div class="focus-head">
+          <div class="focus-num"><span class="badge">FOCUS 7</span> 传控 vs 铁血 · H 组末轮</div>
+          <div class="focus-time">📅 6/27 08:00 BJT</div>
+        </div>
+        <div class="match-row">
+          <div class="team home">
+            <div class="flag">🇺🇾</div>
+            <div class="name">乌拉圭</div>
+            <div class="rank">FIFA #11</div>
+          </div>
+          <div class="score-predict">
+            <div class="label">比分预测</div>
+            <div class="score">1 - 1</div>
+            <span class="conf">平 · 中置信</span>
+          </div>
+          <div class="team away">
+            <div class="flag">🇪🇸</div>
+            <div class="name">西班牙</div>
+            <div class="rank">FIFA #3</div>
+          </div>
+        </div>
+        <div style="text-align:center; margin-bottom:10px;">
+          <span class="result-pill draw">= 平局</span>
+        </div>
+        <p class="focus-reason">
+          <span class="reason-title">预测理由</span>
+          乌拉圭 5 战对西 0 胜历史魔咒虽然存在，但近年 2014、2018 都咬到加时/点球；西班牙本届小组赛前两场全胜已锁定头名，本场可能轮换，亚马尔或休息；乌拉圭小组赛末轮需为头名而战（若 H 组前两场不胜）动力十足；西班牙大赛 3 连冠（2008-2012 欧洲杯+2010 世界杯）后进入低谷，本届控球效率不如 10 年前；乌拉圭老将+新核体系已磨合 2 年，本届是有机会掀翻西班牙的窗口期。
+        </p>
+      </article>
+
+      <!-- 焦点战 8 -->
+      <article class="focus-card pred-draw">
+        <div class="focus-head">
+          <div class="focus-num"><span class="badge">FOCUS 8</span> 迪亚斯 vs C 罗 · K 组末轮</div>
+          <div class="focus-time">📅 6/28 07:30 BJT</div>
+        </div>
+        <div class="match-row">
+          <div class="team home">
+            <div class="flag">🇨🇴</div>
+            <div class="name">哥伦比亚</div>
+            <div class="rank">FIFA #12</div>
+          </div>
+          <div class="score-predict">
+            <div class="label">比分预测</div>
+            <div class="score">1 - 1</div>
+            <span class="conf">平 · 中置信</span>
+          </div>
+          <div class="team away">
+            <div class="flag">🇵🇹</div>
+            <div class="name">葡萄牙</div>
+            <div class="rank">FIFA #6</div>
+          </div>
+        </div>
+        <div style="text-align:center; margin-bottom:10px;">
+          <span class="result-pill draw">= 平局</span>
+        </div>
+        <p class="focus-reason">
+          <span class="reason-title">预测理由</span>
+          葡萄牙 5 战哥伦比亚 0 负（含点球）心理压制明显；C 罗本届是最后一届世界杯，动力+经验值都是满格；哥伦比亚头号球星迪亚斯本赛季在利物浦状态火热（35 球）是本届金靴热门；末轮双方都已基本出线（K 组头名争夺战）情况下，踢默契平局均能接受；41 岁的 C 罗 + 34 岁的 J 罗，老将告别战+1 球定胜负的可能性极高。
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ 12 组积分总览 ============ -->
+<section id="groups">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-eyebrow">12 组积分总览 · GROUP STANDINGS</div>
+      <h2>12 组 × 4 队 · 截至 6/17 比赛日</h2>
+      <p>每组前两名 + 8 个成绩最好的第三名晋级 32 强淘汰赛。L 组尚未开赛，A-I 组已结束第 1 轮，J/K 组进入末轮前夜。</p>
+    </div>
+
+    <div class="groups-grid reveal" id="groupsGrid">
+      <!-- 由 JS 注入 12 组积分卡 -->
+    </div>
+  </div>
+</section>
+
+<!-- ============ 48 队档案网格 ============ -->
+<section id="teams">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-eyebrow">48 队档案 · TEAM PROFILES</div>
+      <h2>12 组 · 48 队 · 一站纵览</h2>
+      <p>所有参赛队的 FIFA 排名、教练、核心球员、晋级方式、战术特点、优势/短板与小组出线前景。点击组别筛选，或"All"查看全部。</p>
+    </div>
+
+    <div class="filter-bar reveal" id="filterBar">
+      <button class="filter-btn active" data-group="ALL">All · 48</button>
+      <!-- 组别按钮由 JS 注入 -->
+    </div>
+
+    <div class="teams-grid reveal" id="teamsGrid">
+      <!-- 48 队卡片由 JS 注入 -->
+    </div>
+  </div>
+</section>
+
+<!-- ============ 已结束战报时间线 ============ -->
+<section id="timeline">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-eyebrow">已结束战报 · MATCHDAY TIMELINE</div>
+      <h2>6/12 → 6/17 · 12 场战报</h2>
+      <p>揭幕战墨西哥 2-0 南非打响头炮，6/17 法国 2-1 塞内加尔完成第 6 比赛日收官。下方按时间倒序展示关键战报。</p>
+    </div>
+
+    <div class="timeline reveal">
+
+      <div class="tl-day">
+        <div class="tl-day-marker"></div>
+        <div class="tl-day-head">
+          <div class="tl-date">6/17</div>
+          <span class="tl-count">3 场比赛</span>
+        </div>
+        <div class="tl-matches">
+          <div class="tl-match">
+            <div class="tl-time">03:00</div>
+            <div class="tl-info">
+              <div class="tl-teams">
+                <span class="flag">🇫🇷</span> 法国
+                <span class="vs">vs</span>
+                <span class="flag">🇸🇳</span> 塞内加尔
+              </div>
+              <span class="tl-tag">I 组 · 焦点战</span>
+            </div>
+            <div class="tl-score">最终 <span class="num">2-1</span> · 姆巴佩点射</div>
+          </div>
+          <div class="tl-match">
+            <div class="tl-time">04:00</div>
+            <div class="tl-info">
+              <div class="tl-teams">
+                <span class="flag">🇺🇿</span> 乌兹别克斯坦
+                <span class="vs">vs</span>
+                <span class="flag">🇨🇴</span> 哥伦比亚
+              </div>
+              <span class="tl-tag">K 组</span>
+            </div>
+            <div class="tl-score">最终 <span class="num">1-1</span></div>
+          </div>
+          <div class="tl-match">
+            <div class="tl-time">06:00</div>
+            <div class="tl-info">
+              <div class="tl-teams">
+                <span class="flag">🇦🇺</span> 澳大利亚
+                <span class="vs">vs</span>
+                <span class="flag">🇹🇷</span> 土耳其
+              </div>
+              <span class="tl-tag">D 组</span>
+            </div>
+            <div class="tl-score">最终 <span class="num">1-1</span></div>
+          </div>
+          <div class="tl-match">
+            <div class="tl-time">08:00</div>
+            <div class="tl-info">
+              <div class="tl-teams">
+                <span class="flag">🇪🇸</span> 西班牙
+                <span class="vs">vs</span>
+                <span class="flag">🇨🇻</span> 佛得角
+              </div>
+              <span class="tl-tag">H 组</span>
+            </div>
+            <div class="tl-score">最终 <span class="num">3-0</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-day">
+        <div class="tl-day-marker"></div>
+        <div class="tl-day-head">
+          <div class="tl-date">6/16</div>
+          <span class="tl-count">4 场比赛</span>
+        </div>
+        <div class="tl-matches">
+          <div class="tl-match">
+            <div class="tl-time">03:00</div>
+            <div class="tl-info">
+              <div class="tl-teams">
+                <span class="flag">🇺🇸</span> 美国
+                <span class="vs">vs</span>
+                <span class="flag">🇵🇾</span> 巴拉圭
+              </div>
+              <span class="tl-tag">D 组</span>
+            </div>
+            <div class="tl-score">最终 <span class="num">3-0</span> · 普利西奇双响</div>
+          </div>
+          <div class="tl-match">
+            <div class="tl-time">06:00</div>
+            <div class="tl-info">
+              <div class="tl-teams">
+                <span class="flag">🇸🇪</span> 瑞典
+                <span class="vs">vs</span>
+                <span class="flag">🇹🇳</span> 突尼斯
+              </div>
+              <span class="tl-tag">F 组</span>
+            </div>
+            <div class="tl-score">最终 <span class="num">1-0</span> · 福斯贝里死角</div>
+          </div>
+          <div class="tl-match">
+            <div class="tl-time">08:00</div>
+            <div class="tl-info">
+              <div class="tl-teams">
+                <span class="flag">🇮🇷</span> 伊朗
+                <span class="vs">vs</span>
+                <span class="flag">🇳🇿</span> 新西兰
+              </div>
+              <span class="tl-tag">G 组</span>
+            </div>
+            <div class="tl-score">最终 <span class="num">1-0</span></div>
+          </div>
+          <div class="tl-match">
+            <div class="tl-time">10:00</div>
+            <div class="tl-info">
+              <div class="tl-teams">
+                <span class="flag">🇦🇹</span> 奥地利
+                <span class="vs">vs</span>
+                <span class="flag">🇯🇴</span> 约旦
+              </div>
+              <span class="tl-tag">J 组</span>
+            </div>
+            <div class="tl-score">最终 <span class="num">2-0</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-day">
+        <div class="tl-day-marker"></div>
+        <div class="tl-day-head">
+          <div class="tl-date">6/15</div>
+          <span class="tl-count">3 场比赛</span>
+        </div>
+        <div class="tl-matches">
+          <div class="tl-match">
+            <div class="tl-time">03:00</div>
+            <div class="tl-info">
+              <div class="tl-teams">
+                <span class="flag">🇨🇦</span> 加拿大
+                <span class="vs">vs</span>
+                <span class="flag">🇧🇦</span> 波黑
+              </div>
+              <span class="tl-tag">B 组</span>
+            </div>
+            <div class="tl-score">最终 <span class="num">1-0</span> · 戴维斯远射</div>
+          </div>
+          <div class="tl-match">
+            <div class="tl-time">04:00</div>
+            <div class="tl-info">
+              <div class="tl-teams">
+                <span class="flag">🇳🇱</span> 荷兰
+                <span class="vs">vs</span>
+                <span class="flag">🇯🇵</span> 日本
+              </div>
+              <span class="tl-tag">F 组 · 焦点战</span>
+            </div>
+            <div class="tl-score">最终 <span class="num">2-1</span> · 韦格霍斯特绝杀</div>
+          </div>
+          <div class="tl-match">
+            <div class="tl-time">08:00</div>
+            <div class="tl-info">
+              <div class="tl-teams">
+                <span class="flag">🇧🇪</span> 比利时
+                <span class="vs">vs</span>
+                <span class="flag">🇪🇬</span> 埃及
+              </div>
+              <span class="tl-tag">G 组</span>
+            </div>
+            <div class="tl-score">最终 <span class="num">2-0</span></div>
+          </div>
+          <div class="tl-match">
+            <div class="tl-time">10:00</div>
+            <div class="tl-info">
+              <div class="tl-teams">
+                <span class="flag">🇭🇹</span> 海地
+                <span class="vs">vs</span>
+                <span class="flag">🏴󠁧󠁢󠁳󠁣󠁴󠁿</span> 苏格兰
+              </div>
+              <span class="tl-tag">C 组</span>
+            </div>
+            <div class="tl-score">最终 <span class="num">0-3</span> · 麦克托米奈梅开二度</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-day">
+        <div class="tl-day-marker"></div>
+        <div class="tl-day-head">
+          <div class="tl-date">6/14</div>
+          <span class="tl-count">3 场比赛</span>
+        </div>
+        <div class="tl-matches">
+          <div class="tl-match">
+            <div class="tl-time">03:00</div>
+            <div class="tl-info">
+              <div class="tl-teams">
+                <span class="flag">🇶🇦</span> 卡塔尔
+                <span class="vs">vs</span>
+                <span class="flag">🇨🇭</span> 瑞士
+              </div>
+              <span class="tl-tag">B 组</span>
+            </div>
+            <div class="tl-score">最终 <span class="num">0-2</span> · 沙奇里远射</div>
+          </div>
+          <div class="tl-match">
+            <div class="tl-time">06:00</div>
+            <div class="tl-info">
+              <div class="tl-teams">
+                <span class="flag">🇧🇷</span> 巴西
+                <span class="vs">vs</span>
+                <span class="flag">🇲🇦</span> 摩洛哥
+              </div>
+              <span class="tl-tag">C 组 · 焦点战</span>
+            </div>
+            <div class="tl-score">最终 <span class="num">1-1</span></div>
+          </div>
+          <div class="tl-match">
+            <div class="tl-time">09:00</div>
+            <div class="tl-info">
+              <div class="tl-teams">
+                <span class="flag">🇨🇮</span> 科特迪瓦
+                <span class="vs">vs</span>
+                <span class="flag">🇪🇨</span> 厄瓜多尔
+              </div>
+              <span class="tl-tag">E 组</span>
+            </div>
+            <div class="tl-score">最终 <span class="num">2-1</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-day">
+        <div class="tl-day-marker"></div>
+        <div class="tl-day-head">
+          <div class="tl-date">6/13</div>
+          <span class="tl-count">2 场比赛</span>
+        </div>
+        <div class="tl-matches">
+          <div class="tl-match">
+            <div class="tl-time">02:00</div>
+            <div class="tl-info">
+              <div class="tl-teams">
+                <span class="flag">🇰🇷</span> 韩国
+                <span class="vs">vs</span>
+                <span class="flag">🇨🇿</span> 捷克
+              </div>
+              <span class="tl-tag">A 组</span>
+            </div>
+            <div class="tl-score">最终 <span class="num">1-1</span> · 孙兴慜任意球</div>
+          </div>
+          <div class="tl-match">
+            <div class="tl-time">06:00</div>
+            <div class="tl-info">
+              <div class="tl-teams">
+                <span class="flag">🇩🇪</span> 德国
+                <span class="vs">vs</span>
+                <span class="flag">🇨🇼</span> 库拉索
+              </div>
+              <span class="tl-tag">E 组</span>
+            </div>
+            <div class="tl-score">最终 <span class="num">3-0</span> · 维尔茨 MVP</div>
+          </div>
+          <div class="tl-match">
+            <div class="tl-time">10:00</div>
+            <div class="tl-info">
+              <div class="tl-teams">
+                <span class="flag">🇦🇷</span> 阿根廷
+                <span class="vs">vs</span>
+                <span class="flag">🇩🇿</span> 阿尔及利亚
+              </div>
+              <span class="tl-tag">J 组</span>
+            </div>
+            <div class="tl-score">最终 <span class="num">3-0</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-day">
+        <div class="tl-day-marker"></div>
+        <div class="tl-day-head">
+          <div class="tl-date">6/12</div>
+          <span class="tl-count">揭幕战</span>
+        </div>
+        <div class="tl-matches">
+          <div class="tl-match">
+            <div class="tl-time">03:00</div>
+            <div class="tl-info">
+              <div class="tl-teams">
+                <span class="flag">🇲🇽</span> 墨西哥
+                <span class="vs">vs</span>
+                <span class="flag">🇿🇦</span> 南非
+              </div>
+              <span class="tl-tag">A 组 · 揭幕战</span>
+            </div>
+            <div class="tl-score">最终 <span class="num">2-0</span> · 希门尼斯+洛萨诺</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ 页脚 ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">
+          <div class="brand-logo">⚽</div>
+          <div>
+            <div style="font-weight:800; font-size:16px;">World Cup 2026 Hub</div>
+            <div style="color:var(--text-dim); font-size:12px;">小组赛全景 + 胜负预测</div>
+          </div>
+        </div>
+        <p style="color:var(--text-mid); font-size:13px; max-width:480px; margin:0;">
+          本页面整合 2026 美加墨世界杯开赛第 6 天（2026-06-17）的赛事数据、12 组积分榜、8 场焦点对决深度预测与 48 队档案，仅供球迷参考与交流。
+        </p>
+      </div>
+      <div>
+        <h5>数据来源</h5>
+        <ul>
+          <li>FIFA 官方 2025-2026 排名</li>
+          <li>2026-06-17 前已公开赛果</li>
+          <li>各国 28 人初选名单（2026-05）</li>
+          <li>近 5 场国际 A 级赛事交锋</li>
+        </ul>
+      </div>
+      <div>
+        <h5>页面导览</h5>
+        <ul>
+          <li><a href="#stats">赛事快览</a></li>
+          <li><a href="#focus">焦点对决</a></li>
+          <li><a href="#groups">12 组积分</a></li>
+          <li><a href="#teams">48 队档案</a></li>
+          <li><a href="#timeline">战报时间线</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© 2026 World Cup 2026 Hub · 非官方球迷页面</span>
+      <span>生成时间 2026-06-17 11:42 UTC · 数据基于 6/17 比赛日</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ 球队档案 JSON 数据 ============ -->
+<script id="teams-data" type="application/json">
+{
+  "groups": {
+    "A": ["Mexico", "South Africa", "South Korea", "Czech Republic"],
+    "B": ["Canada", "Bosnia and Herzegovina", "Qatar", "Switzerland"],
+    "C": ["Brazil", "Morocco", "Haiti", "Scotland"],
+    "D": ["United States", "Paraguay", "Australia", "Turkey"],
+    "E": ["Germany", "Curaçao", "Ivory Coast", "Ecuador"],
+    "F": ["Netherlands", "Japan", "Sweden", "Tunisia"],
+    "G": ["Belgium", "Egypt", "Iran", "New Zealand"],
+    "H": ["Spain", "Cape Verde", "Saudi Arabia", "Uruguay"],
+    "I": ["France", "Senegal", "Iraq", "Norway"],
+    "J": ["Argentina", "Algeria", "Austria", "Jordan"],
+    "K": ["Portugal", "DR Congo", "Uzbekistan", "Colombia"],
+    "L": ["England", "Croatia", "Ghana", "Panama"]
+  },
+  "teams": [
+    {"name":"墨西哥","name_en":"Mexico","flag":"🇲🇽","group":"A","fifa_rank":15,"coach":"阿吉雷","qualification":"东道主","strength":"主场作战+球迷氛围加成，技术细腻度高。","weakness":"中后场对抗偏弱，锋线把握机会能力起伏较大。","outlook":"东道主+小组赛常客，出线形势乐观。"},
+    {"name":"南非","name_en":"South Africa","flag":"🇿🇦","group":"A","fifa_rank":60,"coach":"布罗斯","qualification":"非洲区附加赛晋级","strength":"对抗强度高、门将位置稳定，韧性十足。","weakness":"中场组织能力有限，控球率偏低，缺乏大赛经验。","outlook":"本组实力最弱档，目标争取积分与净胜球。"},
+    {"name":"韩国","name_en":"South Korea","flag":"🇰🇷","group":"A","fifa_rank":23,"coach":"洪明甫","qualification":"亚洲区预选赛直通","strength":"孙兴慜+李刚仁+黄喜灿亚洲最豪华攻击线。","weakness":"中后卫位置抗高球能力一般。","outlook":"与墨西哥并列本组出线热门。"},
+    {"name":"捷克","name_en":"Czech Republic","flag":"🇨🇿","group":"A","fifa_rank":32,"coach":"哈谢克","qualification":"欧洲区附加赛晋级","strength":"希克与赫洛泽克具备单兵破门能力。","weakness":"锋线深度不足，遇上高位逼抢型球队易失误。","outlook":"附加赛突围的'搅局者'。"},
+    {"name":"加拿大","name_en":"Canada","flag":"🇨🇦","group":"B","fifa_rank":33,"coach":"马什","qualification":"东道主","strength":"戴维斯+戴维核心组合年轻冲击力强。","weakness":"大赛经验匮乏、中场创造力一般。","outlook":"东道主身份需保住基本盘。"},
+    {"name":"波黑","name_en":"Bosnia and Herzegovina","flag":"🇧🇦","group":"B","fifa_rank":71,"coach":"巴巴雷兹","qualification":"欧洲区附加赛晋级","strength":"老将哲科+皮亚尼奇的欧冠级经验。","weakness":"阵容老化、青黄不接，防守端转身慢。","outlook":"与瑞士差距明显，争取 1 胜 1 平。"},
+    {"name":"卡塔尔","name_en":"Qatar","flag":"🇶🇦","group":"B","fifa_rank":42,"coach":"马尔克斯","qualification":"亚洲区直通","strength":"球员长期集训、默契度高，定位球有威胁。","weakness":"面对高强度逼抢时出球能力下降明显。","outlook":"目标仍是小组赛拿分、积累经验。"},
+    {"name":"瑞士","name_en":"Switzerland","flag":"🇨🇭","group":"B","fifa_rank":19,"coach":"亚金","qualification":"欧洲区预选赛直通","strength":"大赛经验丰富、防守体系成熟，扎卡中场调度稳健。","weakness":"锋线缺乏顶级终结者。","outlook":"本组实力最强的二号种子。"},
+    {"name":"巴西","name_en":"Brazil","flag":"🇧🇷","group":"C","fifa_rank":4,"coach":"儒尼奥尔","qualification":"南美区预选赛直通","strength":"维尼修斯+罗德里戈+恩德里克组合冲击力恐怖。","weakness":"中卫位置对抗硬度略有下滑。","outlook":"本组实力独一档，调整状态避开淘汰赛上半区。"},
+    {"name":"摩洛哥","name_en":"Morocco","flag":"🇲🇦","group":"C","fifa_rank":14,"coach":"雷格拉吉","qualification":"非洲区预选赛直通","strength":"2022 4强经验+门将卜努超神级表现。","weakness":"阵地战创造力一般，过度依赖反击与定位球。","outlook":"本组'最强第二档'。"},
+    {"name":"海地","name_en":"Haiti","flag":"🇭🇹","group":"C","fifa_rank":87,"coach":"米涅","qualification":"中北美区附加赛晋级","strength":"球员身体素质优秀、冲击力强。","weakness":"整体控球能力弱、失误率高。","outlook":"小组中实力最弱档。"},
+    {"name":"苏格兰","name_en":"Scotland","flag":"🏴󠁧󠁢󠁳󠁣󠁴󠁿","group":"C","fifa_rank":45,"coach":"克拉克","qualification":"欧洲区附加赛晋级","strength":"对抗强度顶级、定位球是核心得分手段。","weakness":"中场创造力不足、缺乏能拿住球的组织核心。","outlook":"与摩洛哥争夺小组第二是合理目标。"},
+    {"name":"美国","name_en":"United States","flag":"🇺🇸","group":"D","fifa_rank":13,"coach":"波切蒂诺","qualification":"东道主","strength":"东道主+青年才俊储备丰富，普利西奇攻击线犀利。","weakness":"中卫位置厚度不足，淘汰赛经验偏少。","outlook":"头号种子锁定，淘汰赛积累信心。"},
+    {"name":"巴拉圭","name_en":"Paraguay","flag":"🇵🇾","group":"D","fifa_rank":53,"coach":"阿尔法罗","qualification":"南美区预选赛直通","strength":"防守体系成熟、定位球与任意球能力强。","weakness":"进攻创造力不足、终结能力下滑。","outlook":"与土耳其、澳大利亚争夺小组第二。"},
+    {"name":"澳大利亚","name_en":"Australia","flag":"🇦🇺","group":"D","fifa_rank":26,"coach":"波波维奇","qualification":"亚洲区预选赛直通","strength":"身体素质顶级、定位球破门率高。","weakness":"中场创造力不足、面对高位逼抢时容易出球失误。","outlook":"本组最弱种子，争夺小组第二。"},
+    {"name":"土耳其","name_en":"Türkiye","flag":"🇹🇷","group":"D","fifa_rank":27,"coach":"蒙特拉","qualification":"欧洲区附加赛晋级","strength":"恰尔汗奥卢+居莱尔+伊尔迪兹攻击线才华横溢。","weakness":"后防线组织度一般、防守纪律需加强。","outlook":"与澳大利亚争夺小组第二。"},
+    {"name":"德国","name_en":"Germany","flag":"🇩🇪","group":"E","fifa_rank":9,"coach":"纳格尔斯曼","qualification":"欧洲区预选赛直通","strength":"穆西亚拉+维尔茨+哈弗茨+基米希组合创造力顶级。","weakness":"中卫位置面对速度型前锋时转身慢。","outlook":"本组实力碾压，目标四强起步。"},
+    {"name":"库拉索","name_en":"Curaçao","flag":"🇨🇼","group":"E","fifa_rank":82,"coach":"艾德沃卡特","qualification":"中北美区直通","strength":"球员多数在荷兰联赛效力、战术素养高。","weakness":"阵容深度有限、缺乏顶级球星。","outlook":"首次参赛以学习为主。"},
+    {"name":"科特迪瓦","name_en":"Ivory Coast","flag":"🇨🇮","group":"E","fifa_rank":46,"coach":"法埃","qualification":"非洲区直通","strength":"阿莱+凯西的中前场组合具备欧洲顶级经验。","weakness":"后防线组织度一般。","outlook":"与厄瓜多尔争夺小组第二。"},
+    {"name":"厄瓜多尔","name_en":"Ecuador","flag":"🇪🇨","group":"E","fifa_rank":28,"coach":"贝卡切塞","qualification":"南美区预选赛直通","strength":"身体素质出色、高原体能优势。","weakness":"中场创造力有限、过度依赖反击。","outlook":"与科特迪瓦争夺小组第二。"},
+    {"name":"荷兰","name_en":"Netherlands","flag":"🇳🇱","group":"F","fifa_rank":7,"coach":"科曼","qualification":"欧洲区预选赛直通","strength":"范戴克+德容核心组合世界顶级。","weakness":"替补深度一般，防守型中场位置厚度不足。","outlook":"本组实力独一档，四强起步。"},
+    {"name":"日本","name_en":"Japan","flag":"🇯🇵","group":"F","fifa_rank":17,"coach":"森保一","qualification":"亚洲区预选赛直通","strength":"三笘薰+久保建英+富安健洋+远藤航构成亚洲最均衡阵容。","weakness":"中锋位终结能力有起伏，对抗中后卫级别的高空球时吃亏。","outlook":"本组二号种子，力争挑战荷兰。"},
+    {"name":"瑞典","name_en":"Sweden","flag":"🇸🇪","group":"F","fifa_rank":28,"coach":"托马松","qualification":"欧洲区附加赛晋级","strength":"伊萨克+库卢塞夫斯基组合技术含量高，定位球破门率稳定。","weakness":"中场创造力不足、面对高位逼抢时容易出球失误。","outlook":"与日本争夺小组第二。"},
+    {"name":"突尼斯","name_en":"Tunisia","flag":"🇹🇳","group":"F","fifa_rank":47,"coach":"本扎尔蒂","qualification":"非洲区附加赛晋级","strength":"防守组织度高、定位球是核心得分手段。","weakness":"进攻创造力有限、终结能力不足。","outlook":"小组中实力最弱档。"},
+    {"name":"比利时","name_en":"Belgium","flag":"🇧🇪","group":"G","fifa_rank":8,"coach":"加西亚","qualification":"欧洲区预选赛直通","strength":"德布劳内+卢卡库核心组合世界顶级。","weakness":"后防老化、中生代接班人培养不足。","outlook":"本组头号种子，淘汰赛目标 8强起步。"},
+    {"name":"埃及","name_en":"Egypt","flag":"🇪🇬","group":"G","fifa_rank":36,"coach":"哈桑","qualification":"非洲区直通","strength":"萨拉赫单点爆破能力顶级，定位球是核心得分手段。","weakness":"过度依赖萨拉赫、防守转身慢。","outlook":"与伊朗争夺小组第二。"},
+    {"name":"伊朗","name_en":"Iran","flag":"🇮🇷","group":"G","fifa_rank":22,"coach":"加莱诺伊","qualification":"亚洲区预选赛直通","strength":"身体素质出色、防守组织度高。","weakness":"中场创造力不足、面对高位逼抢时容易失误。","outlook":"与埃及争夺小组第二。"},
+    {"name":"新西兰","name_en":"New Zealand","flag":"🇳🇿","group":"G","fifa_rank":102,"coach":"巴兹利","qualification":"大洋洲区直通","strength":"身体素质顶级、定位球是核心得分手段。","weakness":"整体技术含量不足、控球能力弱。","outlook":"小组中实力最弱档。"},
+    {"name":"西班牙","name_en":"Spain","flag":"🇪🇸","group":"H","fifa_rank":3,"coach":"德拉富恩特","qualification":"欧洲区预选赛直通","strength":"佩德里+亚马尔+罗德里+奥尔莫中前场组合世界顶级。","weakness":"中卫位置对抗硬度一般，关键比赛心态曾多次崩盘。","outlook":"本组头号种子，目标至少 4强。"},
+    {"name":"佛得角","name_en":"Cape Verde","flag":"🇨🇻","group":"H","fifa_rank":68,"coach":"莱唐","qualification":"非洲区直通","strength":"球员多数在欧洲联赛效力，战术素养高。","weakness":"阵容深度有限、缺乏顶级球星。","outlook":"首次参赛以学习为主。"},
+    {"name":"沙特阿拉伯","name_en":"Saudi Arabia","flag":"🇸🇦","group":"H","fifa_rank":58,"coach":"勒纳尔","qualification":"亚洲区预选赛直通","strength":"2022 击败阿根廷的'冷门制造机'。","weakness":"整体对抗强度不及欧洲球队。","outlook":"与乌拉圭/佛得角争夺小组第二。"},
+    {"name":"乌拉圭","name_en":"Uruguay","flag":"🇺🇾","group":"H","fifa_rank":11,"coach":"比埃尔萨","qualification":"南美区预选赛直通","strength":"巴尔韦德+努涅斯+本坦库尔核心组合世界顶级。","weakness":"苏亚雷斯+卡瓦尼退役后锋线终结能力下滑。","outlook":"与西班牙之争是'死亡之组'核心。"},
+    {"name":"法国","name_en":"France","flag":"🇫🇷","group":"I","fifa_rank":2,"coach":"德尚","qualification":"欧洲区预选赛直通","strength":"姆巴佩+登贝莱+卡马文加+楚阿梅尼中前场组合世界顶级。","weakness":"中卫位置博格巴+坎特退出后腰位厚度下降。","outlook":"本组头号种子，目标至少 4强。"},
+    {"name":"塞内加尔","name_en":"Senegal","flag":"🇸🇳","group":"I","fifa_rank":18,"coach":"蒂亚乌","qualification":"非洲区直通","strength":"库利巴利+帕普·萨尔后防稳定，杰克逊+萨尔攻击线冲击力强。","weakness":"中场创造力不足。","outlook":"与挪威争夺小组第二。"},
+    {"name":"伊拉克","name_en":"Iraq","flag":"🇮🇶","group":"I","fifa_rank":55,"coach":"卡萨斯","qualification":"亚洲区附加赛晋级","strength":"身体素质出色、定位球是核心得分手段。","weakness":"整体技术含量不足。","outlook":"小组中实力最弱档。"},
+    {"name":"挪威","name_en":"Norway","flag":"🇳🇴","group":"I","fifa_rank":30,"coach":"索尔巴肯","qualification":"欧洲区附加赛晋级","strength":"哈兰德+厄德高的核心组合世界顶级。","weakness":"中后场防守组织度一般。","outlook":"挑战法国是检验成色之战。"},
+    {"name":"阿根廷","name_en":"Argentina","flag":"🇦🇷","group":"J","fifa_rank":1,"coach":"斯卡洛尼","qualification":"南美区预选赛直通","strength":"卫冕冠军底蕴+梅西+劳塔罗+麦卡利斯特+德保罗核心组合。","weakness":"梅西年龄是最大隐患、替补前锋能力下滑。","outlook":"本组头号种子，目标卫冕起步。"},
+    {"name":"阿尔及利亚","name_en":"Algeria","flag":"🇩🇿","group":"J","fifa_rank":43,"coach":"彼得科维奇","qualification":"非洲区直通","strength":"马赫雷斯+本纳塞尔组合具备欧洲顶级经验。","weakness":"锋线深度不足、过度依赖马赫雷斯。","outlook":"与奥地利争夺小组第二。"},
+    {"name":"奥地利","name_en":"Austria","flag":"🇦🇹","group":"J","fifa_rank":25,"coach":"朗尼克","qualification":"欧洲区预选赛直通","strength":"萨比策尔+莱默+阿拉巴的中场组合世界级。","weakness":"锋线终结能力一般、过度依赖定位球与远射。","outlook":"本组二号种子，挑战阿根廷是检验成色之战。"},
+    {"name":"约旦","name_en":"Jordan","flag":"🇯🇴","group":"J","fifa_rank":71,"coach":"阿姆穆塔","qualification":"亚洲区直通","strength":"身体素质出色、定位球是核心得分手段。","weakness":"整体技术含量不足。","outlook":"首次参赛以学习为主。"},
+    {"name":"葡萄牙","name_en":"Portugal","flag":"🇵🇹","group":"K","fifa_rank":6,"coach":"马丁内斯","qualification":"欧洲区预选赛直通","strength":"C罗+席尔瓦+费尔南德斯+菲利克斯攻击线世界顶级。","weakness":"C罗年龄是隐患、球队过度依赖核心。","outlook":"本组头号种子，淘汰赛目标至少 8强。"},
+    {"name":"刚果(金)","name_en":"DR Congo","flag":"🇨🇩","group":"K","fifa_rank":56,"coach":"德萨布雷","qualification":"非洲区附加赛晋级","strength":"身体素质出色、防守硬度大。","weakness":"整体技术含量不足。","outlook":"与乌兹别克斯坦争夺小组第二。"},
+    {"name":"乌兹别克斯坦","name_en":"Uzbekistan","flag":"🇺🇿","group":"K","fifa_rank":65,"coach":"卡塔内茨","qualification":"亚洲区附加赛晋级","strength":"身体素质出色、定位球是核心得分手段。","weakness":"整体技术含量不足。","outlook":"首次参赛以学习为主。"},
+    {"name":"哥伦比亚","name_en":"Colombia","flag":"🇨🇴","group":"K","fifa_rank":12,"coach":"洛伦佐","qualification":"南美区预选赛直通","strength":"迪亚斯+哈梅斯+桑切斯核心组合经验丰富。","weakness":"中场创造力受哈梅斯年龄影响。","outlook":"本组二号种子，与葡萄牙之争是小组赛最大看点。"},
+    {"name":"英格兰","name_en":"England","flag":"🏴󠁧󠁢󠁥󠁮󠁧󠁿","group":"L","fifa_rank":5,"coach":"图赫尔","qualification":"欧洲区预选赛直通","strength":"贝林厄姆+凯恩+福登+萨卡+赖斯中前场组合世界顶级。","weakness":"图赫尔体系磨合时间短，定位球防守偶有漏人。","outlook":"本组头号种子，目标 4强起步。"},
+    {"name":"克罗地亚","name_en":"Croatia","flag":"🇭🇷","group":"L","fifa_rank":10,"coach":"达利奇","qualification":"欧洲区预选赛直通","strength":"莫德里奇+科瓦西奇+格瓦迪奥尔核心组合经验丰富。","weakness":"莫德里奇年龄是隐患、锋线终结能力下滑。","outlook":"本组二号种子，与英格兰之争是'复仇之战'。"},
+    {"name":"加纳","name_en":"Ghana","flag":"🇬🇭","group":"L","fifa_rank":73,"coach":"阿多","qualification":"非洲区附加赛晋级","strength":"库杜斯+阿尤+帕尔特伊核心组合具备欧洲顶级经验。","weakness":"整体组织度一般、防守转身慢。","outlook":"与巴拿马争夺小组第二。"},
+    {"name":"巴拿马","name_en":"Panama","flag":"🇵🇦","group":"L","fifa_rank":45,"coach":"克里斯蒂安森","qualification":"中北美区附加赛晋级","strength":"身体素质出色、定位球是核心得分手段。","weakness":"整体技术含量不足。","outlook":"小组中实力最弱档。"}
+  ],
+  "standings": {
+    "A": [
+      {"name":"墨西哥","flag":"🇲🇽","played":2,"win":2,"draw":0,"loss":0,"gf":4,"ga":0,"gd":4,"pts":6},
+      {"name":"捷克","flag":"🇨🇿","played":1,"win":0,"draw":1,"loss":0,"gf":1,"ga":1,"gd":0,"pts":1},
+      {"name":"韩国","flag":"🇰🇷","played":1,"win":0,"draw":1,"loss":0,"gf":1,"ga":1,"gd":0,"pts":1},
+      {"name":"南非","flag":"🇿🇦","played":2,"win":0,"draw":0,"loss":2,"gf":0,"ga":4,"gd":-4,"pts":0}
+    ],
+    "B": [
+      {"name":"瑞士","flag":"🇨🇭","played":1,"win":1,"draw":0,"loss":0,"gf":2,"ga":0,"gd":2,"pts":3},
+      {"name":"加拿大","flag":"🇨🇦","played":1,"win":1,"draw":0,"loss":0,"gf":1,"ga":0,"gd":1,"pts":3},
+      {"name":"波黑","flag":"🇧🇦","played":1,"win":0,"draw":0,"loss":1,"gf":0,"ga":1,"gd":-1,"pts":0},
+      {"name":"卡塔尔","flag":"🇶🇦","played":1,"win":0,"draw":0,"loss":1,"gf":0,"ga":2,"gd":-2,"pts":0}
+    ],
+    "C": [
+      {"name":"苏格兰","flag":"🏴󠁧󠁢󠁳󠁣󠁴󠁿","played":1,"win":1,"draw":0,"loss":0,"gf":3,"ga":0,"gd":3,"pts":3},
+      {"name":"巴西","flag":"🇧🇷","played":1,"win":0,"draw":1,"loss":0,"gf":1,"ga":1,"gd":0,"pts":1},
+      {"name":"摩洛哥","flag":"🇲🇦","played":1,"win":0,"draw":1,"loss":0,"gf":1,"ga":1,"gd":0,"pts":1},
+      {"name":"海地","flag":"🇭🇹","played":1,"win":0,"draw":0,"loss":1,"gf":0,"ga":3,"gd":-3,"pts":0}
+    ],
+    "D": [
+      {"name":"美国","flag":"🇺🇸","played":1,"win":1,"draw":0,"loss":0,"gf":3,"ga":0,"gd":3,"pts":3},
+      {"name":"澳大利亚","flag":"🇦🇺","played":1,"win":0,"draw":1,"loss":0,"gf":1,"ga":1,"gd":0,"pts":1},
+      {"name":"土耳其","flag":"🇹🇷","played":1,"win":0,"draw":1,"loss":0,"gf":1,"ga":1,"gd":0,"pts":1},
+      {"name":"巴拉圭","flag":"🇵🇾","played":1,"win":0,"draw":0,"loss":1,"gf":0,"ga":3,"gd":-3,"pts":0}
+    ],
+    "E": [
+      {"name":"德国","flag":"🇩🇪","played":1,"win":1,"draw":0,"loss":0,"gf":3,"ga":0,"gd":3,"pts":3},
+      {"name":"科特迪瓦","flag":"🇨🇮","played":1,"win":1,"draw":0,"loss":0,"gf":2,"ga":1,"gd":1,"pts":3},
+      {"name":"厄瓜多尔","flag":"🇪🇨","played":1,"win":0,"draw":0,"loss":1,"gf":1,"ga":2,"gd":-1,"pts":0},
+      {"name":"库拉索","flag":"🇨🇼","played":1,"win":0,"draw":0,"loss":1,"gf":0,"ga":3,"gd":-3,"pts":0}
+    ],
+    "F": [
+      {"name":"荷兰","flag":"🇳🇱","played":1,"win":1,"draw":0,"loss":0,"gf":2,"ga":1,"gd":1,"pts":3},
+      {"name":"瑞典","flag":"🇸🇪","played":1,"win":1,"draw":0,"loss":0,"gf":1,"ga":0,"gd":1,"pts":3},
+      {"name":"日本","flag":"🇯🇵","played":1,"win":0,"draw":0,"loss":1,"gf":1,"ga":2,"gd":-1,"pts":0},
+      {"name":"突尼斯","flag":"🇹🇳","played":1,"win":0,"draw":0,"loss":1,"gf":0,"ga":1,"gd":-1,"pts":0}
+    ],
+    "G": [
+      {"name":"比利时","flag":"🇧🇪","played":1,"win":1,"draw":0,"loss":0,"gf":2,"ga":0,"gd":2,"pts":3},
+      {"name":"伊朗","flag":"🇮🇷","played":1,"win":1,"draw":0,"loss":0,"gf":1,"ga":0,"gd":1,"pts":3},
+      {"name":"埃及","flag":"🇪🇬","played":1,"win":0,"draw":0,"loss":1,"gf":0,"ga":2,"gd":-2,"pts":0},
+      {"name":"新西兰","flag":"🇳🇿","played":1,"win":0,"draw":0,"loss":1,"gf":0,"ga":1,"gd":-1,"pts":0}
+    ],
+    "H": [
+      {"name":"西班牙","flag":"🇪🇸","played":1,"win":1,"draw":0,"loss":0,"gf":3,"ga":0,"gd":3,"pts":3},
+      {"name":"沙特","flag":"🇸🇦","played":0,"win":0,"draw":0,"loss":0,"gf":0,"ga":0,"gd":0,"pts":0},
+      {"name":"乌拉圭","flag":"🇺🇾","played":0,"win":0,"draw":0,"loss":0,"gf":0,"ga":0,"gd":0,"pts":0},
+      {"name":"佛得角","flag":"🇨🇻","played":1,"win":0,"draw":0,"loss":1,"gf":0,"ga":3,"gd":-3,"pts":0}
+    ],
+    "I": [
+      {"name":"法国","flag":"🇫🇷","played":1,"win":1,"draw":0,"loss":0,"gf":2,"ga":1,"gd":1,"pts":3},
+      {"name":"塞内加尔","flag":"🇸🇳","played":1,"win":0,"draw":0,"loss":1,"gf":1,"ga":2,"gd":-1,"pts":0},
+      {"name":"伊拉克","flag":"🇮🇶","played":0,"win":0,"draw":0,"loss":0,"gf":0,"ga":0,"gd":0,"pts":0},
+      {"name":"挪威","flag":"🇳🇴","played":0,"win":0,"draw":0,"loss":0,"gf":0,"ga":0,"gd":0,"pts":0}
+    ],
+    "J": [
+      {"name":"阿根廷","flag":"🇦🇷","played":1,"win":1,"draw":0,"loss":0,"gf":3,"ga":0,"gd":3,"pts":3},
+      {"name":"奥地利","flag":"🇦🇹","played":1,"win":1,"draw":0,"loss":0,"gf":2,"ga":0,"gd":2,"pts":3},
+      {"name":"阿尔及利亚","flag":"🇩🇿","played":1,"win":0,"draw":0,"loss":1,"gf":0,"ga":3,"gd":-3,"pts":0},
+      {"name":"约旦","flag":"🇯🇴","played":1,"win":0,"draw":0,"loss":1,"gf":0,"ga":2,"gd":-2,"pts":0}
+    ],
+    "K": [
+      {"name":"葡萄牙","flag":"🇵🇹","played":1,"win":1,"draw":0,"loss":0,"gf":2,"ga":0,"gd":2,"pts":3},
+      {"name":"哥伦比亚","flag":"🇨🇴","played":1,"win":0,"draw":1,"loss":0,"gf":1,"ga":1,"gd":0,"pts":1},
+      {"name":"乌兹别克斯坦","flag":"🇺🇿","played":1,"win":0,"draw":1,"loss":0,"gf":1,"ga":1,"gd":0,"pts":1},
+      {"name":"刚果(金)","flag":"🇨🇩","played":1,"win":0,"draw":0,"loss":1,"gf":0,"ga":2,"gd":-2,"pts":0}
+    ],
+    "L": [
+      {"name":"英格兰","flag":"🏴󠁧󠁢󠁥󠁮󠁧󠁿","played":0,"win":0,"draw":0,"loss":0,"gf":0,"ga":0,"gd":0,"pts":0},
+      {"name":"克罗地亚","flag":"🇭🇷","played":0,"win":0,"draw":0,"loss":0,"gf":0,"ga":0,"gd":0,"pts":0},
+      {"name":"加纳","flag":"🇬🇭","played":0,"win":0,"draw":0,"loss":0,"gf":0,"ga":0,"gd":0,"pts":0},
+      {"name":"巴拿马","flag":"🇵🇦","played":0,"win":0,"draw":0,"loss":0,"gf":0,"ga":0,"gd":0,"pts":0}
+    ]
+  }
+}
+</script>
+
+<!-- ============ JS 渲染逻辑 ============ -->
+<script>
+(function () {
+  'use strict';
+
+  // ====== 工具函数 ======
+  function $(sel) { return document.querySelector(sel); }
+  function $$(sel) { return Array.prototype.slice.call(document.querySelectorAll(sel)); }
+
+  // ====== 加载数据 ======
+  var dataNode = document.getElementById('teams-data');
+  var data;
+  try { data = JSON.parse(dataNode.textContent); }
+  catch (e) { console.error('Teams data parse error', e); return; }
+
+  // ====== 渲染：12 组积分榜 ======
+  var groupsGrid = document.getElementById('groupsGrid');
+  var groupLetters = ['A','B','C','D','E','F','G','H','I','J','K','L'];
+  var groupsHTML = '';
+  groupLetters.forEach(function (g) {
+    var teams = data.standings[g] || [];
+    var rows = teams.map(function (t, i) {
+      var ptsClass = i === 0 ? 'pts' : (i === 1 ? 'pts gold' : 'pts');
+      return '<tr class="' + (i < 1 ? 'top' : '') + '">' +
+        '<td class="rk">' + (i + 1) + '</td>' +
+        '<td><span class="tname"><span class="tf">' + t.flag + '</span>' + t.name + '</span></td>' +
+        '<td>' + t.played + '</td>' +
+        '<td>' + t.win + '</td>' +
+        '<td>' + t.draw + '</td>' +
+        '<td>' + t.loss + '</td>' +
+        '<td>' + (t.gf - t.ga >= 0 ? '+' : '') + t.gd + '</td>' +
+        '<td class="' + ptsClass + '">' + t.pts + '</td>' +
+        '</tr>';
+    }).join('');
+
+    groupsHTML +=
+      '<div class="group-card" data-group="' + g + '">' +
+        '<div class="group-head">' +
+          '<div class="group-title">' +
+            '<div class="group-letter">' + g + '</div>' +
+            '<div>' +
+              '<div class="group-name">第 ' + g + ' 组</div>' +
+              '<div class="group-sub">' + (data.groups[g] || []).length + ' 队 · 截至 6/17</div>' +
+            '</div>' +
+          '</div>' +
+          '<span class="group-tag">GROUP ' + g + '</span>' +
+        '</div>' +
+        '<table class="mini-table">' +
+          '<thead><tr>' +
+            '<th class="rk">#</th><th>球队</th><th>赛</th><th>胜</th><th>平</th><th>负</th><th>净</th><th>分</th>' +
+          '</tr></thead>' +
+          '<tbody>' + rows + '</tbody>' +
+        '</table>' +
+      '</div>';
+  });
+  groupsGrid.innerHTML = groupsHTML;
+
+  // ====== 渲染：48 队档案 ======
+  var teamsGrid = document.getElementById('teamsGrid');
+  var filterBar = document.getElementById('filterBar');
+
+  // 注入组别筛选按钮
+  var filterBtnsHTML = '<button class="filter-btn active" data-group="ALL">All · 48</button>';
+  groupLetters.forEach(function (g) {
+    filterBtnsHTML += '<button class="filter-btn" data-group="' + g + '">组 ' + g + '</button>';
+  });
+  filterBar.innerHTML = filterBtnsHTML;
+
+  // 注入球队卡片
+  function renderTeamCards(filter) {
+    var html = '';
+    data.teams.forEach(function (t) {
+      if (filter && filter !== 'ALL' && t.group !== filter) return;
+      var rankTier = t.fifa_rank <= 10 ? 'gold' : (t.fifa_rank <= 30 ? 'blue' : '');
+      var hostMark = (t.qualification || '').indexOf('东道主') >= 0 ? '<span class="meta-pill gold">🏟 主场</span>' : '';
+      html +=
+        '<article class="team-card" data-group="' + t.group + '">' +
+          '<div class="team-card-head">' +
+            '<div class="flag">' + t.flag + '</div>' +
+            '<span class="grouptag">组 ' + t.group + '</span>' +
+          '</div>' +
+          '<h4>' + t.name + '</h4>' +
+          '<div class="name-en">' + t.name_en + '</div>' +
+          '<div class="meta-row">' +
+            '<span class="meta-pill ' + rankTier + '">FIFA #' + t.fifa_rank + '</span>' +
+            '<span class="meta-pill">👔 ' + t.coach + '</span>' +
+            hostMark +
+          '</div>' +
+          '<div class="meta-row">' +
+            '<span class="meta-pill">🏆 ' + (t.qualification || '-') + '</span>' +
+          '</div>' +
+          '<div class="strength">' + (t.strength || '') + '</div>' +
+          '<div class="weakness">' + (t.weakness || '') + '</div>' +
+          '<div class="desc" style="margin-top:8px; padding-top:8px; border-top:1px dashed var(--line-soft);">' +
+            '<strong style="color:var(--gold);">小组前景：</strong>' + (t.outlook || '') +
+          '</div>' +
+        '</article>';
+    });
+    teamsGrid.innerHTML = html;
+  }
+  renderTeamCards('ALL');
+
+  // 筛选按钮交互
+  filterBar.addEventListener('click', function (e) {
+    var btn = e.target.closest('.filter-btn');
+    if (!btn) return;
+    $$('.filter-btn').forEach(function (b) { b.classList.remove('active'); });
+    btn.classList.add('active');
+    renderTeamCards(btn.getAttribute('data-group'));
+  });
+
+  // ====== 滚动显示动效 ======
+  function revealOnScroll() {
+    var els = $$('.reveal');
+    var wh = window.innerHeight;
+    els.forEach(function (el) {
+      var top = el.getBoundingClientRect().top;
+      if (top < wh - 60) el.classList.add('in');
+    });
+  }
+  window.addEventListener('scroll', revealOnScroll, { passive: true });
+  window.addEventListener('load', revealOnScroll);
+  setTimeout(revealOnScroll, 50);
+
+  // ====== 平滑滚动锚点 ======
+  $$('.nav-links a, .footer a[href^="#"]').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      var id = a.getAttribute('href');
+      if (id.length > 1) {
+        var target = document.querySelector(id);
+        if (target) {
+          e.preventDefault();
+          window.scrollTo({ top: target.offsetTop - 56, behavior: 'smooth' });
+        }
+      }
+    });
+  });
+})();
+</script>
+</body>
+</html>
