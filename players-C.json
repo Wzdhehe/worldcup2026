@@ -56,7 +56,8 @@
         "dribbling": 95,
         "defending": 45,
         "physical": 75
-      }
+      },
+      "prev_market_value_eur": 158654828
     },
     {
       "name": "罗德里戈",
@@ -111,7 +112,8 @@
         "dribbling": 90,
         "defending": 40,
         "physical": 68
-      }
+      },
+      "prev_market_value_eur": 93288264
     },
     {
       "name": "卡塞米罗",
@@ -180,7 +182,8 @@
         "dribbling": 70,
         "defending": 90,
         "physical": 92
-      }
+      },
+      "prev_market_value_eur": 21140386
     },
     {
       "name": "马尔基尼奥斯",
@@ -241,7 +244,8 @@
         "dribbling": 72,
         "defending": 92,
         "physical": 85
-      }
+      },
+      "prev_market_value_eur": 60777632
     },
     {
       "name": "阿什拉夫",
@@ -309,7 +313,8 @@
         "dribbling": 85,
         "defending": 82,
         "physical": 80
-      }
+      },
+      "prev_market_value_eur": 70769456
     },
     {
       "name": "布拉希尔",
@@ -376,7 +381,8 @@
         "dribbling": 90,
         "defending": 45,
         "physical": 65
-      }
+      },
+      "prev_market_value_eur": 29801673
     },
     {
       "name": "皮埃尔",
@@ -436,7 +442,8 @@
       "honors": [
         "海地联赛冠军 2013",
         "海地最佳射手 2014"
-      ]
+      ],
+      "prev_market_value_eur": 692411
     },
     {
       "name": "苏马",
@@ -495,7 +502,8 @@
       ],
       "honors": [
         "海地国家英雄奖 2017"
-      ]
+      ],
+      "prev_market_value_eur": 667902
     },
     {
       "name": "麦克托米奈",
@@ -550,7 +558,8 @@
         "意甲冠军 2025",
         "英格兰联赛杯 2023",
         "苏格兰足球先生 2023"
-      ]
+      ],
+      "prev_market_value_eur": 60278233
     },
     {
       "name": "罗伯逊",
@@ -605,7 +614,8 @@
         "英超冠军 2020 · 2025",
         "欧冠 2019",
         "PFA 英格兰最佳左后卫 2018 · 2019"
-      ]
+      ],
+      "prev_market_value_eur": 31612386
     }
   ],
   "data_source_note": "v9 扩充：C 组全部 4 队核心球员档案（A/C/F/H/I/J/K/L 8 焦点战组，每队 2 名，覆盖 4 国：巴西, 摩洛哥, 海地, 苏格兰）。"
