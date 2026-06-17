@@ -1064,6 +1064,18 @@
   .team-squad-mini svg { width: 100%; aspect-ratio: 1; }
   .team-squad-mini polygon { fill: rgba(0,217,107,0.15); stroke: var(--pitch); stroke-width: 1.2; }
   .team-squad-mini .point { fill: var(--pitch); }
+  .team-squad-mini .tsm-head { display: flex; justify-content: space-between; align-items: center; }
+  .team-squad-mini .tsm-flag { font-size: 18px; }
+  .team-squad-mini .meta { font-size: 10px; color: var(--text-mid); margin-top: 2px; }
+  .kp-text-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+  .kp-text-chip {
+    background: var(--bg-2);
+    border: 1px solid var(--line);
+    color: var(--text);
+    padding: 5px 12px;
+    border-radius: 999px;
+    font-size: 13px;
+  }
   .team-info-row {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -2132,6 +2144,140 @@
       });
     });
   }
+
+  // 队伍详情 modal
+  var GROUPS_WITH_PLAYERS = ['A', 'C', 'F', 'I', 'L', 'J', 'H', 'K'];
+  var squadCache = {};
+  async function loadGroupSquad(group) {
+    if (squadCache[group]) return squadCache[group];
+    if (GROUPS_WITH_PLAYERS.indexOf(group) < 0) return [];
+    try {
+      var r = await fetch('players-' + group + '.json');
+      var d = await r.json();
+      squadCache[group] = d.players || [];
+      return squadCache[group];
+    } catch (e) { console.error('load group ' + group + ' failed', e); return []; }
+  }
+  function fmtValue(v) {
+    if (v >= 1e8) return (v / 1e8).toFixed(1) + '亿€';
+    if (v >= 1e6) return (v / 1e6).toFixed(0) + 'M€';
+    if (v >= 1e3) return (v / 1e3).toFixed(0) + 'K€';
+    return v + '€';
+  }
+  function positionChip(pos) {
+    if (!pos) return 'pos-MF';
+    if (pos.indexOf('FW') >= 0 || pos.indexOf('前锋') >= 0) return 'pos-FW';
+    if (pos.indexOf('DF') >= 0 || pos.indexOf('后卫') >= 0) return 'pos-DF';
+    if (pos.indexOf('GK') >= 0 || pos.indexOf('门将') >= 0) return 'pos-GK';
+    return 'pos-MF';
+  }
+  function drawMiniRadar(svg, ability) {
+    var dims = ['pace', 'shooting', 'passing', 'dribbling', 'defending', 'physical'];
+    var N = 6, cx = 60, cy = 60, maxR = 38;
+    var angle = function(i) { return (Math.PI * 2 * i) / N - Math.PI / 2; };
+    for (var lvl = 1; lvl <= 3; lvl++) {
+      var r = (maxR * lvl) / 3;
+      var pts = [];
+      for (var i = 0; i < N; i++) pts.push((cx + r * Math.cos(angle(i))).toFixed(1) + ',' + (cy + r * Math.sin(angle(i))).toFixed(1));
+      var bg = document.createElementNS('http://www.w3.org/2000/svg', 'polygon');
+      bg.setAttribute('points', pts.join(' '));
+      svg.appendChild(bg);
+    }
+    var dataPts = [];
+    for (var i = 0; i < N; i++) {
+      var v = (ability[dims[i]] || 0) / 100;
+      dataPts.push((cx + maxR * v * Math.cos(angle(i))).toFixed(1) + ',' + (cy + maxR * v * Math.sin(angle(i))).toFixed(1));
+    }
+    var data = document.createElementNS('http://www.w3.org/2000/svg', 'polygon');
+    data.setAttribute('points', dataPts.join(' '));
+    svg.appendChild(data);
+    for (var i = 0; i < N; i++) {
+      var v = (ability[dims[i]] || 0) / 100;
+      var x = cx + maxR * v * Math.cos(angle(i));
+      var y = cy + maxR * v * Math.sin(angle(i));
+      var pt = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+      pt.setAttribute('cx', x); pt.setAttribute('cy', y); pt.setAttribute('r', 1.5);
+      pt.setAttribute('class', 'point');
+      svg.appendChild(pt);
+    }
+  }
+  function openTeamDetail(group, teamIdx) {
+    var t = data.teams[teamIdx];
+    if (!t) return;
+    loadGroupSquad(group).then(function(allPlayers) {
+      var players = allPlayers.filter(function(p) { return p.country === t.name; });
+      var modal = document.getElementById('teamModal');
+      if (!modal) {
+        modal = document.createElement('div');
+        modal.id = 'teamModal';
+        modal.className = 'team-modal';
+        modal.innerHTML = '<div class="team-modal-content"><div id="teamModalBody"></div></div>';
+        document.body.appendChild(modal);
+        modal.addEventListener('click', function(e) { if (e.target === modal) closeTeamModal(); });
+      }
+      var body = document.getElementById('teamModalBody');
+      var playersHTML;
+      if (players.length > 0) {
+        playersHTML = '<div class="team-squad-grid">' + players.map(function(p) {
+          return '<div class="team-squad-mini" data-player-name="' + p.name + '">' +
+            '<div class="tsm-head"><span class="tsm-flag">' + (p.country_flag || '') + '</span><span class="pos-chip ' + positionChip(p.position) + '">' + (p.position_zh || p.position || '') + '</span></div>' +
+            '<div class="name">' + p.name + '</div>' +
+            '<div class="meta">' + (p.club || '') + '</div>' +
+            '<div class="val">' + fmtValue(p.market_value_eur || 0) + '</div>' +
+            '<svg class="player-radar-mini" viewBox="0 0 120 120"></svg>' +
+          '</div>';
+        }).join('') + '</div>';
+      } else {
+        var kp = t.key_players || [];
+        var kpHTML = kp.length
+          ? '<div class="kp-text-list">' + kp.map(function(p) { return '<span class="kp-text-chip">' + p + '</span>'; }).join('') + '</div>'
+          : '<p style="color:var(--text-dim); font-size:13px;">暂无该队核心球员数据</p>';
+        playersHTML = kpHTML + '<p style="color:var(--text-dim); margin-top:12px; font-size:12px; font-style:italic;">该队不在 8 场焦点战覆盖范围，仅显示公开资材。</p>';
+      }
+      body.innerHTML =
+        '<div class="team-modal-head">' +
+          '<div class="flag">' + t.flag + '</div>' +
+          '<div class="modal-name-block">' +
+            '<h2 class="modal-name">' + t.name + ' <span class="modal-name-en">' + t.name_en + '</span></h2>' +
+            '<div class="modal-tags">' +
+              '<span class="meta-pill gold">FIFA #' + t.fifa_rank + '</span>' +
+              '<span class="meta-pill">组 ' + t.group + '</span>' +
+              '<span class="meta-pill">👔 ' + (t.coach || '-') + '</span>' +
+              '<span class="meta-pill">🏆 ' + (t.qualification || '-') + '</span>' +
+            '</div>' +
+          '</div>' +
+          '<button class="modal-close" onclick="closeTeamModal()">×</button>' +
+        '</div>' +
+        '<div class="team-modal-body">' +
+          '<h3 class="modal-section-title">球队概述</h3>' +
+          '<div class="team-info-row">' +
+            '<div class="team-info-card"><h4>优势</h4><p>' + (t.strength || '-') + '</p></div>' +
+            '<div class="team-info-card"><h4>短板</h4><p>' + (t.weakness || '-') + '</p></div>' +
+            '<div class="team-info-card"><h4>战术特点</h4><p>' + (t.play_style || '-') + '</p></div>' +
+            '<div class="team-info-card"><h4>小组前景</h4><p>' + (t.outlook || '-') + '</p></div>' +
+          '</div>' +
+          '<h3 class="modal-section-title">核心球员' + (players.length > 0 ? '（' + players.length + ' 位 · 点击查看完整档案）' : '') + '</h3>' +
+          playersHTML +
+        '</div>';
+      body.querySelectorAll('.team-squad-mini').forEach(function(card, i) {
+        var p = players[i];
+        if (p && p.ability) {
+          var svg = card.querySelector('svg');
+          if (svg) drawMiniRadar(svg, p.ability);
+        }
+        card.addEventListener('click', function() {
+          var name = card.getAttribute('data-player-name');
+          var p = players.find(function(x) { return x.name === name; });
+          if (p) openPlayerModal(p);
+        });
+      });
+      modal.classList.add('open');
+    });
+  }
+  function closeTeamModal() {
+    var modal = document.getElementById('teamModal');
+    if (modal) modal.classList.remove('open');
+  }
   renderTeamCards('ALL');
 
   // 筛选按钮交互
@@ -2451,7 +2597,7 @@ function closePlayerModal() {
   const modal = document.getElementById('playerModal');
   if (modal) modal.classList.remove('open');
 }
-document.addEventListener('keydown', e => { if (e.key === 'Escape') closePlayerModal(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') { closePlayerModal(); closeTeamModal(); } });
 
 // 初始化：拉所有球员数据 + 渲染
 loadAllPlayers().then(() => renderPlayers()).catch(e => console.error('init players failed', e));
