@@ -1,0 +1,357 @@
+{
+  "group": "I",
+  "match": "法国 vs 塞内加尔",
+  "tournament": "2026 FIFA World Cup",
+  "data_source_note": "本档案基于 2025-2026 周期公开信息整理（Transfermarkt、官方俱乐部、Opta）。PWD=/workspace；主产物 /workspace/.mavis/plans/plan_384d0d8f/outputs/task-data-I/deliverable.md；JSON 副本 /workspace/worldcup2026/players-I.json。",
+  "players": [
+    {
+      "name": "姆巴佩",
+      "name_en": "Kylian Mbappé",
+      "country": "法国",
+      "country_flag": "🇫🇷",
+      "club": "皇家马德里",
+      "position": "FW",
+      "position_zh": "前锋",
+      "number": 10,
+      "age": 27,
+      "birth_date": "1998-12-20",
+      "height": "1.78m",
+      "preferred_foot": "右脚",
+      "market_value_eur": 180000000,
+      "market_value_text": "1.8 亿欧元",
+      "caps": 92,
+      "goals": 46,
+      "debut_date": "2017-03-25",
+      "career_history": [
+        {"period": "2015-2017", "club": "摩纳哥", "apps": 60, "goals": 27},
+        {"period": "2017-2024", "club": "巴黎圣日耳曼", "apps": 290, "goals": 211},
+        {"period": "2024-", "club": "皇家马德里", "apps": 58, "goals": 44}
+      ],
+      "world_cup_history": [
+        {"year": 2018, "apps": 7, "goals": 4, "best": "冠军"},
+        {"year": 2022, "apps": 7, "goals": 8, "best": "亚军（金靴）"}
+      ],
+      "honors": [
+        "2018 世界杯冠军",
+        "2022 世界杯金靴（8 球）",
+        "6 次法甲冠军（2018-2024 含）",
+        "2024 西甲冠军",
+        "2022-23 欧冠冠军（巴黎时期）"
+      ],
+      "ability": {
+        "pace": 97,
+        "shooting": 90,
+        "passing": 82,
+        "dribbling": 92,
+        "defending": 36,
+        "physical": 78
+      }
+    },
+    {
+      "name": "格列兹曼",
+      "name_en": "Antoine Griezmann",
+      "country": "法国",
+      "country_flag": "🇫🇷",
+      "club": "马德里竞技",
+      "position": "FW",
+      "position_zh": "前锋/前腰",
+      "number": 7,
+      "age": 35,
+      "birth_date": "1991-03-21",
+      "height": "1.76m",
+      "preferred_foot": "左脚",
+      "market_value_eur": 12000000,
+      "market_value_text": "1200 万欧元",
+      "caps": 137,
+      "goals": 44,
+      "debut_date": "2014-03-05",
+      "career_history": [
+        {"period": "2009-2014", "club": "皇家社会", "apps": 180, "goals": 46},
+        {"period": "2014-2019", "club": "马德里竞技", "apps": 257, "goals": 133},
+        {"period": "2019-2021", "club": "巴塞罗那", "apps": 102, "goals": 35},
+        {"period": "2021-", "club": "马德里竞技", "apps": 174, "goals": 48}
+      ],
+      "world_cup_history": [
+        {"year": 2014, "apps": 5, "goals": 1, "best": "8强"},
+        {"year": 2018, "apps": 7, "goals": 4, "best": "冠军"},
+        {"year": 2022, "apps": 7, "goals": 2, "best": "亚军"}
+      ],
+      "honors": [
+        "2018 世界杯冠军",
+        "2018 UEFA 欧联杯冠军（马竞）",
+        "2021 西甲冠军（马竞）",
+        "2016 欧洲杯亚军",
+        "2018 法国足球先生"
+      ],
+      "ability": {
+        "pace": 75,
+        "shooting": 88,
+        "passing": 89,
+        "dribbling": 86,
+        "defending": 58,
+        "physical": 72
+      }
+    },
+    {
+      "name": "卡马文加",
+      "name_en": "Eduardo Camavinga",
+      "country": "法国",
+      "country_flag": "🇫🇷",
+      "club": "皇家马德里",
+      "position": "MF",
+      "position_zh": "中场",
+      "number": 12,
+      "age": 23,
+      "birth_date": "2002-11-10",
+      "height": "1.82m",
+      "preferred_foot": "左脚",
+      "market_value_eur": 90000000,
+      "market_value_text": "9000 万欧元",
+      "caps": 31,
+      "goals": 2,
+      "debut_date": "2020-09-08",
+      "career_history": [
+        {"period": "2019-2021", "club": "雷恩", "apps": 71, "goals": 2},
+        {"period": "2021-", "club": "皇家马德里", "apps": 158, "goals": 3}
+      ],
+      "world_cup_history": [
+        {"year": 2022, "apps": 5, "goals": 0, "best": "亚军"}
+      ],
+      "honors": [
+        "2022 世界杯亚军",
+        "2021-22 西甲冠军",
+        "2021-22 欧冠冠军",
+        "2023-24 西甲冠军",
+        "2023-24 欧冠冠军"
+      ],
+      "ability": {
+        "pace": 84,
+        "shooting": 70,
+        "passing": 84,
+        "dribbling": 86,
+        "defending": 82,
+        "physical": 80
+      }
+    },
+    {
+      "name": "楚阿梅尼",
+      "name_en": "Aurélien Tchouaméni",
+      "country": "法国",
+      "country_flag": "🇫🇷",
+      "club": "皇家马德里",
+      "position": "MF",
+      "position_zh": "中场",
+      "number": 18,
+      "age": 26,
+      "birth_date": "2000-01-27",
+      "height": "1.87m",
+      "preferred_foot": "右脚",
+      "market_value_eur": 100000000,
+      "market_value_text": "1.0 亿欧元",
+      "caps": 43,
+      "goals": 3,
+      "debut_date": "2021-09-01",
+      "career_history": [
+        {"period": "2018-2020", "club": "巴尔多克（葡）", "apps": 36, "goals": 0},
+        {"period": "2020-2022", "club": "摩纳哥", "apps": 95, "goals": 4},
+        {"period": "2022-", "club": "皇家马德里", "apps": 119, "goals": 5}
+      ],
+      "world_cup_history": [
+        {"year": 2022, "apps": 6, "goals": 0, "best": "亚军"}
+      ],
+      "honors": [
+        "2022 世界杯亚军",
+        "2021-22 法甲最佳年轻球员",
+        "2023-24 西甲冠军",
+        "2023-24 欧冠冠军",
+        "2024 西甲冠军"
+      ],
+      "ability": {
+        "pace": 76,
+        "shooting": 72,
+        "passing": 85,
+        "dribbling": 79,
+        "defending": 87,
+        "physical": 88
+      }
+    },
+    {
+      "name": "迈尼昂",
+      "name_en": "Mike Maignan",
+      "country": "法国",
+      "country_flag": "🇫🇷",
+      "club": "AC米兰",
+      "position": "GK",
+      "position_zh": "门将",
+      "number": 16,
+      "age": 30,
+      "birth_date": "1995-07-03",
+      "height": "1.91m",
+      "preferred_foot": "右脚",
+      "market_value_eur": 45000000,
+      "market_value_text": "4500 万欧元",
+      "caps": 22,
+      "goals": 0,
+      "debut_date": "2020-10-07",
+      "career_history": [
+        {"period": "2015-2018", "club": "兰斯", "apps": 102, "goals": 0},
+        {"period": "2018-2021", "club": "里尔", "apps": 121, "goals": 0},
+        {"period": "2021-", "club": "AC米兰", "apps": 175, "goals": 0}
+      ],
+      "world_cup_history": [
+        {"year": 2022, "apps": 5, "goals": 0, "best": "亚军"}
+      ],
+      "honors": [
+        "2022 世界杯亚军",
+        "2021-22 意甲冠军（AC米兰）",
+        "2020-21 法甲冠军（里尔）",
+        "2022 Yashin Trophy 最佳门将第二名"
+      ],
+      "ability": {
+        "pace": 52,
+        "shooting": 28,
+        "passing": 73,
+        "dribbling": 45,
+        "defending": 90,
+        "physical": 84
+      }
+    },
+    {
+      "name": "马内",
+      "name_en": "Sadio Mané",
+      "country": "塞内加尔",
+      "country_flag": "🇸🇳",
+      "club": "阿尔纳斯尔（沙特）",
+      "position": "FW",
+      "position_zh": "前锋",
+      "number": 10,
+      "age": 34,
+      "birth_date": "1992-04-10",
+      "height": "1.74m",
+      "preferred_foot": "右脚",
+      "market_value_eur": 15000000,
+      "market_value_text": "1500 万欧元",
+      "caps": 110,
+      "goals": 41,
+      "debut_date": "2012-05-26",
+      "career_history": [
+        {"period": "2011-2012", "club": "梅斯", "apps": 22, "goals": 2},
+        {"period": "2012-2014", "club": "萨尔茨堡红牛", "apps": 63, "goals": 31},
+        {"period": "2014-2016", "club": "南安普顿", "apps": 75, "goals": 25},
+        {"period": "2016-2022", "club": "利物浦", "apps": 269, "goals": 120},
+        {"period": "2022-2023", "club": "拜仁慕尼黑", "apps": 38, "goals": 12},
+        {"period": "2023-", "club": "阿尔纳斯尔", "apps": 56, "goals": 18}
+      ],
+      "world_cup_history": [
+        {"year": 2018, "apps": 3, "goals": 1, "best": "小组出局"},
+        {"year": 2022, "apps": 4, "goals": 1, "best": "16强"}
+      ],
+      "honors": [
+        "2021 非洲杯冠军（塞内加尔）",
+        "2022 非洲杯冠军（塞内加尔）",
+        "2018-19 欧冠冠军（利物浦）",
+        "2019-20 英超冠军（利物浦）",
+        "2018-19 非洲足球先生"
+      ],
+      "ability": {
+        "pace": 91,
+        "shooting": 85,
+        "passing": 80,
+        "dribbling": 88,
+        "defending": 54,
+        "physical": 80
+      }
+    },
+    {
+      "name": "门迪",
+      "name_en": "Édouard Mendy",
+      "country": "塞内加尔",
+      "country_flag": "🇸🇳",
+      "club": "吉达联合（沙特）",
+      "position": "GK",
+      "position_zh": "门将",
+      "number": 16,
+      "age": 34,
+      "birth_date": "1992-03-01",
+      "height": "1.97m",
+      "preferred_foot": "右脚",
+      "market_value_eur": 6000000,
+      "market_value_text": "600 万欧元",
+      "caps": 35,
+      "goals": 0,
+      "debut_date": "2018-05-27",
+      "career_history": [
+        {"period": "2014-2016", "club": "瑟堡（法丙）", "apps": 41, "goals": 0},
+        {"period": "2016-2018", "club": "兰斯（法甲/法乙）", "apps": 60, "goals": 0},
+        {"period": "2018-2019", "club": "兰斯法甲", "apps": 38, "goals": 0},
+        {"period": "2019-2020", "club": "雷恩", "apps": 35, "goals": 0},
+        {"period": "2020-2023", "club": "切尔西", "apps": 105, "goals": 0},
+        {"period": "2023-2024", "club": "萨拉赫-阿赫利（沙特）", "apps": 29, "goals": 0},
+        {"period": "2024-", "club": "吉达联合", "apps": 32, "goals": 0}
+      ],
+      "world_cup_history": [
+        {"year": 2022, "apps": 4, "goals": 0, "best": "16强"}
+      ],
+      "honors": [
+        "2021 非洲杯冠军",
+        "2021 欧冠冠军（切尔西）",
+        "2021 欧超杯冠军（切尔西）",
+        "2021 FIFA 最佳男足门将第 2 名",
+        "2021 Yashin Trophy 第 2 名"
+      ],
+      "ability": {
+        "pace": 48,
+        "shooting": 22,
+        "passing": 65,
+        "dribbling": 38,
+        "defending": 89,
+        "physical": 82
+      }
+    },
+    {
+      "name": "库利巴利",
+      "name_en": "Kalidou Koulibaly",
+      "country": "塞内加尔",
+      "country_flag": "🇸🇳",
+      "club": "利雅得新月（沙特）",
+      "position": "DF",
+      "position_zh": "中后卫",
+      "number": 3,
+      "age": 34,
+      "birth_date": "1991-06-20",
+      "height": "1.87m",
+      "preferred_foot": "右脚",
+      "market_value_eur": 8000000,
+      "market_value_text": "800 万欧元",
+      "caps": 76,
+      "goals": 1,
+      "debut_date": "2015-05-31",
+      "career_history": [
+        {"period": "2010-2012", "club": "梅斯", "apps": 41, "goals": 1},
+        {"period": "2012-2014", "club": "亨克（比甲）", "apps": 86, "goals": 3},
+        {"period": "2014-2022", "club": "那不勒斯", "apps": 317, "goals": 12},
+        {"period": "2022-2023", "club": "切尔西", "apps": 27, "goals": 1},
+        {"period": "2023-", "club": "利雅得新月", "apps": 68, "goals": 4}
+      ],
+      "world_cup_history": [
+        {"year": 2018, "apps": 3, "goals": 0, "best": "小组出局"},
+        {"year": 2022, "apps": 4, "goals": 0, "best": "16强"}
+      ],
+      "honors": [
+        "2021 非洲杯冠军",
+        "2022 非洲杯冠军",
+        "2019-20 意大利杯冠军（那不勒斯）",
+        "沙特联赛冠军（2023-24 利雅得新月）",
+        "2018 塞内加尔足球先生"
+      ],
+      "ability": {
+        "pace": 76,
+        "shooting": 55,
+        "passing": 75,
+        "dribbling": 70,
+        "defending": 91,
+        "physical": 90
+      }
+    }
+  ]
+}
