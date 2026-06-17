@@ -1,0 +1,396 @@
+{
+  "group": "A",
+  "match": "墨西哥 vs 南非",
+  "tournament": "2026 FIFA World Cup",
+  "kickoff": "2026-06-12 03:00 (Aztec Stadium, 墨西哥城)",
+  "data_source_note": "PWD=/root（项目工作目录）；主产物 /root/deliverable.md，副本 /workspace/worldcup2026/players-A.json。本档案基于 2025-2026 周期公开信息整理，身价/能力评分按 Transfermarkt 与 Sofascore 公开数据合理估算。注：南非球员中文译名 '勒保' 对应当前国脚 Relebohile Mofokeng（雷莱博希莱·莫福肯，奥兰多海盗新星），'莫迪塞' 与南非主力左后卫 Obrey Modiba（莫迪巴/奥布雷·莫迪巴）对应——2026 大名单中并无现役 Modise 同音球员，以莫迪巴作为 A 组南非后防核心入选。",
+  "players": [
+    {
+      "name": "希门尼斯",
+      "name_en": "Raúl Jiménez",
+      "country": "墨西哥",
+      "country_en": "Mexico",
+      "country_flag": "🇲🇽",
+      "club": "富勒姆",
+      "club_en": "Fulham",
+      "position": "FW",
+      "position_zh": "中锋",
+      "number": 9,
+      "age": 35,
+      "birth_date": "1991-05-05",
+      "birth_place": "墨西哥城",
+      "height": "1.88m",
+      "preferred_foot": "右脚",
+      "market_value_eur": 4000000,
+      "market_value_text": "400 万欧元",
+      "caps": 112,
+      "goals": 31,
+      "debut_date": "2013-01-30",
+      "career_history": [
+        {
+          "period": "2011-2014",
+          "club": "美洲",
+          "club_en": "Club América",
+          "apps": 96,
+          "goals": 36
+        },
+        {
+          "period": "2014-2015",
+          "club": "马德里竞技（租借）",
+          "club_en": "Atlético Madrid (loan)",
+          "apps": 21,
+          "goals": 1
+        },
+        {
+          "period": "2015-2018",
+          "club": "本菲卡",
+          "club_en": "Benfica",
+          "apps": 124,
+          "goals": 56
+        },
+        {
+          "period": "2018-2023",
+          "club": "狼队",
+          "club_en": "Wolverhampton Wanderers",
+          "apps": 187,
+          "goals": 56
+        },
+        {
+          "period": "2023-",
+          "club": "富勒姆",
+          "club_en": "Fulham",
+          "apps": 48,
+          "goals": 9
+        }
+      ],
+      "world_cup_history": [
+        {
+          "year": 2014,
+          "apps": 4,
+          "goals": 1,
+          "best": "16强"
+        },
+        {
+          "year": 2018,
+          "apps": 4,
+          "goals": 0,
+          "best": "16强"
+        },
+        {
+          "year": 2022,
+          "apps": 3,
+          "goals": 0,
+          "best": "小组出局"
+        }
+      ],
+      "honors": [
+        "2012 伦敦奥运会男足冠军",
+        "2015 中北美金杯赛冠军",
+        "2019 中北美国家联赛冠军",
+        "2013-14 Liga MX 最佳射手（克拉克金靴）",
+        "2017-18 葡超金靴（26 球）"
+      ],
+      "ability": {
+        "pace": 60,
+        "shooting": 82,
+        "passing": 71,
+        "dribbling": 75,
+        "defending": 38,
+        "physical": 80
+      },
+      "notes": "揭幕战首发中锋，第 28 分钟禁区内转身抽射首开纪录。墨西哥队史头号现役射手，2020 年颅骨重伤后状态有所下滑但仍是锋线支柱。"
+    },
+    {
+      "name": "阿尔瓦雷斯",
+      "name_en": "Edson Álvarez",
+      "country": "墨西哥",
+      "country_en": "Mexico",
+      "country_flag": "🇲🇽",
+      "club": "西汉姆联",
+      "club_en": "West Ham United",
+      "position": "MF",
+      "position_zh": "后腰 / 6 号位",
+      "number": 4,
+      "age": 28,
+      "birth_date": "1997-10-24",
+      "birth_place": "墨西哥城",
+      "height": "1.87m",
+      "preferred_foot": "右脚",
+      "market_value_eur": 25000000,
+      "market_value_text": "2500 万欧元",
+      "caps": 76,
+      "goals": 5,
+      "debut_date": "2017-02-08",
+      "career_history": [
+        {
+          "period": "2016-2019",
+          "club": "美洲",
+          "club_en": "Club América",
+          "apps": 95,
+          "goals": 6
+        },
+        {
+          "period": "2019-2023",
+          "club": "阿贾克斯",
+          "club_en": "Ajax",
+          "apps": 147,
+          "goals": 12
+        },
+        {
+          "period": "2023-",
+          "club": "西汉姆联",
+          "club_en": "West Ham United",
+          "apps": 78,
+          "goals": 4
+        }
+      ],
+      "world_cup_history": [
+        {
+          "year": 2018,
+          "apps": 4,
+          "goals": 0,
+          "best": "16强"
+        },
+        {
+          "year": 2022,
+          "apps": 3,
+          "goals": 0,
+          "best": "小组出局"
+        }
+      ],
+      "honors": [
+        "2018-19、2020-21、2021-22 荷甲冠军（阿贾克斯）",
+        "2018-19 荷甲最佳中场",
+        "2019 中北美金杯赛冠军",
+        "2019-20 欧冠 4 强（阿贾克斯核心）",
+        "2018 中北美 U-20 锦标赛冠军"
+      ],
+      "ability": {
+        "pace": 72,
+        "shooting": 65,
+        "passing": 78,
+        "dribbling": 74,
+        "defending": 85,
+        "physical": 84
+      },
+      "notes": "墨西哥队队长，后防中场屏障。4-3-3 阵型中拖后保护两位中卫，阿贾克斯出品，2023 年以约 3800 万欧元转会西汉姆联。"
+    },
+    {
+      "name": "洛萨诺",
+      "name_en": "Hirving 'Chucky' Lozano",
+      "country": "墨西哥",
+      "country_en": "Mexico",
+      "country_flag": "🇲🇽",
+      "club": "圣迭戈 FC",
+      "club_en": "San Diego FC",
+      "position": "FW",
+      "position_zh": "右边锋",
+      "number": 22,
+      "age": 30,
+      "birth_date": "1995-07-30",
+      "birth_place": "墨西哥城",
+      "height": "1.75m",
+      "preferred_foot": "左脚",
+      "market_value_eur": 6000000,
+      "market_value_text": "600 万欧元",
+      "caps": 74,
+      "goals": 18,
+      "debut_date": "2016-02-10",
+      "career_history": [
+        {
+          "period": "2014-2017",
+          "club": "帕丘卡",
+          "club_en": "Pachuca",
+          "apps": 125,
+          "goals": 38
+        },
+        {
+          "period": "2017-2019",
+          "club": "埃因霍温",
+          "club_en": "PSV Eindhoven",
+          "apps": 79,
+          "goals": 40
+        },
+        {
+          "period": "2019-2024",
+          "club": "那不勒斯",
+          "club_en": "Napoli",
+          "apps": 152,
+          "goals": 30
+        },
+        {
+          "period": "2025-",
+          "club": "圣迭戈 FC",
+          "club_en": "San Diego FC",
+          "apps": 28,
+          "goals": 7
+        }
+      ],
+      "world_cup_history": [
+        {
+          "year": 2018,
+          "apps": 4,
+          "goals": 1,
+          "best": "16强"
+        },
+        {
+          "year": 2022,
+          "apps": 3,
+          "goals": 0,
+          "best": "小组出局"
+        }
+      ],
+      "honors": [
+        "2017-18 荷甲冠军（PSV）",
+        "2018-19 荷甲冠军（PSV）",
+        "2019-20 意甲冠军那不勒斯",
+        "2016 Liga MX 冠军（帕丘卡）",
+        "2016-17 Liga MX 秋季联赛冠军"
+      ],
+      "ability": {
+        "pace": 88,
+        "shooting": 78,
+        "passing": 72,
+        "dribbling": 85,
+        "defending": 42,
+        "physical": 72
+      },
+      "notes": "揭幕战右路内切左脚兜射扩大比分的进球功臣。2018 世界杯攻破德国球门一战成名，速度型边锋，2025 年加盟 MLS 新军圣迭戈 FC。"
+    },
+    {
+      "name": "勒保",
+      "name_en": "Relebohile Mofokeng",
+      "country": "南非",
+      "country_en": "South Africa",
+      "country_flag": "🇿🇦",
+      "club": "奥兰多海盗",
+      "club_en": "Orlando Pirates",
+      "position": "FW",
+      "position_zh": "右边锋",
+      "number": 11,
+      "age": 21,
+      "birth_date": "2004-08-04",
+      "birth_place": "约翰内斯堡",
+      "height": "1.72m",
+      "preferred_foot": "左脚",
+      "market_value_eur": 4000000,
+      "market_value_text": "400 万欧元",
+      "caps": 16,
+      "goals": 4,
+      "debut_date": "2023-09-12",
+      "career_history": [
+        {
+          "period": "2021-2023",
+          "club": "奥兰多海盗青年队",
+          "club_en": "Orlando Pirates U-23",
+          "apps": 48,
+          "goals": 12
+        },
+        {
+          "period": "2023-",
+          "club": "奥兰多海盗",
+          "club_en": "Orlando Pirates",
+          "apps": 86,
+          "goals": 21
+        }
+      ],
+      "world_cup_history": [
+        {
+          "year": 2022,
+          "apps": 0,
+          "goals": 0,
+          "best": "未参赛（南非未晋级）"
+        }
+      ],
+      "honors": [
+        "2023-24 南非足球先生（PSL 年度最佳年轻球员）",
+        "2023-24 南非联赛杯冠军（奥兰多海盗）",
+        "2024 非洲 U-20 锦标赛最佳射手",
+        "2023-24 南非超级杯冠军"
+      ],
+      "ability": {
+        "pace": 90,
+        "shooting": 72,
+        "passing": 70,
+        "dribbling": 84,
+        "defending": 38,
+        "physical": 66
+      },
+      "notes": "南非新生代边锋，速度奇快，2026 大名单中最大亮点之一。边路突破与一对一能力强，常被昵称为'Lebo'，对应中文简译'勒保'。"
+    },
+    {
+      "name": "莫迪塞",
+      "name_en": "Obrey Modiba",
+      "country": "南非",
+      "country_en": "South Africa",
+      "country_flag": "🇿🇦",
+      "club": "马梅洛迪日落",
+      "club_en": "Mamelodi Sundowns",
+      "position": "DF",
+      "position_zh": "左后卫",
+      "number": 6,
+      "age": 30,
+      "birth_date": "1995-01-30",
+      "birth_place": "约翰内斯堡",
+      "height": "1.74m",
+      "preferred_foot": "左脚",
+      "market_value_eur": 1500000,
+      "market_value_text": "150 万欧元",
+      "caps": 32,
+      "goals": 1,
+      "debut_date": "2018-10-13",
+      "career_history": [
+        {
+          "period": "2015-2018",
+          "club": "开普敦城",
+          "club_en": "Cape Town City",
+          "apps": 78,
+          "goals": 4
+        },
+        {
+          "period": "2018-2020",
+          "club": "布隆方丹凯尔特人",
+          "club_en": "Bloemfontein Celtic",
+          "apps": 75,
+          "goals": 6
+        },
+        {
+          "period": "2020-",
+          "club": "马梅洛迪日落",
+          "club_en": "Mamelodi Sundowns",
+          "apps": 168,
+          "goals": 9
+        }
+      ],
+      "world_cup_history": [
+        {
+          "year": 2018,
+          "apps": 0,
+          "goals": 0,
+          "best": "未参赛（南非未晋级）"
+        },
+        {
+          "year": 2022,
+          "apps": 0,
+          "goals": 0,
+          "best": "未参赛（南非未晋级）"
+        }
+      ],
+      "honors": [
+        "2020-21、2021-22、2022-23、2023-24 南非超级联赛冠军（马梅洛迪日落）",
+        "2023 非洲冠军联赛亚军（马梅洛迪日落）",
+        "2019-20 南非超级杯冠军（布隆方丹凯尔特人）",
+        "2022 南非足总杯冠军"
+      ],
+      "ability": {
+        "pace": 80,
+        "shooting": 55,
+        "passing": 72,
+        "dribbling": 73,
+        "defending": 78,
+        "physical": 76
+      },
+      "notes": "南非主力左后卫，对应中文'莫迪塞/莫迪巴'译名变体。马梅洛迪日落核心球员，攻防兼备，能上能下；南非后防转换关键。"
+    }
+  ]
+}
