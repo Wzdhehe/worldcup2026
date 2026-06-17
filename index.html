@@ -2394,7 +2394,7 @@ let allPlayers = [];
 let playerIndex = {}; // name -> {group, match, idx, data}
 
 async function loadAllPlayers() {
-  const groups = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L'];
+  const groups = ['A', 'C', 'F', 'H', 'I', 'J', 'K', 'L'];  // 主页只列 8 焦点战球员，team modal 走 loadGroupSquad 独立拉全 12 组
   for (const g of groups) {
     try {
       const r = await fetch('players-' + g + '.json');
