@@ -98,7 +98,8 @@
         "dribbling": 85,
         "defending": 42,
         "physical": 76
-      }
+      },
+      "prev_market_value_eur": 1409720
     },
     {
       "name": "努涅斯",
@@ -167,7 +168,8 @@
         "dribbling": 80,
         "defending": 35,
         "physical": 82
-      }
+      },
+      "prev_market_value_eur": 56635107
     },
     {
       "name": "巴尔韦德",
@@ -225,7 +227,8 @@
         "dribbling": 84,
         "defending": 78,
         "physical": 86
-      }
+      },
+      "prev_market_value_eur": 111518585
     },
     {
       "name": "本坦库尔",
@@ -293,7 +296,8 @@
         "dribbling": 80,
         "defending": 75,
         "physical": 80
-      }
+      },
+      "prev_market_value_eur": 30273969
     },
     {
       "name": "佩德里",
@@ -349,7 +353,8 @@
         "dribbling": 88,
         "defending": 60,
         "physical": 68
-      }
+      },
+      "prev_market_value_eur": 139029516
     },
     {
       "name": "加维",
@@ -399,7 +404,8 @@
         "dribbling": 86,
         "defending": 72,
         "physical": 76
-      }
+      },
+      "prev_market_value_eur": 84177968
     },
     {
       "name": "莫拉塔",
@@ -492,7 +498,8 @@
         "dribbling": 75,
         "defending": 40,
         "physical": 80
-      }
+      },
+      "prev_market_value_eur": 14093970
     },
     {
       "name": "罗德里",
@@ -557,7 +564,8 @@
         "dribbling": 80,
         "defending": 86,
         "physical": 88
-      }
+      },
+      "prev_market_value_eur": 142482339
     },
     {
       "name": "阿尔达萨里",
@@ -619,7 +627,8 @@
         "沙特职业联赛冠军×8",
         "亚洲杯亚军 2007（U17）",
         "AFC 年度最佳球员 2022"
-      ]
+      ],
+      "prev_market_value_eur": 5578283
     },
     {
       "name": "阿尔布莱坎",
@@ -674,7 +683,8 @@
       "honors": [
         "沙特职业联赛冠军×6",
         "亚洲杯亚军 2007（U17）"
-      ]
+      ],
+      "prev_market_value_eur": 1931029
     },
     {
       "name": "罗沙",
@@ -722,7 +732,8 @@
       "honors": [
         "葡超冠军 2021 · 2024",
         "葡萄牙联赛杯 2021 · 2022"
-      ]
+      ],
+      "prev_market_value_eur": 3881322
     }
   ]
 }
