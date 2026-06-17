@@ -1,0 +1,382 @@
+{
+  "group": "C",
+  "match": "巴西 vs 摩洛哥",
+  "players": [
+    {
+      "name": "维尼修斯",
+      "name_en": "Vinícius Júnior",
+      "country": "巴西",
+      "country_flag": "🇧🇷",
+      "club": "皇家马德里",
+      "position": "FW",
+      "position_zh": "左边锋",
+      "number": 7,
+      "age": 25,
+      "birth_date": "2000-07-12",
+      "height": "1.76m",
+      "preferred_foot": "右脚",
+      "market_value_eur": 150000000,
+      "market_value_text": "1.5 亿欧元",
+      "caps": 38,
+      "goals": 12,
+      "debut_date": "2017-10-10",
+      "career_history": [
+        {
+          "period": "2017-2018",
+          "club": "弗拉门戈",
+          "apps": 49,
+          "goals": 10
+        },
+        {
+          "period": "2018-",
+          "club": "皇家马德里",
+          "apps": 290,
+          "goals": 95
+        }
+      ],
+      "world_cup_history": [
+        {
+          "year": 2022,
+          "apps": 5,
+          "goals": 2,
+          "best": "8强"
+        }
+      ],
+      "honors": [
+        "2022 欧冠冠军",
+        "2024 欧冠冠军",
+        "2024 西甲冠军",
+        "2024 FIFA 年度最佳球员",
+        "2017 南美解放者杯冠军"
+      ],
+      "ability": {
+        "pace": 96,
+        "shooting": 84,
+        "passing": 80,
+        "dribbling": 95,
+        "defending": 45,
+        "physical": 75
+      }
+    },
+    {
+      "name": "罗德里戈",
+      "name_en": "Rodrygo Goes",
+      "country": "巴西",
+      "country_flag": "🇧🇷",
+      "club": "皇家马德里",
+      "position": "FW",
+      "position_zh": "右边锋",
+      "number": 11,
+      "age": 25,
+      "birth_date": "2001-01-09",
+      "height": "1.74m",
+      "preferred_foot": "右脚",
+      "market_value_eur": 100000000,
+      "market_value_text": "1.0 亿欧元",
+      "caps": 33,
+      "goals": 8,
+      "debut_date": "2019-11-15",
+      "career_history": [
+        {
+          "period": "2017-2019",
+          "club": "桑托斯",
+          "apps": 80,
+          "goals": 17
+        },
+        {
+          "period": "2019-",
+          "club": "皇家马德里",
+          "apps": 280,
+          "goals": 70
+        }
+      ],
+      "world_cup_history": [
+        {
+          "year": 2022,
+          "apps": 4,
+          "goals": 1,
+          "best": "8强"
+        }
+      ],
+      "honors": [
+        "2022 欧冠冠军",
+        "2024 欧冠冠军",
+        "2024 西甲冠军",
+        "2019 巴西甲级联赛最佳新秀"
+      ],
+      "ability": {
+        "pace": 92,
+        "shooting": 82,
+        "passing": 80,
+        "dribbling": 90,
+        "defending": 40,
+        "physical": 68
+      }
+    },
+    {
+      "name": "卡塞米罗",
+      "name_en": "Carlos Henrique Casemiro",
+      "country": "巴西",
+      "country_flag": "🇧🇷",
+      "club": "曼彻斯特联",
+      "position": "MF",
+      "position_zh": "防守中场",
+      "number": 18,
+      "age": 34,
+      "birth_date": "1992-02-23",
+      "height": "1.85m",
+      "preferred_foot": "右脚",
+      "market_value_eur": 20000000,
+      "market_value_text": "2000 万欧元",
+      "caps": 78,
+      "goals": 8,
+      "debut_date": "2011-09-14",
+      "career_history": [
+        {
+          "period": "2013-2014",
+          "club": "皇家马德里 B",
+          "apps": 38,
+          "goals": 4
+        },
+        {
+          "period": "2014-2022",
+          "club": "皇家马德里",
+          "apps": 336,
+          "goals": 31
+        },
+        {
+          "period": "2022-",
+          "club": "曼彻斯特联",
+          "apps": 90,
+          "goals": 12
+        }
+      ],
+      "world_cup_history": [
+        {
+          "year": 2018,
+          "apps": 5,
+          "goals": 0,
+          "best": "8强"
+        },
+        {
+          "year": 2022,
+          "apps": 5,
+          "goals": 1,
+          "best": "8强"
+        }
+      ],
+      "honors": [
+        "2014 欧冠冠军",
+        "2016 欧冠冠军",
+        "2017 欧冠冠军",
+        "2018 欧冠冠军",
+        "2022 欧冠冠军",
+        "2019 巴西美洲杯冠军"
+      ],
+      "ability": {
+        "pace": 65,
+        "shooting": 78,
+        "passing": 80,
+        "dribbling": 70,
+        "defending": 90,
+        "physical": 92
+      }
+    },
+    {
+      "name": "马尔基尼奥斯",
+      "name_en": "Marcos Aoás Corrêa (Marquinhos)",
+      "country": "巴西",
+      "country_flag": "🇧🇷",
+      "club": "巴黎圣日耳曼",
+      "position": "DF",
+      "position_zh": "中后卫",
+      "number": 4,
+      "age": 32,
+      "birth_date": "1994-05-14",
+      "height": "1.83m",
+      "preferred_foot": "右脚",
+      "market_value_eur": 60000000,
+      "market_value_text": "6000 万欧元",
+      "caps": 85,
+      "goals": 6,
+      "debut_date": "2013-10-15",
+      "career_history": [
+        {
+          "period": "2012-2013",
+          "club": "罗马",
+          "apps": 14,
+          "goals": 0
+        },
+        {
+          "period": "2013-",
+          "club": "巴黎圣日耳曼",
+          "apps": 480,
+          "goals": 38
+        }
+      ],
+      "world_cup_history": [
+        {
+          "year": 2018,
+          "apps": 5,
+          "goals": 1,
+          "best": "8强"
+        },
+        {
+          "year": 2022,
+          "apps": 5,
+          "goals": 0,
+          "best": "8强"
+        }
+      ],
+      "honors": [
+        "2019 巴西美洲杯冠军",
+        "2022 欧冠亚军",
+        "9 次法甲冠军",
+        "2020-21 法甲最佳球员"
+      ],
+      "ability": {
+        "pace": 78,
+        "shooting": 55,
+        "passing": 80,
+        "dribbling": 72,
+        "defending": 92,
+        "physical": 85
+      }
+    },
+    {
+      "name": "阿什拉夫",
+      "name_en": "Achraf Hakimi",
+      "country": "摩洛哥",
+      "country_flag": "🇲🇦",
+      "club": "巴黎圣日耳曼",
+      "position": "DF",
+      "position_zh": "右后卫",
+      "number": 2,
+      "age": 27,
+      "birth_date": "1998-11-04",
+      "height": "1.81m",
+      "preferred_foot": "右脚",
+      "market_value_eur": 70000000,
+      "market_value_text": "7000 万欧元",
+      "caps": 80,
+      "goals": 11,
+      "debut_date": "2016-10-11",
+      "career_history": [
+        {
+          "period": "2017-2020",
+          "club": "皇家马德里 / 多特蒙德(租)",
+          "apps": 65,
+          "goals": 12
+        },
+        {
+          "period": "2020-2021",
+          "club": "国际米兰",
+          "apps": 45,
+          "goals": 7
+        },
+        {
+          "period": "2021-",
+          "club": "巴黎圣日耳曼",
+          "apps": 130,
+          "goals": 16
+        }
+      ],
+      "world_cup_history": [
+        {
+          "year": 2018,
+          "apps": 3,
+          "goals": 0,
+          "best": "小组出局"
+        },
+        {
+          "year": 2022,
+          "apps": 7,
+          "goals": 2,
+          "best": "殿军（4强）"
+        }
+      ],
+      "honors": [
+        "2022 卡塔尔世界杯 4 强",
+        "2020-21 意甲冠军",
+        "2022-23 法甲冠军",
+        "2024-25 非洲杯冠军",
+        "2022 FIFA 世界杯最佳阵容"
+      ],
+      "ability": {
+        "pace": 95,
+        "shooting": 72,
+        "passing": 80,
+        "dribbling": 85,
+        "defending": 82,
+        "physical": 80
+      }
+    },
+    {
+      "name": "布拉希尔",
+      "name_en": "Brahim Díaz",
+      "country": "摩洛哥",
+      "country_flag": "🇲🇦",
+      "club": "皇家马德里",
+      "position": "MF",
+      "position_zh": "进攻中场",
+      "number": 10,
+      "age": 26,
+      "birth_date": "1999-08-03",
+      "height": "1.71m",
+      "preferred_foot": "右脚",
+      "market_value_eur": 35000000,
+      "market_value_text": "3500 万欧元",
+      "caps": 30,
+      "goals": 8,
+      "debut_date": "2023-03-25",
+      "career_history": [
+        {
+          "period": "2015-2019",
+          "club": "曼城",
+          "apps": 15,
+          "goals": 2
+        },
+        {
+          "period": "2019-2024",
+          "club": "AC 米兰(租/转)",
+          "apps": 195,
+          "goals": 40
+        },
+        {
+          "period": "2024-",
+          "club": "皇家马德里",
+          "apps": 60,
+          "goals": 12
+        }
+      ],
+      "world_cup_history": [
+        {
+          "year": 2022,
+          "apps": 0,
+          "goals": 0,
+          "best": "未入选"
+        },
+        {
+          "year": 2026,
+          "apps": 0,
+          "goals": 0,
+          "best": "待定"
+        }
+      ],
+      "honors": [
+        "2021-22 意甲冠军",
+        "2024 西甲冠军",
+        "2024 欧冠冠军",
+        "2025 非洲杯冠军"
+      ],
+      "ability": {
+        "pace": 86,
+        "shooting": 78,
+        "passing": 85,
+        "dribbling": 90,
+        "defending": 45,
+        "physical": 65
+      }
+    }
+  ]
+}
