@@ -104,7 +104,8 @@
         "dribbling": 95,
         "defending": 32,
         "physical": 65
-      }
+      },
+      "prev_market_value_eur": 24576822
     },
     {
       "name": "阿尔瓦雷斯",
@@ -168,7 +169,8 @@
         "dribbling": 86,
         "defending": 55,
         "physical": 76
-      }
+      },
+      "prev_market_value_eur": 84221760
     },
     {
       "name": "麦卡利斯特",
@@ -230,7 +232,8 @@
         "dribbling": 82,
         "defending": 70,
         "physical": 75
-      }
+      },
+      "prev_market_value_eur": 71833664
     },
     {
       "name": "德保罗",
@@ -292,7 +295,8 @@
         "dribbling": 80,
         "defending": 75,
         "physical": 82
-      }
+      },
+      "prev_market_value_eur": 33125258
     },
     {
       "name": "恩佐",
@@ -349,7 +353,8 @@
         "dribbling": 82,
         "defending": 76,
         "physical": 78
-      }
+      },
+      "prev_market_value_eur": 87465064
     },
     {
       "name": "萨比策",
@@ -416,7 +421,8 @@
         "dribbling": 78,
         "defending": 70,
         "physical": 78
-      }
+      },
+      "prev_market_value_eur": 19105626
     },
     {
       "name": "阿瑙托维奇",
@@ -489,7 +495,8 @@
         "dribbling": 78,
         "defending": 35,
         "physical": 84
-      }
+      },
+      "prev_market_value_eur": 2835280
     },
     {
       "name": "莱默尔",
@@ -550,7 +557,8 @@
         "dribbling": 75,
         "defending": 80,
         "physical": 84
-      }
+      },
+      "prev_market_value_eur": 30522582
     },
     {
       "name": "马赫雷斯",
@@ -620,7 +628,8 @@
         "非洲国家杯冠军 2019",
         "PFA 英格兰足球先生 2016",
         "BBC 非洲足球先生 2019"
-      ]
+      ],
+      "prev_market_value_eur": 19096181
     },
     {
       "name": "本纳塞尔",
@@ -675,7 +684,8 @@
         "意甲冠军 2022",
         "非洲国家杯冠军 2019",
         "非洲杯 MVP 2019"
-      ]
+      ],
+      "prev_market_value_eur": 23203535
     },
     {
       "name": "阿尔塔马里",
@@ -747,7 +757,8 @@
       "honors": [
         "亚洲杯亚军 2023",
         "约超 MVP 2018 · 2020 · 2021"
-      ]
+      ],
+      "prev_market_value_eur": 4848324
     }
   ]
 }
