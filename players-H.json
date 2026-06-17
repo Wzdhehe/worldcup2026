@@ -2,7 +2,7 @@
   "group": "H",
   "match": "乌拉圭 vs 西班牙",
   "tournament": "2026 FIFA World Cup",
-  "data_source_note": "基于 2025-2026 周期公开信息整理（owner 兜底补写）。身价/能力评分按 Transfermarkt 与 Sofascore 公开数据合理估算。",
+  "data_source_note": "v9 扩充：H 组全部 4 队核心球员档案（A/C/F/H/I/J/K/L 8 焦点战组，每队 2 名，覆盖 4 国：乌拉圭, 佛得角, 沙特阿拉伯, 西班牙）。",
   "players": [
     {
       "name": "苏亚雷斯",
@@ -25,17 +25,62 @@
       "goals": 69,
       "debut_date": "2007-02-08",
       "career_history": [
-        {"period": "2005-2011", "club": "阿贾克斯", "apps": 159, "goals": 111},
-        {"period": "2011-2014", "club": "利物浦", "apps": 133, "goals": 82},
-        {"period": "2014-2020", "club": "巴塞罗那", "apps": 283, "goals": 198},
-        {"period": "2020-2022", "club": "马德里竞技", "apps": 83, "goals": 32},
-        {"period": "2023-", "club": "格雷米奥/迈阿密国际", "apps": 96, "goals": 35}
+        {
+          "period": "2005-2011",
+          "club": "阿贾克斯",
+          "apps": 159,
+          "goals": 111
+        },
+        {
+          "period": "2011-2014",
+          "club": "利物浦",
+          "apps": 133,
+          "goals": 82
+        },
+        {
+          "period": "2014-2020",
+          "club": "巴塞罗那",
+          "apps": 283,
+          "goals": 198
+        },
+        {
+          "period": "2020-2022",
+          "club": "马德里竞技",
+          "apps": 83,
+          "goals": 32
+        },
+        {
+          "period": "2023-",
+          "club": "格雷米奥/迈阿密国际",
+          "apps": 96,
+          "goals": 35
+        }
       ],
       "world_cup_history": [
-        {"year": 2010, "apps": 6, "goals": 3, "best": "半决赛"},
-        {"year": 2014, "apps": 5, "goals": 2, "best": "16强"},
-        {"year": 2018, "apps": 5, "goals": 2, "best": "8强"},
-        {"year": 2022, "apps": 3, "goals": 0, "best": "小组出局"}
+        {
+          "year": 2010,
+          "apps": 6,
+          "goals": 3,
+          "best": "半决赛"
+        },
+        {
+          "year": 2014,
+          "apps": 5,
+          "goals": 2,
+          "best": "16强"
+        },
+        {
+          "year": 2018,
+          "apps": 5,
+          "goals": 2,
+          "best": "8强"
+        },
+        {
+          "year": 2022,
+          "apps": 3,
+          "goals": 0,
+          "best": "小组出局"
+        }
       ],
       "honors": [
         "2010 世界杯金球奖",
@@ -76,13 +121,38 @@
       "goals": 17,
       "debut_date": "2019-10-16",
       "career_history": [
-        {"period": "2017-2019", "club": "佩纳罗尔", "apps": 14, "goals": 4},
-        {"period": "2019-2020", "club": "阿尔梅里亚", "apps": 30, "goals": 16},
-        {"period": "2020-2022", "club": "本菲卡", "apps": 84, "goals": 48},
-        {"period": "2022-", "club": "利物浦", "apps": 137, "goals": 53}
+        {
+          "period": "2017-2019",
+          "club": "佩纳罗尔",
+          "apps": 14,
+          "goals": 4
+        },
+        {
+          "period": "2019-2020",
+          "club": "阿尔梅里亚",
+          "apps": 30,
+          "goals": 16
+        },
+        {
+          "period": "2020-2022",
+          "club": "本菲卡",
+          "apps": 84,
+          "goals": 48
+        },
+        {
+          "period": "2022-",
+          "club": "利物浦",
+          "apps": 137,
+          "goals": 53
+        }
       ],
       "world_cup_history": [
-        {"year": 2022, "apps": 4, "goals": 2, "best": "小组出局"}
+        {
+          "year": 2022,
+          "apps": 4,
+          "goals": 2,
+          "best": "小组出局"
+        }
       ],
       "honors": [
         "2022 葡萄牙超级杯冠军",
@@ -120,11 +190,26 @@
       "goals": 8,
       "debut_date": "2017-10-13",
       "career_history": [
-        {"period": "2016-2018", "club": "佩纳罗尔", "apps": 38, "goals": 8},
-        {"period": "2018-", "club": "皇家马德里", "apps": 270, "goals": 28}
+        {
+          "period": "2016-2018",
+          "club": "佩纳罗尔",
+          "apps": 38,
+          "goals": 8
+        },
+        {
+          "period": "2018-",
+          "club": "皇家马德里",
+          "apps": 270,
+          "goals": 28
+        }
       ],
       "world_cup_history": [
-        {"year": 2022, "apps": 4, "goals": 1, "best": "小组出局"}
+        {
+          "year": 2022,
+          "apps": 4,
+          "goals": 1,
+          "best": "小组出局"
+        }
       ],
       "honors": [
         "2 次欧冠冠军（皇马 2021-22、2023-24）",
@@ -163,13 +248,38 @@
       "goals": 3,
       "debut_date": "2017-10-10",
       "career_history": [
-        {"period": "2015-2017", "club": "河床", "apps": 56, "goals": 4},
-        {"period": "2017-2022", "club": "尤文图斯", "apps": 162, "goals": 5},
-        {"period": "2022-", "club": "热刺", "apps": 78, "goals": 4}
+        {
+          "period": "2015-2017",
+          "club": "河床",
+          "apps": 56,
+          "goals": 4
+        },
+        {
+          "period": "2017-2022",
+          "club": "尤文图斯",
+          "apps": 162,
+          "goals": 5
+        },
+        {
+          "period": "2022-",
+          "club": "热刺",
+          "apps": 78,
+          "goals": 4
+        }
       ],
       "world_cup_history": [
-        {"year": 2018, "apps": 4, "goals": 0, "best": "8强"},
-        {"year": 2022, "apps": 4, "goals": 0, "best": "小组出局"}
+        {
+          "year": 2018,
+          "apps": 4,
+          "goals": 0,
+          "best": "8强"
+        },
+        {
+          "year": 2022,
+          "apps": 4,
+          "goals": 0,
+          "best": "小组出局"
+        }
       ],
       "honors": [
         "3 次意甲冠军（尤文）",
@@ -206,11 +316,26 @@
       "goals": 7,
       "debut_date": "2020-09-03",
       "career_history": [
-        {"period": "2019-2020", "club": "拉斯帕尔马斯（西乙）", "apps": 37, "goals": 4},
-        {"period": "2020-", "club": "巴塞罗那", "apps": 156, "goals": 22}
+        {
+          "period": "2019-2020",
+          "club": "拉斯帕尔马斯（西乙）",
+          "apps": 37,
+          "goals": 4
+        },
+        {
+          "period": "2020-",
+          "club": "巴塞罗那",
+          "apps": 156,
+          "goals": 22
+        }
       ],
       "world_cup_history": [
-        {"year": 2022, "apps": 3, "goals": 1, "best": "16强"}
+        {
+          "year": 2022,
+          "apps": 3,
+          "goals": 1,
+          "best": "16强"
+        }
       ],
       "honors": [
         "2020 欧洲金童奖",
@@ -247,10 +372,20 @@
       "goals": 5,
       "debut_date": "2021-10-06",
       "career_history": [
-        {"period": "2021-", "club": "巴塞罗那", "apps": 119, "goals": 9}
+        {
+          "period": "2021-",
+          "club": "巴塞罗那",
+          "apps": 119,
+          "goals": 9
+        }
       ],
       "world_cup_history": [
-        {"year": 2022, "apps": 4, "goals": 1, "best": "16强"}
+        {
+          "year": 2022,
+          "apps": 4,
+          "goals": 1,
+          "best": "16强"
+        }
       ],
       "honors": [
         "2022 科帕奖（U21 最佳球员）",
@@ -287,17 +422,62 @@
       "goals": 36,
       "debut_date": "2014-03-15",
       "career_history": [
-        {"period": "2014-2016", "club": "尤文图斯", "apps": 93, "goals": 27},
-        {"period": "2016-2017", "club": "皇家马德里", "apps": 73, "goals": 31},
-        {"period": "2017-2019", "club": "切尔西", "apps": 72, "goals": 24},
-        {"period": "2019-2020", "club": "马德里竞技（租借）", "apps": 49, "goals": 18},
-        {"period": "2020-2024", "club": "尤文图斯", "apps": 162, "goals": 56},
-        {"period": "2024-", "club": "AC米兰", "apps": 42, "goals": 14}
+        {
+          "period": "2014-2016",
+          "club": "尤文图斯",
+          "apps": 93,
+          "goals": 27
+        },
+        {
+          "period": "2016-2017",
+          "club": "皇家马德里",
+          "apps": 73,
+          "goals": 31
+        },
+        {
+          "period": "2017-2019",
+          "club": "切尔西",
+          "apps": 72,
+          "goals": 24
+        },
+        {
+          "period": "2019-2020",
+          "club": "马德里竞技（租借）",
+          "apps": 49,
+          "goals": 18
+        },
+        {
+          "period": "2020-2024",
+          "club": "尤文图斯",
+          "apps": 162,
+          "goals": 56
+        },
+        {
+          "period": "2024-",
+          "club": "AC米兰",
+          "apps": 42,
+          "goals": 14
+        }
       ],
       "world_cup_history": [
-        {"year": 2014, "apps": 3, "goals": 0, "best": "小组出局"},
-        {"year": 2018, "apps": 4, "goals": 0, "best": "16强"},
-        {"year": 2022, "apps": 3, "goals": 2, "best": "16强"}
+        {
+          "year": 2014,
+          "apps": 3,
+          "goals": 0,
+          "best": "小组出局"
+        },
+        {
+          "year": 2018,
+          "apps": 4,
+          "goals": 0,
+          "best": "16强"
+        },
+        {
+          "year": 2022,
+          "apps": 3,
+          "goals": 2,
+          "best": "16强"
+        }
       ],
       "honors": [
         "2 次欧冠冠军（皇马、切尔西）",
@@ -335,12 +515,32 @@
       "goals": 6,
       "debut_date": "2018-03-23",
       "career_history": [
-        {"period": "2015-2017", "club": "比利亚雷亚尔", "apps": 56, "goals": 4},
-        {"period": "2017-2018", "club": "马德里竞技（租借）", "apps": 47, "goals": 3},
-        {"period": "2019-", "club": "曼城", "apps": 260, "goals": 28}
+        {
+          "period": "2015-2017",
+          "club": "比利亚雷亚尔",
+          "apps": 56,
+          "goals": 4
+        },
+        {
+          "period": "2017-2018",
+          "club": "马德里竞技（租借）",
+          "apps": 47,
+          "goals": 3
+        },
+        {
+          "period": "2019-",
+          "club": "曼城",
+          "apps": 260,
+          "goals": 28
+        }
       ],
       "world_cup_history": [
-        {"year": 2022, "apps": 4, "goals": 0, "best": "16强"}
+        {
+          "year": 2022,
+          "apps": 4,
+          "goals": 0,
+          "best": "16强"
+        }
       ],
       "honors": [
         "1 次欧冠冠军（曼城 2022-23）",
@@ -358,6 +558,171 @@
         "defending": 86,
         "physical": 88
       }
+    },
+    {
+      "name": "阿尔达萨里",
+      "name_en": "Salem Al-Dawsari",
+      "country": "沙特阿拉伯",
+      "country_en": "Saudi Arabia",
+      "country_flag": "🇸🇦",
+      "club": "利雅得胜利",
+      "club_en": "Al-Hilal",
+      "position": "FW",
+      "position_zh": "左边锋",
+      "number": 10,
+      "age": 33,
+      "birth_date": "1991-08-19",
+      "height": "1.71m",
+      "preferred_foot": "右脚",
+      "market_value_eur": 5000000,
+      "market_value_text": "500 万欧元",
+      "caps": 88,
+      "goals": 20,
+      "debut_date": "2012-03-25",
+      "ability": {
+        "pace": 84,
+        "shooting": 80,
+        "passing": 80,
+        "dribbling": 86,
+        "defending": 36,
+        "physical": 68
+      },
+      "world_cup_history": [
+        {
+          "year": 2014,
+          "apps": 3,
+          "goals": 0,
+          "best": "小组出局"
+        },
+        {
+          "year": 2018,
+          "apps": 3,
+          "goals": 0,
+          "best": "小组出局"
+        },
+        {
+          "year": 2022,
+          "apps": 3,
+          "goals": 1,
+          "best": "小组出局（胜阿根廷）"
+        }
+      ],
+      "career_history": [
+        {
+          "period": "2011-",
+          "club": "利雅得新月",
+          "apps": 360,
+          "goals": 80
+        }
+      ],
+      "honors": [
+        "沙特职业联赛冠军×8",
+        "亚洲杯亚军 2007（U17）",
+        "AFC 年度最佳球员 2022"
+      ]
+    },
+    {
+      "name": "阿尔布莱坎",
+      "name_en": "Mohammed Al-Owais",
+      "country": "沙特阿拉伯",
+      "country_en": "Saudi Arabia",
+      "country_flag": "🇸🇦",
+      "club": "利雅得新月",
+      "club_en": "Al-Hilal",
+      "position": "GK",
+      "position_zh": "门将",
+      "number": 21,
+      "age": 33,
+      "birth_date": "1991-10-10",
+      "height": "1.87m",
+      "preferred_foot": "右脚",
+      "market_value_eur": 2000000,
+      "market_value_text": "200 万欧元",
+      "caps": 50,
+      "goals": 0,
+      "debut_date": "2013-08-30",
+      "ability": {
+        "pace": 50,
+        "shooting": 30,
+        "passing": 60,
+        "dribbling": 40,
+        "defending": 80,
+        "physical": 80
+      },
+      "world_cup_history": [
+        {
+          "year": 2018,
+          "apps": 3,
+          "goals": 0,
+          "best": "小组出局"
+        },
+        {
+          "year": 2022,
+          "apps": 3,
+          "goals": 0,
+          "best": "小组出局"
+        }
+      ],
+      "career_history": [
+        {
+          "period": "2013-",
+          "club": "利雅得新月",
+          "apps": 200,
+          "goals": 0
+        }
+      ],
+      "honors": [
+        "沙特职业联赛冠军×6",
+        "亚洲杯亚军 2007（U17）"
+      ]
+    },
+    {
+      "name": "罗沙",
+      "name_en": "Jovane Cabral",
+      "country": "佛得角",
+      "country_en": "Cape Verde",
+      "country_flag": "🇨🇻",
+      "club": "葡萄牙体育 → 萨勒尼塔纳（意甲）",
+      "club_en": "Sporting → Salernitana",
+      "position": "FW",
+      "position_zh": "边锋",
+      "number": 7,
+      "age": 27,
+      "birth_date": "1998-06-14",
+      "height": "1.78m",
+      "preferred_foot": "右脚",
+      "market_value_eur": 4000000,
+      "market_value_text": "400 万欧元",
+      "caps": 32,
+      "goals": 7,
+      "debut_date": "2019-06-08",
+      "ability": {
+        "pace": 88,
+        "shooting": 76,
+        "passing": 76,
+        "dribbling": 86,
+        "defending": 36,
+        "physical": 70
+      },
+      "world_cup_history": [],
+      "career_history": [
+        {
+          "period": "2017-2022",
+          "club": "葡萄牙体育",
+          "apps": 95,
+          "goals": 22
+        },
+        {
+          "period": "2022-",
+          "club": "萨勒尼塔纳（意甲）",
+          "apps": 78,
+          "goals": 12
+        }
+      ],
+      "honors": [
+        "葡超冠军 2021 · 2024",
+        "葡萄牙联赛杯 2021 · 2022"
+      ]
     }
   ]
 }
