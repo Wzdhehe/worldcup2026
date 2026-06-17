@@ -2118,14 +2118,6 @@
           '<div class="meta-row">' +
             '<span class="meta-pill">🏆 ' + (t.qualification || '-') + '</span>' +
           '</div>' +
-          (function(){
-            var kp = t.key_players || [];
-            if (!kp.length) return '';
-            var kpHTML = '<div class="key-players"><span class="kp-label">核心球员：</span>';
-            kp.forEach(function(p) { kpHTML += '<span class="kp-chip">' + p + '</span>'; });
-            kpHTML += '</div>';
-            return kpHTML;
-          })() +
           '<div class="strength">' + (t.strength || '') + '</div>' +
           '<div class="weakness">' + (t.weakness || '') + '</div>' +
           '<div class="desc" style="margin-top:8px; padding-top:8px; border-top:1px dashed var(--line-soft);">' +
@@ -2246,7 +2238,7 @@
               '<span class="meta-pill">🏆 ' + (t.qualification || '-') + '</span>' +
             '</div>' +
           '</div>' +
-          '<button class="modal-close" onclick="closeTeamModal()">×</button>' +
+          '<button class="modal-close" data-close-team>×</button>' +
         '</div>' +
         '<div class="team-modal-body">' +
           '<h3 class="modal-section-title">球队概述</h3>' +
@@ -2271,6 +2263,9 @@
           if (p) openPlayerModal(p);
         });
       });
+      // 关闭按钮（用 addEventListener，不靠 inline onclick）
+      var closeBtn = body.parentElement.querySelector('[data-close-team]');
+      if (closeBtn) closeBtn.addEventListener('click', closeTeamModal);
       modal.classList.add('open');
     });
   }
@@ -2555,7 +2550,7 @@ function openPlayerModal(p) {
           '<span class="club-line">惯用脚：' + (p.preferred_foot || '-') + '</span>' +
         '</div>' +
       '</div>' +
-      '<button class="modal-close" onclick="closePlayerModal()">×</button>' +
+      '<button class="modal-close" data-close-player>×</button>' +
     '</div>' +
     '<div class="modal-body">' +
       '<div class="modal-grid">' +
@@ -2591,6 +2586,9 @@ function openPlayerModal(p) {
   modal.classList.add('open');
   const radarSvg = document.getElementById('modalRadar');
   if (radarSvg && p.ability) drawRadarChart(radarSvg, p.ability, { size: 200, maxR: 78, showValues: true });
+  // 关闭按钮（addEventListener，不靠 inline onclick）
+  const pClose = modal.querySelector('[data-close-player]');
+  if (pClose) pClose.addEventListener('click', closePlayerModal);
 }
 
 function closePlayerModal() {
