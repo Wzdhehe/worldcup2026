@@ -377,6 +377,236 @@
         "defending": 45,
         "physical": 65
       }
+    },
+    {
+      "name": "皮埃尔",
+      "name_en": "Duckens Nazon",
+      "country": "海地",
+      "country_en": "Haiti",
+      "country_flag": "🇭🇹",
+      "club": "卡昂（法乙）",
+      "club_en": "SM Caen",
+      "position": "FW",
+      "position_zh": "前锋",
+      "number": 9,
+      "age": 31,
+      "birth_date": "1994-04-07",
+      "height": "1.78m",
+      "preferred_foot": "右脚",
+      "market_value_eur": 800000,
+      "market_value_text": "80 万欧元",
+      "caps": 28,
+      "goals": 12,
+      "debut_date": "2014-09-06",
+      "ability": {
+        "pace": 86,
+        "shooting": 76,
+        "passing": 64,
+        "dribbling": 74,
+        "defending": 30,
+        "physical": 76
+      },
+      "world_cup_history": [],
+      "career_history": [
+        {
+          "period": "2013-2015",
+          "club": "阿诺索斯塔加马（芬超）",
+          "apps": 38,
+          "goals": 14
+        },
+        {
+          "period": "2015-2018",
+          "club": "沙托鲁（法乙）",
+          "apps": 80,
+          "goals": 22
+        },
+        {
+          "period": "2018-2020",
+          "club": "勒阿弗尔（法乙）",
+          "apps": 70,
+          "goals": 18
+        },
+        {
+          "period": "2020-",
+          "club": "卡昂（法乙）",
+          "apps": 145,
+          "goals": 35
+        }
+      ],
+      "honors": [
+        "海地联赛冠军 2013",
+        "海地最佳射手 2014"
+      ]
+    },
+    {
+      "name": "苏马",
+      "name_en": "Stephane Lambese",
+      "country": "海地",
+      "country_en": "Haiti",
+      "country_flag": "🇭🇹",
+      "club": "里尔预备队（法甲）",
+      "club_en": "Lille B",
+      "position": "DF",
+      "position_zh": "右后卫",
+      "number": 2,
+      "age": 29,
+      "birth_date": "1995-11-12",
+      "height": "1.78m",
+      "preferred_foot": "右脚",
+      "market_value_eur": 600000,
+      "market_value_text": "60 万欧元",
+      "caps": 35,
+      "goals": 1,
+      "debut_date": "2015-09-05",
+      "ability": {
+        "pace": 82,
+        "shooting": 50,
+        "passing": 65,
+        "dribbling": 72,
+        "defending": 72,
+        "physical": 76
+      },
+      "world_cup_history": [],
+      "career_history": [
+        {
+          "period": "2014-2016",
+          "club": "巴黎 FC（法乙）",
+          "apps": 38,
+          "goals": 1
+        },
+        {
+          "period": "2016-2019",
+          "club": "朗斯（法乙）",
+          "apps": 95,
+          "goals": 2
+        },
+        {
+          "period": "2019-2022",
+          "club": "卡昂（法乙）",
+          "apps": 100,
+          "goals": 3
+        },
+        {
+          "period": "2022-",
+          "club": "里尔预备队",
+          "apps": 50,
+          "goals": 1
+        }
+      ],
+      "honors": [
+        "海地国家英雄奖 2017"
+      ]
+    },
+    {
+      "name": "麦克托米奈",
+      "name_en": "Scott McTominay",
+      "country": "苏格兰",
+      "country_en": "Scotland",
+      "country_flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+      "club": "那不勒斯",
+      "club_en": "Napoli",
+      "position": "MF",
+      "position_zh": "中场",
+      "number": 8,
+      "age": 28,
+      "birth_date": "1996-12-08",
+      "height": "1.93m",
+      "preferred_foot": "右脚",
+      "market_value_eur": 55000000,
+      "market_value_text": "5500 万欧元",
+      "caps": 60,
+      "goals": 10,
+      "debut_date": "2018-03-23",
+      "ability": {
+        "pace": 76,
+        "shooting": 80,
+        "passing": 78,
+        "dribbling": 72,
+        "defending": 80,
+        "physical": 90
+      },
+      "world_cup_history": [],
+      "career_history": [
+        {
+          "period": "2013-2017",
+          "club": "曼联青训",
+          "apps": 0,
+          "goals": 0
+        },
+        {
+          "period": "2017-2024",
+          "club": "曼联",
+          "apps": 255,
+          "goals": 29
+        },
+        {
+          "period": "2024-",
+          "club": "那不勒斯",
+          "apps": 38,
+          "goals": 8
+        }
+      ],
+      "honors": [
+        "意甲冠军 2025",
+        "英格兰联赛杯 2023",
+        "苏格兰足球先生 2023"
+      ]
+    },
+    {
+      "name": "罗伯逊",
+      "name_en": "Andrew Robertson",
+      "country": "苏格兰",
+      "country_en": "Scotland",
+      "country_flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+      "club": "利物浦",
+      "club_en": "Liverpool",
+      "position": "DF",
+      "position_zh": "左后卫",
+      "number": 3,
+      "age": 31,
+      "birth_date": "1994-03-11",
+      "height": "1.78m",
+      "preferred_foot": "左脚",
+      "market_value_eur": 30000000,
+      "market_value_text": "3000 万欧元",
+      "caps": 88,
+      "goals": 5,
+      "debut_date": "2014-05-30",
+      "ability": {
+        "pace": 84,
+        "shooting": 70,
+        "passing": 84,
+        "dribbling": 76,
+        "defending": 82,
+        "physical": 80
+      },
+      "world_cup_history": [],
+      "career_history": [
+        {
+          "period": "2012-2014",
+          "club": "女王公园",
+          "apps": 60,
+          "goals": 3
+        },
+        {
+          "period": "2014-2017",
+          "club": "赫尔城",
+          "apps": 115,
+          "goals": 6
+        },
+        {
+          "period": "2017-",
+          "club": "利物浦",
+          "apps": 350,
+          "goals": 25
+        }
+      ],
+      "honors": [
+        "英超冠军 2020 · 2025",
+        "欧冠 2019",
+        "PFA 英格兰最佳左后卫 2018 · 2019"
+      ]
     }
-  ]
+  ],
+  "data_source_note": "v9 扩充：C 组全部 4 队核心球员档案（A/C/F/H/I/J/K/L 8 焦点战组，每队 2 名，覆盖 4 国：巴西, 摩洛哥, 海地, 苏格兰）。"
 }
