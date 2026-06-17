@@ -101,7 +101,8 @@
         "dribbling": 86,
         "defending": 40,
         "physical": 70
-      }
+      },
+      "prev_market_value_eur": 4353882
     },
     {
       "name": "迪亚斯",
@@ -170,7 +171,8 @@
         "dribbling": 90,
         "defending": 45,
         "physical": 76
-      }
+      },
+      "prev_market_value_eur": 79700774
     },
     {
       "name": "夸德拉多",
@@ -263,7 +265,8 @@
         "dribbling": 86,
         "defending": 70,
         "physical": 72
-      }
+      },
+      "prev_market_value_eur": 710130
     },
     {
       "name": "C罗",
@@ -374,7 +377,8 @@
         "dribbling": 84,
         "defending": 35,
         "physical": 80
-      }
+      },
+      "prev_market_value_eur": 16375739
     },
     {
       "name": "B费",
@@ -439,7 +443,8 @@
         "dribbling": 84,
         "defending": 60,
         "physical": 75
-      }
+      },
+      "prev_market_value_eur": 65075772
     },
     {
       "name": "莱奥",
@@ -502,7 +507,8 @@
         "dribbling": 88,
         "defending": 35,
         "physical": 80
-      }
+      },
+      "prev_market_value_eur": 121724791
     },
     {
       "name": "维蒂尼亚",
@@ -570,7 +576,8 @@
         "dribbling": 86,
         "defending": 70,
         "physical": 70
-      }
+      },
+      "prev_market_value_eur": 94223571
     },
     {
       "name": "巴坎布",
@@ -642,7 +649,8 @@
       "honors": [
         "非洲国家杯 3rd 2015",
         "土超金靴 2015-16"
-      ]
+      ],
+      "prev_market_value_eur": 3820635
     },
     {
       "name": "姆本巴",
@@ -709,7 +717,8 @@
         "葡超冠军 2020 · 2022",
         "比利时甲冠军 2013-14",
         "非洲国家杯 3rd 2015"
-      ]
+      ],
+      "prev_market_value_eur": 7471944
     },
     {
       "name": "肖穆罗多夫",
@@ -769,7 +778,8 @@
       "honors": [
         "乌超冠军 2016 · 2017",
         "意大利杯 2022"
-      ]
+      ],
+      "prev_market_value_eur": 5540955
     }
   ]
 }
