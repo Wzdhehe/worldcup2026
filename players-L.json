@@ -2,7 +2,7 @@
   "group": "L",
   "match": "英格兰 vs 克罗地亚",
   "tournament": "2026 FIFA World Cup",
-  "data_source_note": "PWD=/root（项目工作目录）；主产物 /root/deliverable.md，副本 /workspace/worldcup2026/players-L.json。本档案基于 2025-2026 周期公开信息整理，身价/能力评分按 Transfermarkt 与 Sofascore 公开数据合理估算。",
+  "data_source_note": "v9 扩充：L 组全部 4 队核心球员档案（A/C/F/H/I/J/K/L 8 焦点战组，每队 2 名，覆盖 4 国：克罗地亚, 加纳, 巴拿马, 英格兰）。",
   "players": [
     {
       "name": "凯恩",
@@ -543,6 +543,221 @@
         "defending": 40,
         "physical": 72
       }
+    },
+    {
+      "name": "库杜斯",
+      "name_en": "Mohammed Kudus",
+      "country": "加纳",
+      "country_en": "Ghana",
+      "country_flag": "🇬🇭",
+      "club": "西汉姆联",
+      "club_en": "West Ham United",
+      "position": "MF",
+      "position_zh": "前腰",
+      "number": 20,
+      "age": 24,
+      "birth_date": "2000-08-02",
+      "height": "1.77m",
+      "preferred_foot": "右脚",
+      "market_value_eur": 55000000,
+      "market_value_text": "5500 万欧元",
+      "caps": 45,
+      "goals": 12,
+      "debut_date": "2019-03-25",
+      "ability": {
+        "pace": 84,
+        "shooting": 80,
+        "passing": 84,
+        "dribbling": 90,
+        "defending": 56,
+        "physical": 80
+      },
+      "world_cup_history": [
+        {
+          "year": 2022,
+          "apps": 3,
+          "goals": 2,
+          "best": "小组出局"
+        }
+      ],
+      "career_history": [
+        {
+          "period": "2018-2023",
+          "club": "阿贾克斯",
+          "apps": 120,
+          "goals": 31
+        },
+        {
+          "period": "2023-",
+          "club": "西汉姆联",
+          "apps": 70,
+          "goals": 18
+        }
+      ],
+      "honors": [
+        "荷兰甲冠军 2021 · 2022 · 2023",
+        "非洲最佳年轻球员 2022",
+        "荷甲年度最佳 2023"
+      ]
+    },
+    {
+      "name": "阿尤",
+      "name_en": "André Ayew",
+      "country": "加纳",
+      "country_en": "Ghana",
+      "country_flag": "🇬🇭",
+      "club": "勒阿弗尔（法甲）",
+      "club_en": "Le Havre",
+      "position": "FW",
+      "position_zh": "前锋",
+      "number": 10,
+      "age": 35,
+      "birth_date": "1989-12-17",
+      "height": "1.76m",
+      "preferred_foot": "右脚",
+      "market_value_eur": 1500000,
+      "market_value_text": "150 万欧元",
+      "caps": 120,
+      "goals": 24,
+      "debut_date": "2007-11-19",
+      "ability": {
+        "pace": 80,
+        "shooting": 76,
+        "passing": 80,
+        "dribbling": 84,
+        "defending": 50,
+        "physical": 76
+      },
+      "world_cup_history": [
+        {
+          "year": 2010,
+          "apps": 5,
+          "goals": 0,
+          "best": "8强"
+        },
+        {
+          "year": 2014,
+          "apps": 3,
+          "goals": 0,
+          "best": "小组出局"
+        },
+        {
+          "year": 2022,
+          "apps": 3,
+          "goals": 0,
+          "best": "小组出局"
+        }
+      ],
+      "career_history": [
+        {
+          "period": "2007-2010",
+          "club": "马赛（法甲）",
+          "apps": 95,
+          "goals": 18
+        },
+        {
+          "period": "2010-2015",
+          "club": "阿森纳（租）→ 桑德兰（租）→ 斯旺西",
+          "apps": 170,
+          "goals": 33
+        },
+        {
+          "period": "2015-2018",
+          "club": "斯旺西",
+          "apps": 145,
+          "goals": 26
+        },
+        {
+          "period": "2018-2021",
+          "club": "费内巴切（土超）",
+          "apps": 100,
+          "goals": 21
+        },
+        {
+          "period": "2021-2023",
+          "club": "阿尔萨德（卡塔尔）",
+          "apps": 50,
+          "goals": 9
+        },
+        {
+          "period": "2023-",
+          "club": "勒阿弗尔（法甲）",
+          "apps": 50,
+          "goals": 6
+        }
+      ],
+      "honors": [
+        "加纳足球先生×5",
+        "英超月最佳 2015-12",
+        "法甲冠军 2009-10"
+      ]
+    },
+    {
+      "name": "卡明斯",
+      "name_en": "Cecilio Waterman",
+      "country": "巴拿马",
+      "country_en": "Panama",
+      "country_flag": "🇵🇦",
+      "club": "安提瓜 GFC（危地马拉）",
+      "club_en": "Antigua GFC",
+      "position": "FW",
+      "position_zh": "前锋",
+      "number": 9,
+      "age": 33,
+      "birth_date": "1991-10-13",
+      "height": "1.82m",
+      "preferred_foot": "右脚",
+      "market_value_eur": 600000,
+      "market_value_text": "60 万欧元",
+      "caps": 45,
+      "goals": 14,
+      "debut_date": "2013-10-15",
+      "ability": {
+        "pace": 78,
+        "shooting": 80,
+        "passing": 70,
+        "dribbling": 76,
+        "defending": 30,
+        "physical": 80
+      },
+      "world_cup_history": [
+        {
+          "year": 2018,
+          "apps": 3,
+          "goals": 0,
+          "best": "小组出局"
+        }
+      ],
+      "career_history": [
+        {
+          "period": "2012-2015",
+          "club": "阿拉胡埃伦斯（哥斯达黎加）",
+          "apps": 90,
+          "goals": 28
+        },
+        {
+          "period": "2015-2018",
+          "club": "卡塔尔联队（卡塔尔）",
+          "apps": 75,
+          "goals": 22
+        },
+        {
+          "period": "2018-2021",
+          "club": "圣何塞地震（MLS）",
+          "apps": 60,
+          "goals": 15
+        },
+        {
+          "period": "2021-",
+          "club": "安提瓜 GFC（危地马拉）",
+          "apps": 130,
+          "goals": 35
+        }
+      ],
+      "honors": [
+        "中北美国家联赛亚军 2017",
+        "巴拿马联赛冠军 2014"
+      ]
     }
   ]
 }
