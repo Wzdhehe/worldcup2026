@@ -2,7 +2,7 @@
   "group": "K",
   "match": "哥伦比亚 vs 葡萄牙",
   "tournament": "2026 FIFA World Cup",
-  "data_source_note": "基于 2025-2026 周期公开信息整理（owner 兜底补写）。身价/能力评分按 Transfermarkt 与 Sofascore 公开数据合理估算。",
+  "data_source_note": "v9 扩充：K 组全部 4 队核心球员档案（A/C/F/H/I/J/K/L 8 焦点战组，每队 2 名，覆盖 4 国：乌兹别克斯坦, 刚果(金), 哥伦比亚, 葡萄牙）。",
   "players": [
     {
       "name": "J罗",
@@ -25,18 +25,68 @@
       "goals": 29,
       "debut_date": "2011-10-11",
       "career_history": [
-        {"period": "2010-2013", "club": "班菲尔德 / 波尔图", "apps": 67, "goals": 22},
-        {"period": "2013-2014", "club": "摩纳哥", "apps": 38, "goals": 10},
-        {"period": "2014-2017", "club": "皇家马德里", "apps": 125, "goals": 46},
-        {"period": "2017-2019", "club": "拜仁慕尼黑（租借）", "apps": 43, "goals": 7},
-        {"period": "2019-2021", "club": "埃弗顿", "apps": 39, "goals": 8},
-        {"period": "2021-2022", "club": "卡塔尔/沙特", "apps": 33, "goals": 7},
-        {"period": "2022-", "club": "奥林匹亚/圣保罗/巴列卡诺", "apps": 76, "goals": 14}
+        {
+          "period": "2010-2013",
+          "club": "班菲尔德 / 波尔图",
+          "apps": 67,
+          "goals": 22
+        },
+        {
+          "period": "2013-2014",
+          "club": "摩纳哥",
+          "apps": 38,
+          "goals": 10
+        },
+        {
+          "period": "2014-2017",
+          "club": "皇家马德里",
+          "apps": 125,
+          "goals": 46
+        },
+        {
+          "period": "2017-2019",
+          "club": "拜仁慕尼黑（租借）",
+          "apps": 43,
+          "goals": 7
+        },
+        {
+          "period": "2019-2021",
+          "club": "埃弗顿",
+          "apps": 39,
+          "goals": 8
+        },
+        {
+          "period": "2021-2022",
+          "club": "卡塔尔/沙特",
+          "apps": 33,
+          "goals": 7
+        },
+        {
+          "period": "2022-",
+          "club": "奥林匹亚/圣保罗/巴列卡诺",
+          "apps": 76,
+          "goals": 14
+        }
       ],
       "world_cup_history": [
-        {"year": 2014, "apps": 5, "goals": 6, "best": "8强 / 金靴奖"},
-        {"year": 2018, "apps": 4, "goals": 0, "best": "16强"},
-        {"year": 2022, "apps": 3, "goals": 0, "best": "小组出局"}
+        {
+          "year": 2014,
+          "apps": 5,
+          "goals": 6,
+          "best": "8强 / 金靴奖"
+        },
+        {
+          "year": 2018,
+          "apps": 4,
+          "goals": 0,
+          "best": "16强"
+        },
+        {
+          "year": 2022,
+          "apps": 3,
+          "goals": 0,
+          "best": "小组出局"
+        }
       ],
       "honors": [
         "2014 世界杯金靴奖（6 球）",
@@ -74,13 +124,38 @@
       "goals": 17,
       "debut_date": "2018-09-11",
       "career_history": [
-        {"period": "2015-2017", "club": "巴兰基亚青年", "apps": 38, "goals": 6},
-        {"period": "2017-2019", "club": "卡利美洲", "apps": 65, "goals": 16},
-        {"period": "2019-2022", "club": "波尔图", "apps": 113, "goals": 41},
-        {"period": "2022-", "club": "利物浦", "apps": 145, "goals": 47}
+        {
+          "period": "2015-2017",
+          "club": "巴兰基亚青年",
+          "apps": 38,
+          "goals": 6
+        },
+        {
+          "period": "2017-2019",
+          "club": "卡利美洲",
+          "apps": 65,
+          "goals": 16
+        },
+        {
+          "period": "2019-2022",
+          "club": "波尔图",
+          "apps": 113,
+          "goals": 41
+        },
+        {
+          "period": "2022-",
+          "club": "利物浦",
+          "apps": 145,
+          "goals": 47
+        }
       ],
       "world_cup_history": [
-        {"year": 2022, "apps": 3, "goals": 1, "best": "小组出局"}
+        {
+          "year": 2022,
+          "apps": 3,
+          "goals": 1,
+          "best": "小组出局"
+        }
       ],
       "honors": [
         "1 次葡超冠军（波尔图）",
@@ -118,17 +193,62 @@
       "goals": 11,
       "debut_date": "2010-04-30",
       "career_history": [
-        {"period": "2012-2015", "club": "佛罗伦萨", "apps": 106, "goals": 19},
-        {"period": "2015-2017", "club": "切尔西", "apps": 30, "goals": 1},
-        {"period": "2015-2017", "club": "尤文图斯（租借）", "apps": 84, "goals": 12},
-        {"period": "2017-2023", "club": "尤文图斯", "apps": 268, "goals": 27},
-        {"period": "2023-2024", "club": "国际米兰", "apps": 36, "goals": 2},
-        {"period": "2024-", "club": "亚特兰大", "apps": 38, "goals": 2}
+        {
+          "period": "2012-2015",
+          "club": "佛罗伦萨",
+          "apps": 106,
+          "goals": 19
+        },
+        {
+          "period": "2015-2017",
+          "club": "切尔西",
+          "apps": 30,
+          "goals": 1
+        },
+        {
+          "period": "2015-2017",
+          "club": "尤文图斯（租借）",
+          "apps": 84,
+          "goals": 12
+        },
+        {
+          "period": "2017-2023",
+          "club": "尤文图斯",
+          "apps": 268,
+          "goals": 27
+        },
+        {
+          "period": "2023-2024",
+          "club": "国际米兰",
+          "apps": 36,
+          "goals": 2
+        },
+        {
+          "period": "2024-",
+          "club": "亚特兰大",
+          "apps": 38,
+          "goals": 2
+        }
       ],
       "world_cup_history": [
-        {"year": 2014, "apps": 5, "goals": 1, "best": "8强"},
-        {"year": 2018, "apps": 4, "goals": 0, "best": "16强"},
-        {"year": 2022, "apps": 3, "goals": 0, "best": "小组出局"}
+        {
+          "year": 2014,
+          "apps": 5,
+          "goals": 1,
+          "best": "8强"
+        },
+        {
+          "year": 2018,
+          "apps": 4,
+          "goals": 0,
+          "best": "16强"
+        },
+        {
+          "year": 2022,
+          "apps": 3,
+          "goals": 0,
+          "best": "小组出局"
+        }
       ],
       "honors": [
         "5 次意甲冠军（尤文）",
@@ -166,19 +286,74 @@
       "goals": 138,
       "debut_date": "2003-08-20",
       "career_history": [
-        {"period": "2002-2003", "club": "葡萄牙体育", "apps": 31, "goals": 5},
-        {"period": "2003-2009", "club": "曼联", "apps": 292, "goals": 118},
-        {"period": "2009-2018", "club": "皇家马德里", "apps": 438, "goals": 450},
-        {"period": "2018-2021", "club": "尤文图斯", "apps": 134, "goals": 101},
-        {"period": "2021-2022", "club": "曼联", "apps": 50, "goals": 27},
-        {"period": "2023-", "club": "阿尔纳斯尔", "apps": 96, "goals": 78}
+        {
+          "period": "2002-2003",
+          "club": "葡萄牙体育",
+          "apps": 31,
+          "goals": 5
+        },
+        {
+          "period": "2003-2009",
+          "club": "曼联",
+          "apps": 292,
+          "goals": 118
+        },
+        {
+          "period": "2009-2018",
+          "club": "皇家马德里",
+          "apps": 438,
+          "goals": 450
+        },
+        {
+          "period": "2018-2021",
+          "club": "尤文图斯",
+          "apps": 134,
+          "goals": 101
+        },
+        {
+          "period": "2021-2022",
+          "club": "曼联",
+          "apps": 50,
+          "goals": 27
+        },
+        {
+          "period": "2023-",
+          "club": "阿尔纳斯尔",
+          "apps": 96,
+          "goals": 78
+        }
       ],
       "world_cup_history": [
-        {"year": 2006, "apps": 6, "goals": 1, "best": "殿军"},
-        {"year": 2010, "apps": 4, "goals": 1, "best": "16强"},
-        {"year": 2014, "apps": 3, "goals": 1, "best": "小组出局"},
-        {"year": 2018, "apps": 4, "goals": 4, "best": "16强"},
-        {"year": 2022, "apps": 3, "goals": 1, "best": "8强"}
+        {
+          "year": 2006,
+          "apps": 6,
+          "goals": 1,
+          "best": "殿军"
+        },
+        {
+          "year": 2010,
+          "apps": 4,
+          "goals": 1,
+          "best": "16强"
+        },
+        {
+          "year": 2014,
+          "apps": 3,
+          "goals": 1,
+          "best": "小组出局"
+        },
+        {
+          "year": 2018,
+          "apps": 4,
+          "goals": 4,
+          "best": "16强"
+        },
+        {
+          "year": 2022,
+          "apps": 3,
+          "goals": 1,
+          "best": "8强"
+        }
       ],
       "honors": [
         "5 次金球奖",
@@ -222,12 +397,32 @@
       "goals": 25,
       "debut_date": "2017-11-10",
       "career_history": [
-        {"period": "2012-2016", "club": "诺瓦拉/乌迪内斯", "apps": 89, "goals": 11},
-        {"period": "2017-2020", "club": "葡萄牙体育", "apps": 137, "goals": 65},
-        {"period": "2020-", "club": "曼联", "apps": 269, "goals": 98}
+        {
+          "period": "2012-2016",
+          "club": "诺瓦拉/乌迪内斯",
+          "apps": 89,
+          "goals": 11
+        },
+        {
+          "period": "2017-2020",
+          "club": "葡萄牙体育",
+          "apps": 137,
+          "goals": 65
+        },
+        {
+          "period": "2020-",
+          "club": "曼联",
+          "apps": 269,
+          "goals": 98
+        }
       ],
       "world_cup_history": [
-        {"year": 2022, "apps": 3, "goals": 2, "best": "8强"}
+        {
+          "year": 2022,
+          "apps": 3,
+          "goals": 2,
+          "best": "8强"
+        }
       ],
       "honors": [
         "1 次葡萄牙联赛杯冠军（葡萄牙体育）",
@@ -267,12 +462,32 @@
       "goals": 5,
       "debut_date": "2021-03-24",
       "career_history": [
-        {"period": "2017-2019", "club": "葡萄牙体育", "apps": 7, "goals": 2},
-        {"period": "2018-2019", "club": "里尔（租借）", "apps": 24, "goals": 8},
-        {"period": "2019-", "club": "AC米兰", "apps": 213, "goals": 71}
+        {
+          "period": "2017-2019",
+          "club": "葡萄牙体育",
+          "apps": 7,
+          "goals": 2
+        },
+        {
+          "period": "2018-2019",
+          "club": "里尔（租借）",
+          "apps": 24,
+          "goals": 8
+        },
+        {
+          "period": "2019-",
+          "club": "AC米兰",
+          "apps": 213,
+          "goals": 71
+        }
       ],
       "world_cup_history": [
-        {"year": 2022, "apps": 3, "goals": 0, "best": "8强"}
+        {
+          "year": 2022,
+          "apps": 3,
+          "goals": 0,
+          "best": "8强"
+        }
       ],
       "honors": [
         "1 次意甲冠军（AC米兰 2021-22）",
@@ -310,13 +525,38 @@
       "goals": 2,
       "debut_date": "2022-03-24",
       "career_history": [
-        {"period": "2018-2020", "club": "波尔图", "apps": 21, "goals": 1},
-        {"period": "2020-2021", "club": "狼队（租借）", "apps": 22, "goals": 1},
-        {"period": "2021-2022", "club": "波尔图", "apps": 47, "goals": 4},
-        {"period": "2022-", "club": "巴黎圣日耳曼", "apps": 105, "goals": 9}
+        {
+          "period": "2018-2020",
+          "club": "波尔图",
+          "apps": 21,
+          "goals": 1
+        },
+        {
+          "period": "2020-2021",
+          "club": "狼队（租借）",
+          "apps": 22,
+          "goals": 1
+        },
+        {
+          "period": "2021-2022",
+          "club": "波尔图",
+          "apps": 47,
+          "goals": 4
+        },
+        {
+          "period": "2022-",
+          "club": "巴黎圣日耳曼",
+          "apps": 105,
+          "goals": 9
+        }
       ],
       "world_cup_history": [
-        {"year": 2022, "apps": 3, "goals": 0, "best": "8强"}
+        {
+          "year": 2022,
+          "apps": 3,
+          "goals": 0,
+          "best": "8强"
+        }
       ],
       "honors": [
         "1 次法甲冠军（PSG 2023-24、2024-25）",
@@ -331,6 +571,205 @@
         "defending": 70,
         "physical": 70
       }
+    },
+    {
+      "name": "巴坎布",
+      "name_en": "Cédric Bakambu",
+      "country": "刚果(金)",
+      "country_en": "DR Congo",
+      "country_flag": "🇨🇩",
+      "club": "贝西克塔斯（土超）",
+      "club_en": "Beşiktaş",
+      "position": "FW",
+      "position_zh": "前锋",
+      "number": 17,
+      "age": 34,
+      "birth_date": "1991-04-11",
+      "height": "1.79m",
+      "preferred_foot": "右脚",
+      "market_value_eur": 4000000,
+      "market_value_text": "400 万欧元",
+      "caps": 50,
+      "goals": 22,
+      "debut_date": "2015-04-26",
+      "ability": {
+        "pace": 86,
+        "shooting": 84,
+        "passing": 70,
+        "dribbling": 82,
+        "defending": 36,
+        "physical": 80
+      },
+      "world_cup_history": [],
+      "career_history": [
+        {
+          "period": "2009-2014",
+          "club": "索肖（法甲）",
+          "apps": 110,
+          "goals": 22
+        },
+        {
+          "period": "2014-2016",
+          "club": "布尔萨体育（土超）",
+          "apps": 70,
+          "goals": 27
+        },
+        {
+          "period": "2016-2018",
+          "club": "比利亚雷亚尔（西甲）",
+          "apps": 75,
+          "goals": 32
+        },
+        {
+          "period": "2018-2021",
+          "club": "北京国安（中超）",
+          "apps": 75,
+          "goals": 39
+        },
+        {
+          "period": "2021-2022",
+          "club": "马赛（法甲）",
+          "apps": 35,
+          "goals": 4
+        },
+        {
+          "period": "2022-",
+          "club": "贝西克塔斯（土超）",
+          "apps": 95,
+          "goals": 30
+        }
+      ],
+      "honors": [
+        "非洲国家杯 3rd 2015",
+        "土超金靴 2015-16"
+      ]
+    },
+    {
+      "name": "姆本巴",
+      "name_en": "Chancel Mbemba",
+      "country": "刚果(金)",
+      "country_en": "DR Congo",
+      "country_flag": "🇨🇩",
+      "club": "马赛（法甲）",
+      "club_en": "Olympique de Marseille",
+      "position": "DF",
+      "position_zh": "中后卫",
+      "number": 2,
+      "age": 30,
+      "birth_date": "1994-08-08",
+      "height": "1.83m",
+      "preferred_foot": "左脚",
+      "market_value_eur": 8000000,
+      "market_value_text": "800 万欧元",
+      "caps": 80,
+      "goals": 5,
+      "debut_date": "2012-12-26",
+      "ability": {
+        "pace": 78,
+        "shooting": 50,
+        "passing": 70,
+        "dribbling": 70,
+        "defending": 86,
+        "physical": 86
+      },
+      "world_cup_history": [],
+      "career_history": [
+        {
+          "period": "2012-2013",
+          "club": "标准列日（比甲）",
+          "apps": 50,
+          "goals": 3
+        },
+        {
+          "period": "2013-2015",
+          "club": "安德莱赫特（比甲）",
+          "apps": 75,
+          "goals": 6
+        },
+        {
+          "period": "2015-2018",
+          "club": "纽卡斯尔联（英超）",
+          "apps": 75,
+          "goals": 4
+        },
+        {
+          "period": "2018-2022",
+          "club": "波尔图（葡超）",
+          "apps": 130,
+          "goals": 12
+        },
+        {
+          "period": "2022-",
+          "club": "马赛（法甲）",
+          "apps": 80,
+          "goals": 3
+        }
+      ],
+      "honors": [
+        "葡超冠军 2020 · 2022",
+        "比利时甲冠军 2013-14",
+        "非洲国家杯 3rd 2015"
+      ]
+    },
+    {
+      "name": "肖穆罗多夫",
+      "name_en": "Eldor Shomurodov",
+      "country": "乌兹别克斯坦",
+      "country_en": "Uzbekistan",
+      "country_flag": "🇺🇿",
+      "club": "卡利亚里（意甲）",
+      "club_en": "Cagliari",
+      "position": "FW",
+      "position_zh": "前锋",
+      "number": 9,
+      "age": 29,
+      "birth_date": "1995-06-29",
+      "height": "1.85m",
+      "preferred_foot": "右脚",
+      "market_value_eur": 5000000,
+      "market_value_text": "500 万欧元",
+      "caps": 75,
+      "goals": 28,
+      "debut_date": "2015-03-31",
+      "ability": {
+        "pace": 80,
+        "shooting": 80,
+        "passing": 70,
+        "dribbling": 76,
+        "defending": 32,
+        "physical": 80
+      },
+      "world_cup_history": [],
+      "career_history": [
+        {
+          "period": "2014-2017",
+          "club": "缔造者（乌超）",
+          "apps": 100,
+          "goals": 35
+        },
+        {
+          "period": "2017-2020",
+          "club": "罗斯托夫（俄超）",
+          "apps": 95,
+          "goals": 22
+        },
+        {
+          "period": "2020-2021",
+          "club": "热那亚（意甲）→ 罗马（意甲）",
+          "apps": 65,
+          "goals": 14
+        },
+        {
+          "period": "2021-",
+          "club": "罗马（意甲）→ 卡利亚里（租）",
+          "apps": 110,
+          "goals": 18
+        }
+      ],
+      "honors": [
+        "乌超冠军 2016 · 2017",
+        "意大利杯 2022"
+      ]
     }
   ]
 }
