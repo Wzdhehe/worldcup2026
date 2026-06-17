@@ -70,7 +70,8 @@
         "dribbling": 92,
         "defending": 36,
         "physical": 78
-      }
+      },
+      "prev_market_value_eur": 181388940
     },
     {
       "name": "格列兹曼",
@@ -150,7 +151,8 @@
         "dribbling": 86,
         "defending": 58,
         "physical": 72
-      }
+      },
+      "prev_market_value_eur": 10615119
     },
     {
       "name": "卡马文加",
@@ -206,7 +208,8 @@
         "dribbling": 86,
         "defending": 82,
         "physical": 80
-      }
+      },
+      "prev_market_value_eur": 94673941
     },
     {
       "name": "楚阿梅尼",
@@ -268,7 +271,8 @@
         "dribbling": 79,
         "defending": 87,
         "physical": 88
-      }
+      },
+      "prev_market_value_eur": 95064586
     },
     {
       "name": "迈尼昂",
@@ -329,7 +333,8 @@
         "dribbling": 45,
         "defending": 90,
         "physical": 84
-      }
+      },
+      "prev_market_value_eur": 42427061
     },
     {
       "name": "马内",
@@ -415,7 +420,8 @@
         "dribbling": 88,
         "defending": 54,
         "physical": 80
-      }
+      },
+      "prev_market_value_eur": 16210695
     },
     {
       "name": "门迪",
@@ -501,7 +507,8 @@
         "dribbling": 38,
         "defending": 89,
         "physical": 82
-      }
+      },
+      "prev_market_value_eur": 5563456
     },
     {
       "name": "库利巴利",
@@ -581,7 +588,8 @@
         "dribbling": 70,
         "defending": 91,
         "physical": 90
-      }
+      },
+      "prev_market_value_eur": 7040697
     },
     {
       "name": "哈兰德",
@@ -650,7 +658,8 @@
         "英超金靴 2023",
         "欧洲金靴 2020 · 2023",
         "挪威足球先生×4"
-      ]
+      ],
+      "prev_market_value_eur": 174294443
     },
     {
       "name": "厄德高",
@@ -717,7 +726,8 @@
         "欧洲金童奖 2015",
         "阿森纳赛季最佳 2022-23",
         "挪超金靴 2019"
-      ]
+      ],
+      "prev_market_value_eur": 87038286
     },
     {
       "name": "穆罕纳德",
@@ -771,7 +781,8 @@
       "honors": [
         "伊拉克联赛冠军 2017",
         "西亚 U20 冠军 2016"
-      ]
+      ],
+      "prev_market_value_eur": 802334
     }
   ]
 }
