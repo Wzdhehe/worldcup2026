@@ -849,7 +849,7 @@
     inset: 0;
     background: rgba(6,10,20,0.85);
     backdrop-filter: blur(8px);
-    z-index: 1000;
+    z-index: 1100;
     display: none;
     align-items: center;
     justify-content: center;
@@ -2394,7 +2394,7 @@ let allPlayers = [];
 let playerIndex = {}; // name -> {group, match, idx, data}
 
 async function loadAllPlayers() {
-  const groups = ['A', 'C', 'F', 'I', 'L', 'J', 'H', 'K'];
+  const groups = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L'];
   for (const g of groups) {
     try {
       const r = await fetch('players-' + g + '.json');
