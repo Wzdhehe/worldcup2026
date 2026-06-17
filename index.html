@@ -534,6 +534,31 @@
   .team-card .weakness::before {
     content: "⚠ "; color: var(--gold);
   }
+  .team-card .key-players {
+    margin: 8px 0 4px;
+    padding: 8px 10px;
+    background: var(--bg-2);
+    border: 1px solid var(--line-soft);
+    border-radius: 8px;
+    line-height: 1.6;
+  }
+  .team-card .kp-label {
+    color: var(--text-dim);
+    font-size: 11px;
+    margin-right: 4px;
+    font-weight: 600;
+  }
+  .team-card .kp-chip {
+    display: inline-block;
+    background: var(--card-hi);
+    color: var(--pitch);
+    border: 1px solid rgba(0,217,107,0.2);
+    border-radius: 999px;
+    padding: 2px 9px;
+    font-size: 11px;
+    margin: 1px 3px 1px 0;
+    font-weight: 500;
+  }
 
   /* ============== 时间线 ============== */
   .timeline { position: relative; padding-left: 28px; }
@@ -964,6 +989,99 @@
     .players-grid { grid-template-columns: repeat(2, 1fr); }
     .modal-grid { grid-template-columns: 1fr; }
   }
+
+  /* ============== 队伍二级页面 ============== */
+  .team-card { transition: all 0.2s ease; position: relative; }
+  .team-card:hover {
+    border-color: var(--pitch);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 32px rgba(0,217,107,0.18);
+  }
+  .click-hint {
+    margin-top: 10px;
+    text-align: right;
+    color: var(--pitch);
+    font-size: 11px;
+    font-weight: 600;
+    opacity: 0.7;
+  }
+  .team-modal {
+    position: fixed; inset: 0;
+    background: rgba(6,10,20,0.85);
+    backdrop-filter: blur(8px);
+    z-index: 1001;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .team-modal.open { display: flex; }
+  .team-modal-content {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    max-width: 1100px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    animation: slideUp 0.25s ease;
+  }
+  .team-modal-head {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 24px 28px;
+    border-bottom: 1px solid var(--line);
+    background: linear-gradient(135deg, rgba(0,217,107,0.1), transparent 70%);
+    position: sticky;
+    top: 0;
+    background-color: var(--card);
+    z-index: 1;
+  }
+  .team-modal-head .flag { font-size: 56px; }
+  .team-modal-body { padding: 24px 28px; }
+  .team-squad-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-top: 16px;
+  }
+  .team-squad-mini {
+    background: var(--bg-2);
+    border: 1px solid var(--line-soft);
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  .team-squad-mini:hover {
+    border-color: var(--pitch);
+    transform: translateY(-2px);
+  }
+  .team-squad-mini .name { font-weight: 700; font-size: 13px; color: var(--text); margin-top: 6px; }
+  .team-squad-mini .pos { font-size: 10px; color: var(--text-dim); margin-top: 2px; }
+  .team-squad-mini .val { color: var(--pitch); font-size: 11px; margin-top: 2px; font-weight: 700; }
+  .team-squad-mini svg { width: 100%; aspect-ratio: 1; }
+  .team-squad-mini polygon { fill: rgba(0,217,107,0.15); stroke: var(--pitch); stroke-width: 1.2; }
+  .team-squad-mini .point { fill: var(--pitch); }
+  .team-info-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-top: 16px;
+  }
+  .team-info-card {
+    background: var(--bg-2);
+    border: 1px solid var(--line-soft);
+    border-radius: 10px;
+    padding: 14px;
+  }
+  .team-info-card h4 { font-size: 12px; color: var(--pitch); margin: 0 0 8px; text-transform: uppercase; letter-spacing: 0.1em; }
+  .team-info-card p { font-size: 13px; color: var(--text); margin: 0; line-height: 1.6; }
+  @media (max-width: 800px) {
+    .team-squad-grid { grid-template-columns: repeat(2, 1fr); }
+    .team-info-row { grid-template-columns: 1fr; }
+  }
 </style>
 </head>
 <body>
@@ -1346,44 +1464,6 @@
   </div>
 </section>
 
-<!-- ============ 核心球员档案 ============ -->
-<section id="players">
-  <div class="container">
-    <div class="section-head reveal">
-      <div class="section-eyebrow">核心球员档案 · KEY PLAYERS</div>
-      <h2>⭐ 58 位核心球员 · 身价 + 六维能力图</h2>
-      <p>8 场焦点对决的 58 名核心球员完整档案：基本信息、生涯履历、世界杯经历、6 维能力评分（速度/射门/传球/盘带/防守/身体）、身价（Transfermarkt 2025-2026 公开数据）。点开任意球员查看详细数据。</p>
-    </div>
-
-    <div class="players-toolbar reveal">
-      <div class="filter-row">
-        <span class="filter-label">按位置：</span>
-        <button class="filter-chip active" data-filter="ALL">全部</button>
-        <button class="filter-chip" data-filter="FW">前锋</button>
-        <button class="filter-chip" data-filter="MF">中场</button>
-        <button class="filter-chip" data-filter="DF">后卫</button>
-        <button class="filter-chip" data-filter="GK">门将</button>
-      </div>
-      <div class="filter-row">
-        <span class="filter-label">按比赛：</span>
-        <button class="filter-chip active" data-match="ALL">全部</button>
-        <button class="filter-chip" data-match="A">🇲🇽 A 组</button>
-        <button class="filter-chip" data-match="C">🇧🇷 C 组</button>
-        <button class="filter-chip" data-match="F">🇳🇱 F 组</button>
-        <button class="filter-chip" data-match="I">🇫🇷 I 组</button>
-        <button class="filter-chip" data-match="L">🏴󠁧󠁢󠁥󠁮󠁧󠁿 L 组</button>
-        <button class="filter-chip" data-match="J">🇦🇷 J 组</button>
-        <button class="filter-chip" data-match="H">🇪🇸 H 组</button>
-        <button class="filter-chip" data-match="K">🇵🇹 K 组</button>
-      </div>
-    </div>
-
-    <div class="players-grid reveal" id="playersGrid">
-      <!-- 由 JS 注入球员卡片 -->
-    </div>
-  </div>
-</section>
-
 <!-- ============ 12 组积分总览 ============ -->
 <section id="groups">
   <div class="container">
@@ -1722,6 +1802,32 @@
   </div>
 </section>
 
+<!-- ============ 核心球员档案（最底部补充） ============ -->
+<section id="players">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-eyebrow">核心球员档案 · KEY PLAYERS</div>
+      <h2>⭐ 8 场焦点对决 · 58 位核心球员</h2>
+      <p>8 场焦点对决的 58 名核心球员完整档案：身价、6 维能力评分（速度/射门/传球/盘带/防守/身体）、生涯履历、世界杯经历、个人荣誉。点开任意球员查看详细数据。</p>
+    </div>
+
+    <div class="players-toolbar reveal">
+      <div class="filter-row">
+        <span class="filter-label">按位置：</span>
+        <button class="filter-chip active" data-filter="ALL">全部</button>
+        <button class="filter-chip" data-filter="FW">前锋</button>
+        <button class="filter-chip" data-filter="MF">中场</button>
+        <button class="filter-chip" data-filter="DF">后卫</button>
+        <button class="filter-chip" data-filter="GK">门将</button>
+      </div>
+    </div>
+
+    <div class="players-grid reveal" id="playersGrid">
+      <!-- 由 JS 注入球员卡片 -->
+    </div>
+  </div>
+</section>
+
 <!-- ============ 页脚 ============ -->
 <footer class="footer">
   <div class="container">
@@ -1980,12 +2086,12 @@
   // 注入球队卡片
   function renderTeamCards(filter) {
     var html = '';
-    data.teams.forEach(function (t) {
+    data.teams.forEach(function (t, idx) {
       if (filter && filter !== 'ALL' && t.group !== filter) return;
       var rankTier = t.fifa_rank <= 10 ? 'gold' : (t.fifa_rank <= 30 ? 'blue' : '');
       var hostMark = (t.qualification || '').indexOf('东道主') >= 0 ? '<span class="meta-pill gold">🏟 主场</span>' : '';
       html +=
-        '<article class="team-card" data-group="' + t.group + '">' +
+        '<article class="team-card" data-group="' + t.group + '" data-idx="' + idx + '" style="cursor:pointer;">' +
           '<div class="team-card-head">' +
             '<div class="flag">' + t.flag + '</div>' +
             '<span class="grouptag">组 ' + t.group + '</span>' +
@@ -2000,14 +2106,31 @@
           '<div class="meta-row">' +
             '<span class="meta-pill">🏆 ' + (t.qualification || '-') + '</span>' +
           '</div>' +
+          (function(){
+            var kp = t.key_players || [];
+            if (!kp.length) return '';
+            var kpHTML = '<div class="key-players"><span class="kp-label">核心球员：</span>';
+            kp.forEach(function(p) { kpHTML += '<span class="kp-chip">' + p + '</span>'; });
+            kpHTML += '</div>';
+            return kpHTML;
+          })() +
           '<div class="strength">' + (t.strength || '') + '</div>' +
           '<div class="weakness">' + (t.weakness || '') + '</div>' +
           '<div class="desc" style="margin-top:8px; padding-top:8px; border-top:1px dashed var(--line-soft);">' +
             '<strong style="color:var(--gold);">小组前景：</strong>' + (t.outlook || '') +
           '</div>' +
+          '<div class="click-hint">点击查看详情 →</div>' +
         '</article>';
     });
     teamsGrid.innerHTML = html;
+    // 点击事件委托
+    teamsGrid.querySelectorAll('.team-card').forEach(function(card) {
+      card.addEventListener('click', function() {
+        var g = card.getAttribute('data-group');
+        var idx = parseInt(card.getAttribute('data-idx'));
+        openTeamDetail(g, idx);
+      });
+    });
   }
   renderTeamCards('ALL');
 
@@ -2238,11 +2361,9 @@ function renderPlayers() {
 
 function applyFilters() {
   const pos = document.querySelector('.filter-chip.active[data-filter]')?.getAttribute('data-filter') || 'ALL';
-  const mt = document.querySelector('.filter-chip.active[data-match]')?.getAttribute('data-match') || 'ALL';
   document.querySelectorAll('.player-card').forEach(card => {
     let show = true;
     if (pos !== 'ALL' && card.getAttribute('data-pos') !== pos) show = false;
-    if (mt !== 'ALL' && card.getAttribute('data-match') !== mt) show = false;
     card.style.display = show ? '' : 'none';
   });
 }
@@ -2250,13 +2371,6 @@ function applyFilters() {
 document.querySelectorAll('.filter-chip[data-filter]').forEach(btn => {
   btn.addEventListener('click', () => {
     document.querySelectorAll('.filter-chip[data-filter]').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    applyFilters();
-  });
-});
-document.querySelectorAll('.filter-chip[data-match]').forEach(btn => {
-  btn.addEventListener('click', () => {
-    document.querySelectorAll('.filter-chip[data-match]').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
     applyFilters();
   });
