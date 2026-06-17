@@ -67,7 +67,8 @@
         "dribbling": 70,
         "defending": 92,
         "physical": 90
-      }
+      },
+      "prev_market_value_eur": 28484241
     },
     {
       "name": "德容",
@@ -134,7 +135,8 @@
         "dribbling": 90,
         "defending": 70,
         "physical": 76
-      }
+      },
+      "prev_market_value_eur": 49175538
     },
     {
       "name": "加克波",
@@ -194,7 +196,8 @@
         "dribbling": 82,
         "defending": 45,
         "physical": 85
-      }
+      },
+      "prev_market_value_eur": 47608098
     },
     {
       "name": "德佩",
@@ -273,7 +276,8 @@
         "dribbling": 86,
         "defending": 35,
         "physical": 75
-      }
+      },
+      "prev_market_value_eur": 8280399
     },
     {
       "name": "久保建英",
@@ -339,7 +343,8 @@
         "dribbling": 88,
         "defending": 40,
         "physical": 62
-      }
+      },
+      "prev_market_value_eur": 24601404
     },
     {
       "name": "三苫薰",
@@ -400,7 +405,8 @@
         "dribbling": 90,
         "defending": 45,
         "physical": 70
-      }
+      },
+      "prev_market_value_eur": 37878017
     },
     {
       "name": "远藤航",
@@ -479,7 +485,8 @@
         "dribbling": 72,
         "defending": 88,
         "physical": 82
-      }
+      },
+      "prev_market_value_eur": 16375448
     },
     {
       "name": "富安健洋",
@@ -546,7 +553,8 @@
         "dribbling": 72,
         "defending": 86,
         "physical": 82
-      }
+      },
+      "prev_market_value_eur": 21698469
     },
     {
       "name": "伊萨克",
@@ -613,7 +621,8 @@
       "honors": [
         "西甲最佳年轻球员 2020-21",
         "瑞典足球先生 2022 · 2023 · 2024"
-      ]
+      ],
+      "prev_market_value_eur": 101506734
     },
     {
       "name": "库卢塞夫斯基",
@@ -674,7 +683,8 @@
       "honors": [
         "瑞典甲最佳年轻球员 2019",
         "意甲最佳年轻球员 2019-20"
-      ]
+      ],
+      "prev_market_value_eur": 60220559
     },
     {
       "name": "姆萨克尼",
@@ -759,7 +769,8 @@
       "honors": [
         "突尼斯足球先生×5",
         "法甲月最佳 2017-11"
-      ]
+      ],
+      "prev_market_value_eur": 2357311
     },
     {
       "name": "斯希里",
@@ -832,7 +843,8 @@
       "honors": [
         "突尼斯足球先生 2012 · 2014",
         "卡塔尔星联赛冠军×4"
-      ]
+      ],
+      "prev_market_value_eur": 1147338
     }
   ],
   "data_source_note": "v9 扩充：F 组全部 4 队核心球员档案（A/C/F/H/I/J/K/L 8 焦点战组，每队 2 名，覆盖 4 国：日本, 瑞典, 突尼斯, 荷兰）。"
