@@ -665,6 +665,305 @@
   .reveal.in {
     opacity: 1; transform: translateY(0);
   }
+
+  /* ============== 球员档案板块 ============== */
+  .players-toolbar {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 24px;
+    padding: 18px 22px;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+  }
+  .filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+  }
+  .filter-label {
+    color: var(--text-dim);
+    font-size: 13px;
+    margin-right: 4px;
+  }
+  .filter-chip {
+    background: var(--bg-2);
+    color: var(--text-mid);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 6px 14px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+  .filter-chip:hover {
+    border-color: var(--pitch);
+    color: var(--text);
+  }
+  .filter-chip.active {
+    background: var(--pitch);
+    color: #060a14;
+    border-color: var(--pitch);
+    font-weight: 600;
+  }
+  .players-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 14px;
+  }
+  .player-card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  .player-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(0,217,107,0.05), transparent 60%);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+  .player-card:hover {
+    border-color: var(--pitch);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 32px rgba(0,217,107,0.15);
+  }
+  .player-card:hover::before { opacity: 1; }
+  .player-head {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+  .player-flag { font-size: 22px; }
+  .player-name {
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--text);
+    line-height: 1.1;
+  }
+  .player-name-en {
+    font-size: 11px;
+    color: var(--text-dim);
+    margin-top: 2px;
+  }
+  .player-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 8px 0 10px;
+    font-size: 11px;
+  }
+  .pos-chip {
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 11px;
+    color: #060a14;
+  }
+  .pos-FW { background: linear-gradient(135deg, #ff5d5d, #ff8a3d); }
+  .pos-MF { background: linear-gradient(135deg, #5d8aff, #3dcaff); }
+  .pos-DF { background: linear-gradient(135deg, #5dff8a, #caff5d); color: #060a14; }
+  .pos-GK { background: linear-gradient(135deg, #f5d442, #f5a442); color: #060a14; }
+  .club-line { color: var(--text-mid); font-size: 11px; }
+  .value-line {
+    color: var(--pitch);
+    font-weight: 700;
+    font-size: 13px;
+    margin: 4px 0 8px;
+  }
+  .player-radar-mini {
+    width: 100%;
+    aspect-ratio: 1;
+    max-height: 110px;
+  }
+  .player-radar-mini polygon {
+    fill: rgba(0,217,107,0.15);
+    stroke: var(--pitch);
+    stroke-width: 1.5;
+  }
+  .player-radar-mini circle {
+    fill: none;
+    stroke: var(--line-soft);
+    stroke-width: 0.5;
+  }
+  .player-radar-mini text {
+    fill: var(--text-dim);
+    font-size: 7px;
+    font-family: var(--font-mono, monospace);
+  }
+  .player-radar-mini .point {
+    fill: var(--pitch);
+  }
+
+  /* ============== 球员详情模态框 ============== */
+  .player-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(6,10,20,0.85);
+    backdrop-filter: blur(8px);
+    z-index: 1000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    animation: fadeIn 0.2s ease;
+  }
+  .player-modal.open { display: flex; }
+  @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+  .modal-content {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    max-width: 900px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    animation: slideUp 0.25s ease;
+  }
+  @keyframes slideUp { from { transform: translateY(20px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+  .modal-head {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 24px 28px;
+    border-bottom: 1px solid var(--line);
+    background: linear-gradient(135deg, rgba(0,217,107,0.08), transparent 70%);
+  }
+  .modal-flag { font-size: 56px; }
+  .modal-name-block { flex: 1; }
+  .modal-name { font-size: 28px; font-weight: 800; color: var(--text); margin: 0; }
+  .modal-name-en { font-size: 14px; color: var(--text-dim); margin-top: 4px; }
+  .modal-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+  .modal-close {
+    background: var(--bg-2);
+    color: var(--text);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  .modal-close:hover { background: var(--card-hi); border-color: var(--pitch); }
+  .modal-body { padding: 24px 28px; }
+  .modal-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+  .data-table { width: 100%; font-size: 13px; }
+  .data-table tr { border-bottom: 1px solid var(--line-soft); }
+  .data-table td { padding: 8px 0; }
+  .data-table td:first-child { color: var(--text-dim); width: 110px; }
+  .data-table td:last-child { color: var(--text); font-weight: 600; }
+  .modal-radar svg { width: 100%; height: auto; }
+  .modal-radar polygon { fill: rgba(0,217,107,0.18); stroke: var(--pitch); stroke-width: 2; }
+  .modal-radar circle { fill: none; stroke: var(--line-soft); stroke-width: 0.6; }
+  .modal-radar .axis { stroke: var(--line); stroke-width: 0.5; }
+  .modal-radar text { fill: var(--text-dim); font-size: 11px; font-family: var(--font-mono, monospace); }
+  .modal-radar .label { fill: var(--text); font-size: 12px; font-weight: 600; }
+  .modal-radar .value { fill: var(--pitch); font-size: 11px; font-weight: 700; }
+  .modal-radar .point { fill: var(--pitch); }
+  .key-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-top: 12px;
+  }
+  .key-stat {
+    background: var(--bg-2);
+    border: 1px solid var(--line-soft);
+    border-radius: 8px;
+    padding: 10px 12px;
+    text-align: center;
+  }
+  .key-stat .label { font-size: 11px; color: var(--text-dim); margin-bottom: 4px; }
+  .key-stat .num { font-size: 22px; font-weight: 800; color: var(--pitch); }
+  .modal-section-title {
+    font-size: 14px;
+    color: var(--pitch);
+    margin: 18px 0 10px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .career-timeline {
+    border-left: 2px solid var(--pitch);
+    padding-left: 16px;
+    margin-left: 8px;
+  }
+  .career-timeline .item {
+    position: relative;
+    padding: 8px 0;
+  }
+  .career-timeline .item::before {
+    content: "";
+    position: absolute;
+    left: -22px;
+    top: 14px;
+    width: 10px;
+    height: 10px;
+    background: var(--pitch);
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px var(--card);
+  }
+  .career-period { color: var(--text-dim); font-size: 12px; }
+  .career-club { color: var(--text); font-size: 14px; font-weight: 600; margin: 2px 0; }
+  .career-stats { color: var(--text-mid); font-size: 12px; }
+  .honors-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .honor-chip {
+    background: linear-gradient(135deg, rgba(245,212,66,0.15), rgba(0,217,107,0.1));
+    border: 1px solid rgba(245,212,66,0.3);
+    color: var(--text);
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+  }
+  .world-cup-tbl { width: 100%; font-size: 13px; }
+  .world-cup-tbl th { color: var(--text-dim); text-align: left; padding: 8px 6px; border-bottom: 1px solid var(--line); font-weight: 600; }
+  .world-cup-tbl td { padding: 8px 6px; border-bottom: 1px solid var(--line-soft); }
+
+  /* ============== 焦点战 chip 球员名 ============== */
+  .focus-players {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 10px;
+  }
+  .focus-player-chip {
+    background: var(--bg-2);
+    border: 1px solid var(--line);
+    color: var(--text-mid);
+    padding: 3px 9px;
+    border-radius: 999px;
+    font-size: 11px;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  .focus-player-chip:hover {
+    border-color: var(--pitch);
+    color: var(--pitch);
+  }
+  @media (max-width: 1100px) { .players-grid { grid-template-columns: repeat(3, 1fr); } }
+  @media (max-width: 700px) {
+    .players-grid { grid-template-columns: repeat(2, 1fr); }
+    .modal-grid { grid-template-columns: 1fr; }
+  }
 </style>
 </head>
 <body>
@@ -1043,6 +1342,44 @@
         </p>
       </article>
 
+    </div>
+  </div>
+</section>
+
+<!-- ============ 核心球员档案 ============ -->
+<section id="players">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-eyebrow">核心球员档案 · KEY PLAYERS</div>
+      <h2>⭐ 58 位核心球员 · 身价 + 六维能力图</h2>
+      <p>8 场焦点对决的 58 名核心球员完整档案：基本信息、生涯履历、世界杯经历、6 维能力评分（速度/射门/传球/盘带/防守/身体）、身价（Transfermarkt 2025-2026 公开数据）。点开任意球员查看详细数据。</p>
+    </div>
+
+    <div class="players-toolbar reveal">
+      <div class="filter-row">
+        <span class="filter-label">按位置：</span>
+        <button class="filter-chip active" data-filter="ALL">全部</button>
+        <button class="filter-chip" data-filter="FW">前锋</button>
+        <button class="filter-chip" data-filter="MF">中场</button>
+        <button class="filter-chip" data-filter="DF">后卫</button>
+        <button class="filter-chip" data-filter="GK">门将</button>
+      </div>
+      <div class="filter-row">
+        <span class="filter-label">按比赛：</span>
+        <button class="filter-chip active" data-match="ALL">全部</button>
+        <button class="filter-chip" data-match="A">🇲🇽 A 组</button>
+        <button class="filter-chip" data-match="C">🇧🇷 C 组</button>
+        <button class="filter-chip" data-match="F">🇳🇱 F 组</button>
+        <button class="filter-chip" data-match="I">🇫🇷 I 组</button>
+        <button class="filter-chip" data-match="L">🏴󠁧󠁢󠁥󠁮󠁧󠁿 L 组</button>
+        <button class="filter-chip" data-match="J">🇦🇷 J 组</button>
+        <button class="filter-chip" data-match="H">🇪🇸 H 组</button>
+        <button class="filter-chip" data-match="K">🇵🇹 K 组</button>
+      </div>
+    </div>
+
+    <div class="players-grid reveal" id="playersGrid">
+      <!-- 由 JS 注入球员卡片 -->
     </div>
   </div>
 </section>
@@ -1710,6 +2047,337 @@
     });
   });
 })();
+
+/* ============================================================
+   球员档案板块逻辑
+   ============================================================ */
+
+// 6 维能力雷达图渲染函数（接受 svg 元素 + ability 对象）
+function drawRadarChart(svg, ability, opts) {
+  opts = opts || {};
+  const size = opts.size || 200;
+  const cx = size / 2, cy = size / 2;
+  const maxR = (opts.maxR || (size / 2 - 22));
+  const dims = ['pace', 'shooting', 'passing', 'dribbling', 'defending', 'physical'];
+  const labels = ['速度', '射门', '传球', '盘带', '防守', '身体'];
+  const N = dims.length;
+  const angle = i => (Math.PI * 2 * i) / N - Math.PI / 2;
+
+  let svgNS = 'http://www.w3.org/2000/svg';
+  svg.setAttribute('viewBox', '0 0 ' + size + ' ' + size);
+
+  // 背景 4 圈六边形
+  for (let lvl = 1; lvl <= 4; lvl++) {
+    const r = (maxR * lvl) / 4;
+    let pts = [];
+    for (let i = 0; i < N; i++) {
+      pts.push((cx + r * Math.cos(angle(i))).toFixed(1) + ',' + (cy + r * Math.sin(angle(i))).toFixed(1));
+    }
+    let bg = document.createElementNS(svgNS, 'polygon');
+    bg.setAttribute('points', pts.join(' '));
+    svg.appendChild(bg);
+  }
+
+  // 轴线
+  for (let i = 0; i < N; i++) {
+    const x2 = cx + maxR * Math.cos(angle(i));
+    const y2 = cy + maxR * Math.sin(angle(i));
+    let axis = document.createElementNS(svgNS, 'line');
+    axis.setAttribute('x1', cx); axis.setAttribute('y1', cy);
+    axis.setAttribute('x2', x2); axis.setAttribute('y2', y2);
+    axis.setAttribute('class', 'axis');
+    svg.appendChild(axis);
+  }
+
+  // 数据多边形
+  let dataPts = [];
+  for (let i = 0; i < N; i++) {
+    const v = (ability[dims[i]] || 0) / 100;
+    const x = cx + maxR * v * Math.cos(angle(i));
+    const y = cy + maxR * v * Math.sin(angle(i));
+    dataPts.push(x.toFixed(1) + ',' + y.toFixed(1));
+  }
+  let data = document.createElementNS(svgNS, 'polygon');
+  data.setAttribute('points', dataPts.join(' '));
+  svg.appendChild(data);
+
+  // 顶点圆点 + 数字
+  for (let i = 0; i < N; i++) {
+    const v = (ability[dims[i]] || 0) / 100;
+    const x = cx + maxR * v * Math.cos(angle(i));
+    const y = cy + maxR * v * Math.sin(angle(i));
+    let pt = document.createElementNS(svgNS, 'circle');
+    pt.setAttribute('cx', x); pt.setAttribute('cy', y); pt.setAttribute('r', 2.5);
+    pt.setAttribute('class', 'point');
+    svg.appendChild(pt);
+
+    if (opts.showValues) {
+      let num = document.createElementNS(svgNS, 'text');
+      num.setAttribute('x', x); num.setAttribute('y', y - 5);
+      num.setAttribute('text-anchor', 'middle');
+      num.setAttribute('class', 'value');
+      num.textContent = ability[dims[i]] || 0;
+      svg.appendChild(num);
+    }
+  }
+
+  // 维度标签
+  for (let i = 0; i < N; i++) {
+    const r = maxR + 14;
+    const x = cx + r * Math.cos(angle(i));
+    const y = cy + r * Math.sin(angle(i));
+    let lab = document.createElementNS(svgNS, 'text');
+    lab.setAttribute('x', x); lab.setAttribute('y', y + 4);
+    lab.setAttribute('text-anchor', 'middle');
+    lab.setAttribute('class', 'label');
+    lab.textContent = labels[i];
+    svg.appendChild(lab);
+  }
+}
+
+// 所有球员数据（从 8 份 JSON fetch）
+let allPlayers = [];
+let playerIndex = {}; // name -> {group, match, idx, data}
+
+async function loadAllPlayers() {
+  const groups = ['A', 'C', 'F', 'I', 'L', 'J', 'H', 'K'];
+  for (const g of groups) {
+    try {
+      const r = await fetch('players-' + g + '.json');
+      const d = await r.json();
+      d.players.forEach((p, idx) => {
+        p._group = d.group;
+        p._match = d.match;
+        p._idx = idx;
+        allPlayers.push(p);
+        playerIndex[p.name] = p;
+      });
+    } catch (e) { console.error('load ' + g + ' failed', e); }
+  }
+}
+
+function positionChip(pos) {
+  if (!pos) return 'pos-MF';
+  if (pos.includes('FW') || pos.includes('前锋')) return 'pos-FW';
+  if (pos.includes('DF') || pos.includes('后卫')) return 'pos-DF';
+  if (pos.includes('GK') || pos.includes('门将')) return 'pos-GK';
+  return 'pos-MF';
+}
+
+function fmtValue(v) {
+  if (v >= 1e8) return (v / 1e8).toFixed(1) + '亿€';
+  if (v >= 1e6) return (v / 1e6).toFixed(0) + 'M€';
+  if (v >= 1e3) return (v / 1e3).toFixed(0) + 'K€';
+  return v + '€';
+}
+
+function renderPlayers() {
+  const grid = document.getElementById('playersGrid');
+  if (!grid) return;
+  grid.innerHTML = '';
+  allPlayers.forEach(p => {
+    const card = document.createElement('div');
+    card.className = 'player-card';
+    card.setAttribute('data-pos', p.position || 'MF');
+    card.setAttribute('data-match', p._group || '');
+    card.innerHTML =
+      '<div class="player-head">' +
+        '<div class="player-flag">' + (p.country_flag || '🏳️') + '</div>' +
+        '<div><div class="player-name">' + p.name + '</div>' +
+        '<div class="player-name-en">' + (p.name_en || '') + '</div></div>' +
+      '</div>' +
+      '<div class="player-meta">' +
+        '<span class="pos-chip ' + positionChip(p.position) + '">' + (p.position_zh || p.position || '') + '</span>' +
+        '<span class="club-line">' + (p.club || '') + '</span>' +
+      '</div>' +
+      '<div class="value-line">' + fmtValue(p.market_value_eur || 0) + '</div>' +
+      '<svg class="player-radar-mini" viewBox="0 0 120 120"></svg>';
+    grid.appendChild(card);
+    const svg = card.querySelector('svg');
+    if (svg && p.ability) {
+      svg.setAttribute('viewBox', '0 0 120 120');
+      const dims = ['pace', 'shooting', 'passing', 'dribbling', 'defending', 'physical'];
+      const labels = ['速', '射', '传', '盘', '防', '身'];
+      const N = 6;
+      const angle = i => (Math.PI * 2 * i) / N - Math.PI / 2;
+      const cx = 60, cy = 60, maxR = 38;
+      for (let lvl = 1; lvl <= 3; lvl++) {
+        const r = (maxR * lvl) / 3;
+        let pts = [];
+        for (let i = 0; i < N; i++) {
+          pts.push((cx + r * Math.cos(angle(i))).toFixed(1) + ',' + (cy + r * Math.sin(angle(i))).toFixed(1));
+        }
+        let bg = document.createElementNS('http://www.w3.org/2000/svg', 'polygon');
+        bg.setAttribute('points', pts.join(' '));
+        svg.appendChild(bg);
+      }
+      let dataPts = [];
+      for (let i = 0; i < N; i++) {
+        const v = (p.ability[dims[i]] || 0) / 100;
+        const x = cx + maxR * v * Math.cos(angle(i));
+        const y = cy + maxR * v * Math.sin(angle(i));
+        dataPts.push(x.toFixed(1) + ',' + y.toFixed(1));
+      }
+      let data = document.createElementNS('http://www.w3.org/2000/svg', 'polygon');
+      data.setAttribute('points', dataPts.join(' '));
+      svg.appendChild(data);
+      for (let i = 0; i < N; i++) {
+        const v = (p.ability[dims[i]] || 0) / 100;
+        const x = cx + maxR * v * Math.cos(angle(i));
+        const y = cy + maxR * v * Math.sin(angle(i));
+        let pt = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+        pt.setAttribute('cx', x); pt.setAttribute('cy', y); pt.setAttribute('r', 1.5);
+        pt.setAttribute('class', 'point');
+        svg.appendChild(pt);
+      }
+    }
+    card.addEventListener('click', () => openPlayerModal(p));
+  });
+  applyFilters();
+}
+
+function applyFilters() {
+  const pos = document.querySelector('.filter-chip.active[data-filter]')?.getAttribute('data-filter') || 'ALL';
+  const mt = document.querySelector('.filter-chip.active[data-match]')?.getAttribute('data-match') || 'ALL';
+  document.querySelectorAll('.player-card').forEach(card => {
+    let show = true;
+    if (pos !== 'ALL' && card.getAttribute('data-pos') !== pos) show = false;
+    if (mt !== 'ALL' && card.getAttribute('data-match') !== mt) show = false;
+    card.style.display = show ? '' : 'none';
+  });
+}
+
+document.querySelectorAll('.filter-chip[data-filter]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-chip[data-filter]').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    applyFilters();
+  });
+});
+document.querySelectorAll('.filter-chip[data-match]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-chip[data-match]').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    applyFilters();
+  });
+});
+
+function openPlayerModal(p) {
+  let modal = document.getElementById('playerModal');
+  if (!modal) {
+    modal = document.createElement('div');
+    modal.id = 'playerModal';
+    modal.className = 'player-modal';
+    modal.innerHTML = '<div class="modal-content"><div id="modalBody"></div></div>';
+    document.body.appendChild(modal);
+    modal.addEventListener('click', e => { if (e.target === modal) closePlayerModal(); });
+  }
+  const body = document.getElementById('modalBody');
+  const career = (p.career_history || []).map(c =>
+    '<div class="item">' +
+      '<div class="career-period">' + c.period + '</div>' +
+      '<div class="career-club">' + c.club + '</div>' +
+      '<div class="career-stats">' + c.apps + ' 场 ' + c.goals + ' 球</div>' +
+    '</div>').join('');
+  const wc = (p.world_cup_history || []);
+  const wcTbl = wc.length ? '<table class="world-cup-tbl"><tr><th>年份</th><th>出场</th><th>进球</th><th>最佳战绩</th></tr>' +
+    wc.map(w => '<tr><td>' + w.year + '</td><td>' + w.apps + '</td><td>' + w.goals + '</td><td>' + w.best + '</td></tr>').join('') + '</table>' : '<p style="color:var(--text-dim)">暂无世界杯经历</p>';
+  const honors = (p.honors || []).map(h => '<span class="honor-chip">' + h + '</span>').join('');
+  body.innerHTML =
+    '<div class="modal-head">' +
+      '<div class="modal-flag">' + (p.country_flag || '🏳️') + '</div>' +
+      '<div class="modal-name-block">' +
+        '<h2 class="modal-name">' + p.name + ' <span style="font-size:18px;color:var(--text-dim);font-weight:500">' + (p.name_en || '') + '</span></h2>' +
+        '<div class="modal-name-en">' + (p.country || '') + ' · ' + (p.club || '') + '</div>' +
+        '<div class="modal-tags">' +
+          '<span class="pos-chip ' + positionChip(p.position) + '">' + (p.position_zh || p.position || '') + '</span>' +
+          '<span class="club-line">#' + (p.number || '-') + ' · ' + (p.age || '?') + ' 岁 · ' + (p.height || '-') + '</span>' +
+          '<span class="club-line">惯用脚：' + (p.preferred_foot || '-') + '</span>' +
+        '</div>' +
+      '</div>' +
+      '<button class="modal-close" onclick="closePlayerModal()">×</button>' +
+    '</div>' +
+    '<div class="modal-body">' +
+      '<div class="modal-grid">' +
+        '<div>' +
+          '<h3 class="modal-section-title">基本数据</h3>' +
+          '<table class="data-table">' +
+            '<tr><td>出生日期</td><td>' + (p.birth_date || '-') + '</td></tr>' +
+            '<tr><td>身高</td><td>' + (p.height || '-') + '</td></tr>' +
+            '<tr><td>惯用脚</td><td>' + (p.preferred_foot || '-') + '</td></tr>' +
+            '<tr><td>球衣号</td><td>#' + (p.number || '-') + '</td></tr>' +
+            '<tr><td>当前俱乐部</td><td>' + (p.club || '-') + '</td></tr>' +
+            '<tr><td>身价</td><td style="color:var(--pitch)">' + (p.market_value_text || fmtValue(p.market_value_eur || 0)) + '</td></tr>' +
+            '<tr><td>国家队首秀</td><td>' + (p.debut_date || '-') + '</td></tr>' +
+          '</table>' +
+        '</div>' +
+        '<div>' +
+          '<h3 class="modal-section-title">六维能力</h3>' +
+          '<div class="modal-radar"><svg id="modalRadar" viewBox="0 0 200 200"></svg></div>' +
+          '<div class="key-stats">' +
+            '<div class="key-stat"><div class="label">国家队出场</div><div class="num">' + (p.caps || 0) + '</div></div>' +
+            '<div class="key-stat"><div class="label">国家队进球</div><div class="num">' + (p.goals || 0) + '</div></div>' +
+            '<div class="key-stat"><div class="label">身价</div><div class="num">' + fmtValue(p.market_value_eur || 0) + '</div></div>' +
+          '</div>' +
+        '</div>' +
+      '</div>' +
+      '<h3 class="modal-section-title">生涯履历</h3>' +
+      '<div class="career-timeline">' + (career || '<p style="color:var(--text-dim)">暂无</p>') + '</div>' +
+      '<h3 class="modal-section-title">世界杯经历</h3>' +
+      wcTbl +
+      '<h3 class="modal-section-title">个人荣誉</h3>' +
+      '<div class="honors-list">' + (honors || '<p style="color:var(--text-dim)">暂无</p>') + '</div>' +
+    '</div>';
+  modal.classList.add('open');
+  const radarSvg = document.getElementById('modalRadar');
+  if (radarSvg && p.ability) drawRadarChart(radarSvg, p.ability, { size: 200, maxR: 78, showValues: true });
+}
+
+function closePlayerModal() {
+  const modal = document.getElementById('playerModal');
+  if (modal) modal.classList.remove('open');
+}
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closePlayerModal(); });
+
+// 初始化：拉所有球员数据 + 渲染
+loadAllPlayers().then(() => renderPlayers()).catch(e => console.error('init players failed', e));
+
+// 焦点战卡片下加球员 chip
+function decorateFocusCards() {
+  const groupPlayerMap = {
+    'A': ['希门尼斯', '阿尔瓦雷斯', '洛萨诺', '勒保', '莫迪塞'],
+    'C': ['维尼修斯', '罗德里戈', '卡塞米罗', '马尔基尼奥斯', '阿什拉夫', '布拉希尔'],
+    'F': ['范戴克', '德容', '加克波', '久保建英', '三苫薰', '远藤航', '富安健洋', '德佩'],
+    'I': ['姆巴佩', '格列兹曼', '卡马文加', '楚阿梅尼', '迈尼昂', '马内', '门迪', '库利巴利'],
+    'L': ['凯恩', '贝林厄姆', '萨卡', '赖斯', '斯通斯', '莫德里奇', '格瓦迪奥尔', '克拉马里奇'],
+    'J': ['梅西', '阿尔瓦雷斯', '麦卡利斯特', '德保罗', '恩佐', '萨比策', '阿瑙托维奇', '莱默尔'],
+    'H': ['苏亚雷斯', '努涅斯', '巴尔韦德', '本坦库尔', '佩德里', '加维', '莫拉塔', '罗德里'],
+    'K': ['J罗', '迪亚斯', '夸德拉多', 'C罗', 'B费', '莱奥', '维蒂尼亚']
+  };
+  document.querySelectorAll('.focus-card, [data-group]').forEach(card => {
+    const g = card.getAttribute('data-group');
+    if (!g || !groupPlayerMap[g]) return;
+    if (card.querySelector('.focus-players')) return;
+    const wrap = document.createElement('div');
+    wrap.className = 'focus-players';
+    groupPlayerMap[g].forEach(name => {
+      const chip = document.createElement('span');
+      chip.className = 'focus-player-chip';
+      chip.textContent = name;
+      chip.addEventListener('click', e => {
+        e.stopPropagation();
+        const p = playerIndex[name];
+        if (p) openPlayerModal(p);
+      });
+      wrap.appendChild(chip);
+    });
+    card.appendChild(wrap);
+  });
+}
+
+// 等 loadAllPlayers 完成后调用 decorateFocusCards
+const _origRender = renderPlayers;
+renderPlayers = function() { _origRender(); decorateFocusCards(); };
 </script>
 </body>
 </html>
