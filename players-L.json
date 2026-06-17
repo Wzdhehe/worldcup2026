@@ -72,7 +72,8 @@
         "dribbling": 80,
         "defending": 42,
         "physical": 82
-      }
+      },
+      "prev_market_value_eur": 99798394
     },
     {
       "name": "贝林厄姆",
@@ -136,7 +137,8 @@
         "dribbling": 90,
         "defending": 75,
         "physical": 85
-      }
+      },
+      "prev_market_value_eur": 191957314
     },
     {
       "name": "萨卡",
@@ -187,7 +189,8 @@
         "dribbling": 90,
         "defending": 60,
         "physical": 74
-      }
+      },
+      "prev_market_value_eur": 132007361
     },
     {
       "name": "赖斯",
@@ -244,7 +247,8 @@
         "dribbling": 76,
         "defending": 86,
         "physical": 88
-      }
+      },
+      "prev_market_value_eur": 96223242
     },
     {
       "name": "斯通斯",
@@ -314,7 +318,8 @@
         "dribbling": 80,
         "defending": 88,
         "physical": 82
-      }
+      },
+      "prev_market_value_eur": 30470947
     },
     {
       "name": "莫德里奇",
@@ -402,7 +407,8 @@
         "dribbling": 90,
         "defending": 70,
         "physical": 70
-      }
+      },
+      "prev_market_value_eur": 7595704
     },
     {
       "name": "格瓦迪奥尔",
@@ -466,7 +472,8 @@
         "dribbling": 80,
         "defending": 88,
         "physical": 86
-      }
+      },
+      "prev_market_value_eur": 65029221
     },
     {
       "name": "克拉马里奇",
@@ -542,7 +549,8 @@
         "dribbling": 82,
         "defending": 40,
         "physical": 72
-      }
+      },
+      "prev_market_value_eur": 12410009
     },
     {
       "name": "库杜斯",
@@ -598,7 +606,8 @@
         "荷兰甲冠军 2021 · 2022 · 2023",
         "非洲最佳年轻球员 2022",
         "荷甲年度最佳 2023"
-      ]
+      ],
+      "prev_market_value_eur": 50591512
     },
     {
       "name": "阿尤",
@@ -690,7 +699,8 @@
         "加纳足球先生×5",
         "英超月最佳 2015-12",
         "法甲冠军 2009-10"
-      ]
+      ],
+      "prev_market_value_eur": 1399191
     },
     {
       "name": "卡明斯",
@@ -757,7 +767,8 @@
       "honors": [
         "中北美国家联赛亚军 2017",
         "巴拿马联赛冠军 2014"
-      ]
+      ],
+      "prev_market_value_eur": 470862
     }
   ]
 }
