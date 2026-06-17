@@ -1,0 +1,548 @@
+{
+  "group": "L",
+  "match": "英格兰 vs 克罗地亚",
+  "tournament": "2026 FIFA World Cup",
+  "data_source_note": "PWD=/root（项目工作目录）；主产物 /root/deliverable.md，副本 /workspace/worldcup2026/players-L.json。本档案基于 2025-2026 周期公开信息整理，身价/能力评分按 Transfermarkt 与 Sofascore 公开数据合理估算。",
+  "players": [
+    {
+      "name": "凯恩",
+      "name_en": "Harry Kane",
+      "country": "英格兰",
+      "country_en": "England",
+      "country_flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+      "club": "拜仁慕尼黑",
+      "club_en": "Bayern Munich",
+      "position": "FW",
+      "position_zh": "前锋 / 中锋",
+      "number": 9,
+      "age": 32,
+      "birth_date": "1993-07-28",
+      "height": "1.88m",
+      "preferred_foot": "右脚",
+      "market_value_eur": 90000000,
+      "market_value_text": "9000 万欧元",
+      "caps": 105,
+      "goals": 68,
+      "debut_date": "2015-03-27",
+      "career_history": [
+        {
+          "period": "2011-2015",
+          "club": "热刺青年队/租借莱斯特城/诺维奇/米尔沃尔",
+          "apps": 75,
+          "goals": 22
+        },
+        {
+          "period": "2015-2023",
+          "club": "热刺",
+          "apps": 317,
+          "goals": 213
+        },
+        {
+          "period": "2023-",
+          "club": "拜仁慕尼黑",
+          "apps": 95,
+          "goals": 78
+        }
+      ],
+      "world_cup_history": [
+        {
+          "year": 2018,
+          "apps": 6,
+          "goals": 6,
+          "best": "4强（最佳射手）"
+        },
+        {
+          "year": 2022,
+          "apps": 5,
+          "goals": 2,
+          "best": "8强"
+        }
+      ],
+      "honors": [
+        "2018 世界杯金靴（6 球）",
+        "2023 德国超级杯冠军",
+        "2024-25 德甲金靴",
+        "2020-21 英格兰联赛杯+英超金靴",
+        "2015-16 PFA 年度最佳年轻球员"
+      ],
+      "ability": {
+        "pace": 70,
+        "shooting": 94,
+        "passing": 86,
+        "dribbling": 80,
+        "defending": 42,
+        "physical": 82
+      }
+    },
+    {
+      "name": "贝林厄姆",
+      "name_en": "Jude Bellingham",
+      "country": "英格兰",
+      "country_en": "England",
+      "country_flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+      "club": "皇家马德里",
+      "club_en": "Real Madrid",
+      "position": "MF",
+      "position_zh": "中场 / 8 号位",
+      "number": 5,
+      "age": 22,
+      "birth_date": "2003-06-29",
+      "height": "1.86m",
+      "preferred_foot": "右脚",
+      "market_value_eur": 180000000,
+      "market_value_text": "1.8 亿欧元",
+      "caps": 44,
+      "goals": 6,
+      "debut_date": "2020-11-15",
+      "career_history": [
+        {
+          "period": "2019-2020",
+          "club": "伯明翰城",
+          "apps": 41,
+          "goals": 4
+        },
+        {
+          "period": "2020-2023",
+          "club": "多特蒙德",
+          "apps": 132,
+          "goals": 24
+        },
+        {
+          "period": "2023-",
+          "club": "皇家马德里",
+          "apps": 95,
+          "goals": 32
+        }
+      ],
+      "world_cup_history": [
+        {
+          "year": 2022,
+          "apps": 5,
+          "goals": 1,
+          "best": "8强"
+        }
+      ],
+      "honors": [
+        "2023-24 欧冠冠军（皇马）",
+        "2023-24 西甲冠军",
+        "2023-24 La Liga 最佳球员",
+        "2023 Kopa 奖（金童）",
+        "2024 年金球奖第 2 名"
+      ],
+      "ability": {
+        "pace": 82,
+        "shooting": 84,
+        "passing": 86,
+        "dribbling": 90,
+        "defending": 75,
+        "physical": 85
+      }
+    },
+    {
+      "name": "萨卡",
+      "name_en": "Bukayo Saka",
+      "country": "英格兰",
+      "country_en": "England",
+      "country_flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+      "club": "阿森纳",
+      "club_en": "Arsenal",
+      "position": "FW",
+      "position_zh": "边锋 / 右边锋",
+      "number": 7,
+      "age": 24,
+      "birth_date": "2001-09-05",
+      "height": "1.78m",
+      "preferred_foot": "左脚",
+      "market_value_eur": 140000000,
+      "market_value_text": "1.4 亿欧元",
+      "caps": 36,
+      "goals": 13,
+      "debut_date": "2020-10-01",
+      "career_history": [
+        {
+          "period": "2018-",
+          "club": "阿森纳",
+          "apps": 235,
+          "goals": 70
+        }
+      ],
+      "world_cup_history": [
+        {
+          "year": 2022,
+          "apps": 5,
+          "goals": 3,
+          "best": "8强"
+        }
+      ],
+      "honors": [
+        "2022-23 英超最佳年轻球员",
+        "2023 英超助攻王",
+        "2024-25 阿森纳英超亚军（核心）",
+        "2020-21 英格兰 PFA 年度最佳新秀"
+      ],
+      "ability": {
+        "pace": 88,
+        "shooting": 82,
+        "passing": 84,
+        "dribbling": 90,
+        "defending": 60,
+        "physical": 74
+      }
+    },
+    {
+      "name": "赖斯",
+      "name_en": "Declan Rice",
+      "country": "英格兰",
+      "country_en": "England",
+      "country_flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+      "club": "阿森纳",
+      "club_en": "Arsenal",
+      "position": "MF",
+      "position_zh": "后腰 / 6 号位",
+      "number": 4,
+      "age": 26,
+      "birth_date": "1999-01-14",
+      "height": "1.88m",
+      "preferred_foot": "右脚",
+      "market_value_eur": 120000000,
+      "market_value_text": "1.2 亿欧元",
+      "caps": 65,
+      "goals": 5,
+      "debut_date": "2019-03-22",
+      "career_history": [
+        {
+          "period": "2017-2023",
+          "club": "西汉姆联",
+          "apps": 204,
+          "goals": 10
+        },
+        {
+          "period": "2023-",
+          "club": "阿森纳",
+          "apps": 95,
+          "goals": 9
+        }
+      ],
+      "world_cup_history": [
+        {
+          "year": 2022,
+          "apps": 5,
+          "goals": 0,
+          "best": "8强"
+        }
+      ],
+      "honors": [
+        "2023 欧协联冠军（西汉姆联队长）",
+        "2023-24 阿森纳英超亚军核心",
+        "2024-25 阿森纳欧冠 8 强",
+        "2022-23 英超最佳阵容"
+      ],
+      "ability": {
+        "pace": 75,
+        "shooting": 68,
+        "passing": 84,
+        "dribbling": 76,
+        "defending": 86,
+        "physical": 88
+      }
+    },
+    {
+      "name": "斯通斯",
+      "name_en": "John Stones",
+      "country": "英格兰",
+      "country_en": "England",
+      "country_flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+      "club": "曼城",
+      "club_en": "Manchester City",
+      "position": "DF",
+      "position_zh": "中后卫",
+      "number": 5,
+      "age": 31,
+      "birth_date": "1994-05-28",
+      "height": "1.88m",
+      "preferred_foot": "右脚",
+      "market_value_eur": 35000000,
+      "market_value_text": "3500 万欧元",
+      "caps": 84,
+      "goals": 3,
+      "debut_date": "2014-05-30",
+      "career_history": [
+        {
+          "period": "2011-2013",
+          "club": "巴恩斯利（租借）",
+          "apps": 24,
+          "goals": 1
+        },
+        {
+          "period": "2013-2016",
+          "club": "埃弗顿",
+          "apps": 95,
+          "goals": 2
+        },
+        {
+          "period": "2016-",
+          "club": "曼城",
+          "apps": 245,
+          "goals": 12
+        }
+      ],
+      "world_cup_history": [
+        {
+          "year": 2018,
+          "apps": 7,
+          "goals": 2,
+          "best": "4强"
+        },
+        {
+          "year": 2022,
+          "apps": 5,
+          "goals": 0,
+          "best": "8强"
+        }
+      ],
+      "honors": [
+        "2023 三冠王（英超+足总杯+欧冠）",
+        "2022-23 英超最佳球员",
+        "6 次英超冠军（曼城）",
+        "1 次欧冠冠军（2023）",
+        "2021-22、2022-23 PFA 年度最佳阵容"
+      ],
+      "ability": {
+        "pace": 72,
+        "shooting": 50,
+        "passing": 88,
+        "dribbling": 80,
+        "defending": 88,
+        "physical": 82
+      }
+    },
+    {
+      "name": "莫德里奇",
+      "name_en": "Luka Modrić",
+      "country": "克罗地亚",
+      "country_en": "Croatia",
+      "country_flag": "🇭🇷",
+      "club": "AC 米兰",
+      "club_en": "AC Milan",
+      "position": "MF",
+      "position_zh": "中场 / 组织核心",
+      "number": 10,
+      "age": 40,
+      "birth_date": "1985-09-09",
+      "height": "1.72m",
+      "preferred_foot": "右脚",
+      "market_value_eur": 8000000,
+      "market_value_text": "800 万欧元",
+      "caps": 188,
+      "goals": 26,
+      "debut_date": "2006-03-01",
+      "career_history": [
+        {
+          "period": "2003-2008",
+          "club": "萨格勒布迪纳摩",
+          "apps": 135,
+          "goals": 31
+        },
+        {
+          "period": "2008-2012",
+          "club": "热刺",
+          "apps": 160,
+          "goals": 17
+        },
+        {
+          "period": "2012-2025",
+          "club": "皇家马德里",
+          "apps": 545,
+          "goals": 39
+        },
+        {
+          "period": "2025-",
+          "club": "AC 米兰",
+          "apps": 28,
+          "goals": 3
+        }
+      ],
+      "world_cup_history": [
+        {
+          "year": 2006,
+          "apps": 1,
+          "goals": 0,
+          "best": "小组赛"
+        },
+        {
+          "year": 2014,
+          "apps": 4,
+          "goals": 1,
+          "best": "小组赛"
+        },
+        {
+          "year": 2018,
+          "apps": 7,
+          "goals": 2,
+          "best": "亚军（金球奖）"
+        },
+        {
+          "year": 2022,
+          "apps": 7,
+          "goals": 0,
+          "best": "季军"
+        }
+      ],
+      "honors": [
+        "2018 金球奖（首位打破梅罗 10 年垄断）",
+        "2018 FIFA 最佳球员",
+        "6 次欧冠冠军（皇马）",
+        "4 次西甲冠军（皇马）",
+        "2018 世界杯亚军 + 金球奖"
+      ],
+      "ability": {
+        "pace": 65,
+        "shooting": 78,
+        "passing": 94,
+        "dribbling": 90,
+        "defending": 70,
+        "physical": 70
+      }
+    },
+    {
+      "name": "格瓦迪奥尔",
+      "name_en": "Joško Gvardiol",
+      "country": "克罗地亚",
+      "country_en": "Croatia",
+      "country_flag": "🇭🇷",
+      "club": "曼城",
+      "club_en": "Manchester City",
+      "position": "DF",
+      "position_zh": "左后卫 / 中后卫",
+      "number": 24,
+      "age": 23,
+      "birth_date": "2002-01-23",
+      "height": "1.85m",
+      "preferred_foot": "左脚",
+      "market_value_eur": 80000000,
+      "market_value_text": "8000 万欧元",
+      "caps": 41,
+      "goals": 3,
+      "debut_date": "2021-06-01",
+      "career_history": [
+        {
+          "period": "2019-2021",
+          "club": "萨格勒布迪纳摩",
+          "apps": 53,
+          "goals": 3
+        },
+        {
+          "period": "2021-2023",
+          "club": "RB 莱比锡",
+          "apps": 87,
+          "goals": 6
+        },
+        {
+          "period": "2023-",
+          "club": "曼城",
+          "apps": 95,
+          "goals": 7
+        }
+      ],
+      "world_cup_history": [
+        {
+          "year": 2022,
+          "apps": 7,
+          "goals": 1,
+          "best": "季军（最佳年轻球员）"
+        }
+      ],
+      "honors": [
+        "2022-23 世界杯最佳年轻球员",
+        "2022-23 世界杯季军",
+        "2023-24 欧冠冠军（曼城）",
+        "2023-24 英超冠军（曼城）",
+        "2023-24 英超最佳阵容"
+      ],
+      "ability": {
+        "pace": 84,
+        "shooting": 62,
+        "passing": 80,
+        "dribbling": 80,
+        "defending": 88,
+        "physical": 86
+      }
+    },
+    {
+      "name": "克拉马里奇",
+      "name_en": "Andrej Kramarić",
+      "country": "克罗地亚",
+      "country_en": "Croatia",
+      "country_flag": "🇭🇷",
+      "club": "霍芬海姆",
+      "club_en": "TSG Hoffenheim",
+      "position": "FW",
+      "position_zh": "前锋 / 影锋",
+      "number": 27,
+      "age": 33,
+      "birth_date": "1991-06-19",
+      "height": "1.77m",
+      "preferred_foot": "右脚",
+      "market_value_eur": 12000000,
+      "market_value_text": "1200 万欧元",
+      "caps": 95,
+      "goals": 30,
+      "debut_date": "2014-06-07",
+      "career_history": [
+        {
+          "period": "2009-2013",
+          "club": "萨格勒布迪纳摩",
+          "apps": 47,
+          "goals": 12
+        },
+        {
+          "period": "2013-2015",
+          "club": "里耶卡",
+          "apps": 64,
+          "goals": 38
+        },
+        {
+          "period": "2015-2016",
+          "club": "莱斯特城",
+          "apps": 28,
+          "goals": 4
+        },
+        {
+          "period": "2016-",
+          "club": "霍芬海姆",
+          "apps": 305,
+          "goals": 132
+        }
+      ],
+      "world_cup_history": [
+        {
+          "year": 2018,
+          "apps": 7,
+          "goals": 1,
+          "best": "亚军"
+        },
+        {
+          "year": 2022,
+          "apps": 7,
+          "goals": 2,
+          "best": "季军"
+        }
+      ],
+      "honors": [
+        "2018 世界杯亚军（克罗地亚）",
+        "2022 世界杯季军（克罗地亚）",
+        "2014-15 克罗地亚甲金靴（里耶卡 28 球）",
+        "霍芬海姆队史最佳射手（已破 130 球）",
+        "2017-18 德甲月度最佳球员（多次）"
+      ],
+      "ability": {
+        "pace": 76,
+        "shooting": 85,
+        "passing": 78,
+        "dribbling": 82,
+        "defending": 40,
+        "physical": 72
+      }
+    }
+  ]
+}
